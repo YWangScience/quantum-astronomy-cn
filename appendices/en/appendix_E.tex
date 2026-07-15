@@ -1,0 +1,70 @@
+\chapter{Guide to the Worked-Example Code}
+\label{app:e}
+
+Each chapter has a corresponding Python file, located at \texttt{code/chapter\_XX.py}. These scripts generate the PDF figures in the main text and also provide a starting point for reproducing the order-of-magnitude estimates of each experiment. Formula definitions follow their first appearance in the main text; the code turns those formulas into checkable curves, scalings, simulated data, and error budgets.
+
+\section{Contents and Run Order}
+\label{appsec:e-run}
+
+\begin{enumerate}[leftmargin=*]
+\item First read \texttt{code/README.md} to confirm the Python version, the required packages, and the output directory.
+\item Look at \texttt{code/plot\_style.py} and \texttt{code/plot\_recipes.py} to understand the unified fonts, colors, line widths, and save functions.
+\item Run a single-chapter script, for example \texttt{python code/chapter\_20.py}. A single-chapter script should generate only that chapter's figures and should not modify other chapters.
+\item Check that the PDFs are written to \texttt{figures/generated/chapter\_XX/}.
+\item Compile \texttt{main\_nature.tex} and confirm that the figure numbers, captions, in-text references, and PDF layout are all consistent.
+\end{enumerate}
+
+\section{Correspondence Between Scripts and Text}
+\label{appsec:e-map}
+
+\begin{longtable}{p{0.18\linewidth}p{0.30\linewidth}p{0.42\linewidth}}
+\toprule
+Chapter & Typical figure or computation & Points to check \\
+\midrule
+1--2 & Event tables, Poisson counts, ordinary light curves, and information loss & Event-table fields in the figures match the symbols in the text. \\
+3--4 & Light states, occupation numbers, \(g^{(1)}\), \(g^{(2)}\), multimode dilution & Do not draw idealized single-mode results as if they were real instrumental observations. \\
+5 & Visibility, uniform disk, binary stars, SII SNR, missing phase & Axes carry units; use \(B_\perp\) for the baseline, not the physical array separation. \\
+6 & Detector response, jitter, dead time, background dilution, data rate & Normalize the response kernel; make the time units explicit. \\
+7 & Pair count, time-shift background, covariance, and Fisher scaling & Draw accidental coincidences and physical correlations separately. \\
+8 & Rayleigh curse, SPADE mode probabilities, QFI, and SII Fisher & In the small-separation limit, do not use a log axis to manufacture a false improvement. \\
+9--13 & Radiation mechanisms, stars, compact objects, black holes, and transient toy models & Typical parameters come from the text; do not merely plot arbitrarily normalized curves. \\
+14--17 & Propagation, polarization, new physics, CMB, and quantum-network resources & Ordinary astrophysical terms and new-physics terms must be drawn separately. \\
+18--22 & Error budgets, science cases, teaching experiments, pitfalls, and roadmap & Captions should state the feasibility, the failure modes, or the decision boundary. \\
+\bottomrule
+\end{longtable}
+
+\section{Minimum Requirements for Each Figure}
+\label{appsec:e-figure-requirements}
+
+\begin{longtable}{p{0.24\linewidth}p{0.66\linewidth}}
+\toprule
+Check item & Requirement \\
+\midrule
+Physical quantity & Axes state the quantity name and units clearly; dimensionless quantities must be explicitly labeled dimensionless or have units omitted. \\
+Order of magnitude & At least one curve, point, or annotation should correspond to a real order of magnitude from the text. Pedagogically amplified signals must be flagged in the caption. \\
+Symbols & Symbols in the figure should match the text, for example \(B_\perp\), \(\lambda\), \(\theta\), \(R_\gamma\), \(\Delta t\), \(\tau_c\). \\
+Output & All main-text figures use PDF; no screenshots or low-resolution bitmaps. \\
+Style & Use the unified style; avoid overly dense grids, too many colors, and decoration with no physical meaning. \\
+Reproducibility & A comment at the top of the script or on the function should state the input parameters, default values, and output files. \\
+\bottomrule
+\end{longtable}
+
+\section{Debugging Checklist}
+\label{appsec:e-debug}
+
+If a figure looks inconsistent with the text, check these issues first:
+
+\begin{enumerate}[leftmargin=*]
+\item Are units mixed up: mas, rad, m, nm, Hz, s are the easiest to get wrong.
+\item Is the angular diameter being treated as an angular radius, or vice versa.
+\item Is the baseline the projected baseline \(B_\perp\), rather than the physical array separation.
+\item Is the spectral bandwidth \(\Delta\lambda\) being substituted directly for \(\Delta\nu\).
+\item Are the correlation bin, the detector response, and the coherence time all in the same time unit.
+\item Are the random numbers using a fixed seed; do the error bars of simulated figures change substantially with the seed.
+\item Do the generated file names match the \texttt{\string\includegraphics} paths in the LaTeX.
+\end{enumerate}
+
+\section{Minimum Submission Package for the Course Project}
+\label{appsec:e-project-package}
+
+When submitting the course project in Chapter~\ref{chap:e26}, include at least five files or objects: an event-table description, the Python script, the generated PDF figures, a short report, and the null-test output. In the short report, every figure must state its input parameters, units, physical meaning, and failure modes; pasting the figure alone is not enough.

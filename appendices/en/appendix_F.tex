@@ -1,0 +1,80 @@
+\chapter{Suggested 14-Week Course Schedule}
+\label{app:f}
+
+This is a reading and project sequence designed around a single semester. The course can be compressed or expanded, but Chapters~\ref{chap:e00}--\ref{chap:e14} are best kept intact; all of the later science cases depend on the language of event tables, coherence functions, instrumental errors, and correlators.
+
+\section{Course Goals and Grading Structure}
+\label{appsec:f-goals}
+
+By the end of the course, students should be able to start from a science question and write down the observable, the event-table fields, the core formulas, the order of magnitude, the error budget, the null tests, and reproducible code. A suggested grading structure is: weekly reading notes \(20\%\), three short computational assignments \(30\%\), one midterm project design \(20\%\), and a final project report and code \(30\%\).
+
+\begin{longtable}{p{0.20\linewidth}p{0.34\linewidth}p{0.36\linewidth}}
+\toprule
+Deliverable & Content & Evaluation criteria \\
+\midrule
+Reading notes & 1 page per week, listing the main observables, formulas, orders of magnitude, and open questions. & Whether the conditions of validity of the formulas are understood, not substituting copied summaries for understanding. \\
+Short assignments & Event tables, \(g^{(2)}\), visibility, Fisher information, or error budgets. & Correct units, clear figures, runnable code. \\
+Midterm design & An executable observing or experimental plan. & Whether the photon rate, baseline, background, calibration, and failure criteria are complete. \\
+Final project & Code, PDF figures, a short report, and null tests. & Whether it can be reproduced, whether systematic errors are explained. \\
+\bottomrule
+\end{longtable}
+
+\section{Weeks 1--5: Foundations and Instruments}
+\label{appsec:f-foundation}
+
+\begin{longtable}{@{}p{0.09\linewidth}p{0.21\linewidth}p{0.27\linewidth}p{0.29\linewidth}@{}}
+\toprule
+Week & Reading & Class focus & Assignment \\
+\midrule
+1 & Chapter~\ref{chap:e00} & Event tables, observables, units, and orders of magnitude. & From the same event table, generate a light curve and one simple statistic. \\
+2 & Chapters~\ref{chap:e00}--\ref{chap:e06} & Why the mean intensity is not enough; common light states. & Compare the count statistics of thermal light and coherent light. \\
+3 & Chapter~\ref{chap:e08} & \(g^{(1)}\), \(g^{(2)}\), the Siegert relation, and multimode dilution. & Plot the \(g^{(2)}\) contrast for different mode numbers and time bins. \\
+4 & Chapter~\ref{chap:e10} & VCZ, uniform disk, binary stars, and intensity-interferometry SNR. & Fit the angular diameter of a simulated uniform disk. \\
+5 & Chapters~\ref{chap:e13}--\ref{chap:e14} & Detectors, time synchronization, correlators, and null tests. & Write an event-table correlator and complete a time-shift check. \\
+\bottomrule
+\end{longtable}
+
+\section{Weeks 6--10: Source Models and Science Questions}
+\label{appsec:f-science}
+
+\begin{longtable}{@{}p{0.09\linewidth}p{0.21\linewidth}p{0.27\linewidth}p{0.29\linewidth}@{}}
+\toprule
+Week & Reading & Class focus & Assignment \\
+\midrule
+6 & Chapter~\ref{chap:e12} & Rayleigh curse, SPADE, and Fisher information. & Compare the small-separation error of direct imaging versus mode measurement. \\
+7 & Chapters~\ref{chap:e16}--\ref{chap:e17} & Radiation mechanisms, the thermal-light approximation, stellar angular diameters, and binaries. & Use \(|V|^2\) to distinguish a uniform disk from a binary toy model. \\
+8 & Chapters~\ref{chap:e18}--\ref{chap:e19} & Compact objects, pulsars, black holes, and the photon ring. & Design an event table that preserves phase or time tags. \\
+9 & Chapter~\ref{chap:e20} & Transient triggers, angular expansion, and multi-messenger delays. & Build a Type Ia or nova angular-expansion toy model. \\
+10 & Chapters~\ref{chap:e21}--\ref{chap:e23} & Propagation, polarization rotation, lensing, new physics, and the CMB. & Distinguish an ordinary propagation term from a new-physics candidate. \\
+\bottomrule
+\end{longtable}
+
+\section{Weeks 11--14: Design, Project, and Report}
+\label{appsec:f-project}
+
+\begin{longtable}{@{}p{0.09\linewidth}p{0.21\linewidth}p{0.27\linewidth}p{0.29\linewidth}@{}}
+\toprule
+Week & Reading & Class focus & Assignment \\
+\midrule
+11 & Chapters~\ref{chap:e24}--\ref{chap:e15} & Quantum-network boundaries, observing design, and error budgets. & Write a one-page observing-proposal abstract. \\
+12 & Chapter~\ref{chap:e25} & Ranking of first-generation science cases. & Assign readiness scores to three candidate projects. \\
+13 & Chapters~\ref{chap:e26}--\ref{chap:e27} & Teaching experiments, common pitfalls, false alarms, and new-physics boundaries. & Complete the project code, figures, and two null tests. \\
+14 & Chapter~\ref{chap:e28} & From a textbook project to a proposal. & Submit the final report, code, and milestone table. \\
+\bottomrule
+\end{longtable}
+
+\section{Final Project Topic Bank}
+\label{appsec:f-project-list}
+
+\begin{longtable}{p{0.25\linewidth}p{0.34\linewidth}p{0.31\linewidth}}
+\toprule
+Topic & Basic content & Suggested extension \\
+\midrule
+Tabletop HBT & Event table, delay histogram, time-shift, response kernel. & Compare laser, LED, and pseudothermal light. \\
+Uniform-disk fit & \(|V|^2\) simulation, angular-diameter posterior, baseline coverage. & Add limb darkening or calibrator-star error. \\
+Binary intensity interferometry & Flux ratio, angular separation, position angle, and multi-baseline degeneracy. & Add orbital phase and mirror degeneracy. \\
+SPADE toy model & Mode probabilities, Fisher information, crosstalk, and background. & Compare different PSFs or centroid errors. \\
+Type Ia distance & Angular radius, velocity, explosion time, and distance posterior. & Add asphericity or a velocity gradient. \\
+False-alarm analysis & Poisson tails, trial factor, global significance. & Use a real or simulated search grid. \\
+\bottomrule
+\end{longtable}

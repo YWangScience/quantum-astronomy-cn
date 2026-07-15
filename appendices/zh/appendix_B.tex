@@ -1,0 +1,102 @@
+\chapter{常用单位和数值}
+\label{app:b}
+
+这些表格集中列出写作、估算和审稿时最常用的单位与数量级。具体公式回到正文首次定义处；估算时同时检查单位、数量级和适用条件。
+
+\section{基本常数和天文换算}
+\label{appsec:b-constants}
+
+\begin{longtable}{p{0.22\linewidth}p{0.30\linewidth}p{0.38\linewidth}}
+\toprule
+量 & 常用数值 & 使用提醒 \\
+\midrule
+光速 & \(c=2.998\times10^{10}\,{\rm cm\,s^{-1}}\) & 基线光行时 \(B/c\)：\(1\,{\rm km}\) 约 \(3.3\,\mu{\rm s}\)，\(1000\,{\rm km}\) 约 \(3.3\,{\rm ms}\)。 \\
+Planck 常数 & \(h=6.626\times10^{-27}\,{\rm erg\,s}\) & 单个光子能量 \(E=h\nu=hc/\lambda\)。 \\
+Boltzmann 常数 & \(k_{\rm B}=1.381\times10^{-16}\,{\rm erg\,K^{-1}}\) & 亮温、Planck 占有数和热噪声都需要它。 \\
+Jansky & \(1\,{\rm Jy}=10^{-23}\,{\rm erg\,s^{-1}\,cm^{-2}\,Hz^{-1}}\) & AB 星等和光子率估算常从 Jy 开始。 \\
+parsec & \(1\,{\rm pc}=3.086\times10^{18}\,{\rm cm}\) & \(1\,{\rm AU}\) 在 \(1\,{\rm pc}\) 处张角为 \(1''\)。 \\
+太阳半径 & \(R_\odot=6.96\times10^{10}\,{\rm cm}\) & 估算恒星角直径和双星尺度时很常用。 \\
+太阳光度 & \(L_\odot=3.83\times10^{33}\,{\rm erg\,s^{-1}}\) & 和 \(F_{\rm bol}\)、\(T_{\rm eff}\)、\(\theta\) 联用。 \\
+\bottomrule
+\end{longtable}
+
+\section{角度、波长和基线}
+\label{appsec:b-angle}
+
+\begin{longtable}{p{0.22\linewidth}p{0.30\linewidth}p{0.38\linewidth}}
+\toprule
+量 & 常用数值 & 相关正文位置 \\
+\midrule
+角度换算 & \(1\,{\rm rad}=206265''\)；\(1\,{\rm mas}=4.848\times10^{-9}\,{\rm rad}\)；\(1\,\mu{\rm as}=4.848\times10^{-12}\,{\rm rad}\) & 第 \ref{chap:e00} 章、第 \ref{chap:e10} 章。 \\
+可见光波长 & 蓝光强度干涉常在 \(400\)--\(450\,{\rm nm}\)；宽波段成像常用 \(500\)--\(800\,{\rm nm}\) & 第 \ref{chap:e10} 章、第 \ref{chap:e15} 章。 \\
+衍射量级 & \(\lambda/B\) 在 \(500\,{\rm nm}\)、\(100\,{\rm m}\) 时约 \(1\,{\rm mas}\) & 百米级阵列适合亮星角直径。 \\
+第一零点量级 & \(1\,{\rm mas}\) 均匀圆盘在 \(416\,{\rm nm}\) 附近第一零点约 \(100\,{\rm m}\) & 第 \ref{chap:e10} 章。 \\
+\(\mu{\rm as}\) 结构 & \(10\,\mu{\rm as}\) 在 \(500\,{\rm nm}\) 下对应 \(\lambda/\theta\sim10\,{\rm km}\) & 近邻超新星、AGN 小尺度结构和远期长基线案例。 \\
+投影基线 & \(B_\perp\) 随目标高度、时角和阵列几何变化 & 不能用固定物理基线替代整夜 \(u,v\) 覆盖。 \\
+\bottomrule
+\end{longtable}
+
+\section{时间、频率和相干}
+\label{appsec:b-time}
+
+\begin{longtable}{p{0.22\linewidth}p{0.30\linewidth}p{0.38\linewidth}}
+\toprule
+量 & 常用数值 & 相关正文位置 \\
+\midrule
+频率换算 & \(500\,{\rm nm}\) 对应 \(6.0\times10^{14}\,{\rm Hz}\) & 光学带宽常需要在 \(\Delta\lambda\) 和 \(\Delta\nu\) 间换算。 \\
+光学相干时间 & \(10\,{\rm nm}\) 级滤光片在可见光下通常给 \(10^{-14}\)--\(10^{-13}\,{\rm s}\) & 第 \ref{chap:e08} 章。 \\
+相关 bin & 桌面实验可取 ps--ns；天文强度干涉常受电子学响应和数据率限制 & 第 \ref{chap:e14} 章、第 \ref{chap:e26} 章。 \\
+探测器 jitter & 优秀 SPAD、PMT、TDC 系统可到几十 ps--ns；系统同步要单独标定 & 第 \ref{chap:e13} 章。 \\
+死时间 & SPAD 常在 ns--\(\mu{\rm s}\)；PMT 和电子链也有恢复时间 & 死时间会在短延迟处制造负相关。 \\
+afterpulsing & 概率可到 \(10^{-4}\)--\(10^{-2}\) 量级 & 会在探测器特征延迟处制造正相关。 \\
+积分时间标度 & 纯统计误差常按 \(T^{-1/2}\) 下降 & 一旦达到系统误差地板，继续积分不会自动改善。 \\
+\bottomrule
+\end{longtable}
+
+\section{光子率、星等和背景}
+\label{appsec:b-photon-rate}
+
+\begin{longtable}{p{0.22\linewidth}p{0.30\linewidth}p{0.38\linewidth}}
+\toprule
+量 & 常用数值 & 相关正文位置 \\
+\midrule
+AB 星等通量 & AB 零点见第 \ref{chap:e15} 章；光子率估算见第 \ref{chap:e00} 章 & 写 proposal 时同时给出带宽、效率、面积和背景。 \\
+星等变化 & 目标暗 \(1\,{\rm mag}\)，光子率约降到原来的 \(10^{-0.4}\simeq0.40\) & 第 \ref{chap:e15} 章、第 \ref{chap:e28} 章。 \\
+望远镜面积 & \(D=12\,{\rm m}\) 的理想几何面积约 \(113\,{\rm m^2}\)，实际有效面积还要乘效率和遮挡 & Cherenkov 望远镜光学效率、滤光片和探测器 QE 都要进入。 \\
+背景稀释 & 目标通量分数为 \(f\) 时，二阶相关超额近似按 \(f^2\) 被压低 & 第 \ref{chap:e13} 章。 \\
+窄线观测 & 谱线越窄，相干时间越长，但总光子数和滤光片泄漏可能变差 & Be 星盘、maser/laser 和 BLR 案例都要报告线/连续谱分离。 \\
+夜天光 & 随月相、天顶距、滤光片和场镜大小变化 & 不要把暗场背景当成所有目标位置都适用。 \\
+\bottomrule
+\end{longtable}
+
+\section{仪器和数据量}
+\label{appsec:b-instrument}
+
+\begin{longtable}{p{0.22\linewidth}p{0.30\linewidth}p{0.38\linewidth}}
+\toprule
+量 & 常用数值 & 相关正文位置 \\
+\midrule
+单路采样数据率 & \(\Delta t=4\,{\rm ns}\)、\(16\) bit、单通道时约 \(4\,{\rm Gb\,s^{-1}}\) & 第 \ref{chap:e13} 章。 \\
+多通道膨胀 & 64 个光谱通道会把同一例子推到约 \(256\,{\rm Gb\,s^{-1}}\) 每望远镜 & 需要实时相关、压缩或片上累加。 \\
+基线数 & 4 台望远镜为 6 条基线；60 台为 1770 条基线 & 第 \ref{chap:e10} 章。 \\
+校准星 & 应尽量接近目标天空位置、颜色和亮度，且角直径已知 & 第 \ref{chap:e15} 章。 \\
+质量切片 & 按天空透明度、目标高度、背景率、死时间和通道状态切分 & 只报告墙钟时间不足以复现实验。 \\
+系统地板 & \(10^{-5}\)--\(10^{-4}\) 级相关幅度地板已足以支配许多 SII 目标 & 第 \ref{chap:e27} 章。 \\
+\bottomrule
+\end{longtable}
+
+\section{天体物理数量级}
+\label{appsec:b-astro}
+
+\begin{longtable}{p{0.22\linewidth}p{0.30\linewidth}p{0.38\linewidth}}
+\toprule
+量 & 常用数值 & 相关正文位置 \\
+\midrule
+亮星角直径 & 近邻亮星常在 \(0.2\)--\(5\,{\rm mas}\) 量级 & 第 \ref{chap:e17} 章、第 \ref{chap:e25} 章。 \\
+Type Ia 早期速度 & 光球速度常为 \(8000\)--\(15000\,{\rm km\,s^{-1}}\) & 第 \ref{chap:e20} 章、第 \ref{chap:e26} 章。 \\
+近邻超新星角半径 & \(20\,{\rm Mpc}\)、\(v=10^4\,{\rm km\,s^{-1}}\)、15 天时约数 \(\mu{\rm as}\) & km 到十 km 级基线才有明显信息。 \\
+Crab 周期 & 约 \(33\,{\rm ms}\) & 相位分辨光子统计需要保留绝对时间。 \\
+AGN 宽线区 & 光变延迟常为天到月，角尺度通常极小 & 需要把 reverberation、角位移和模型先验合并。 \\
+CMB 温度 & \(2.725\,{\rm K}\) & 第 \ref{chap:e23} 章；光学光子统计不能直接套用。 \\
+\bottomrule
+\end{longtable}

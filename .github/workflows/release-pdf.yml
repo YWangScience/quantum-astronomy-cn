@@ -1,0 +1,62 @@
+name: Release PDFs
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release-pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Delete previous releases
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const currentTag = process.env.GITHUB_REF_NAME;
+            const releases = await github.paginate(github.rest.repos.listReleases, {
+              owner,
+              repo,
+              per_page: 100,
+            });
+
+            for (const release of releases) {
+              if (release.tag_name !== currentTag) {
+                await github.rest.repos.deleteRelease({
+                  owner,
+                  repo,
+                  release_id: release.id,
+                });
+              }
+            }
+
+      - name: Prepare release assets
+        run: |
+          tag="${GITHUB_REF_NAME}"
+          cp build/main.pdf quantum-astronomy-cn.pdf
+          cp build/main_en.pdf quantum-astronomy-en.pdf
+          cp build/main.pdf "quantum-astronomy-cn-${tag}.pdf"
+          cp build/main_en.pdf "quantum-astronomy-en-${tag}.pdf"
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: "Quantum Astronomy PDFs ${{ github.ref_name }}"
+          body: |
+            PDF release for the bilingual Quantum Astronomy manuscript.
+
+            Source commit: ${{ github.sha }}
+            English PDF: quantum-astronomy-en.pdf
+            Chinese PDF: quantum-astronomy-cn.pdf
+          files: |
+            quantum-astronomy-en.pdf
+            quantum-astronomy-cn.pdf
+            quantum-astronomy-en-${{ github.ref_name }}.pdf
+            quantum-astronomy-cn-${{ github.ref_name }}.pdf

@@ -1,0 +1,60 @@
+# Canonical bilingual terminology for the English translation.
+# Keep citation keys, equation labels, figure labels, and code filenames unchanged.
+
+book_title:
+  zh: 量子天文学
+  en: Quantum Astronomy
+
+terms:
+  事件表: event table
+  光子事件: photon event
+  到达时间: arrival time
+  时间戳: time stamp
+  频率通道: frequency channel
+  偏振标签: polarization label
+  复振幅: complex amplitude
+  相位: phase
+  干涉: interference
+  振幅干涉: amplitude interferometry
+  强度干涉: intensity interferometry
+  空间相干: spatial coherence
+  一阶相干: first-order coherence
+  二阶相干: second-order coherence
+  相干函数: coherence function
+  相干时间: coherence time
+  复可见度: complex visibility
+  可见度模平方: squared visibility amplitude
+  天空亮度: sky brightness
+  基线: baseline
+  投影基线: projected baseline
+  光子计数分布: photon-count distribution
+  阶乘矩: factorial moment
+  光子聚束: photon bunching
+  反聚束: antibunching
+  超 Poisson 统计: super-Poisson statistics
+  亚 Poisson 统计: sub-Poisson statistics
+  协方差: covariance
+  符合计数: coincidence count
+  随机符合: accidental coincidence
+  死时间: dead time
+  后脉冲: afterpulsing
+  偏振串扰: polarization crosstalk
+  Jones 向量: Jones vector
+  Jones 矩阵: Jones matrix
+  Stokes 向量: Stokes vector
+  Mueller 矩阵: Mueller matrix
+  密度矩阵: density matrix
+  部分迹: partial trace
+  正规序: normal ordering
+  光电探测: photodetection
+  似然函数: likelihood function
+  Fisher 信息: Fisher information
+  量子 Fisher 信息: quantum Fisher information
+  误差预算: error budget
+  数量级: order of magnitude
+  仪器响应: instrument response
+  背景稀释: background dilution
+  时间分辨率稀释: time-resolution dilution
+  模式分解: mode decomposition
+  空间模式测量: spatial-mode measurement
+  量子网络望远镜: quantum-network telescope

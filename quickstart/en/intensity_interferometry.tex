@@ -1,0 +1,768 @@
+\chapter*{Part One: What Is Intensity Interferometry}
+\phantomsection
+\addcontentsline{toc}{chapter}{Part One: What Is Intensity Interferometry}
+\label{quickstart:intensity-interferometry}
+\markboth{Part One: What Is Intensity Interferometry}{Part One: What Is Intensity Interferometry}
+
+From ordinary interferometry to intensity interferometry: why can two telescopes measure the size of a star? Let us start from the most basic question: what is light, and what does a detector actually measure? Light is fundamentally an electromagnetic wave. For monochromatic light, the electric field can be written as
+\[
+  E(t)=E_0\cos(\omega t+\phi),
+\]
+\begin{formulaexplain}[Reading the electric-field notation]
+\(E(t)\) is the electric field oscillating in time; \(E_0\) is the amplitude; \(\omega\) is the angular frequency; \(t\) is time; \(\phi\) is the phase. This expression says that light is first of all a wave carrying amplitude and phase, not, from the outset, a count inside a detector.
+\end{formulaexplain}
+where \(E_0\) is the amplitude, \(\omega=2\pi\nu\) is the angular frequency, \(\nu\) is the frequency, and \(\phi\) is the phase. What truly oscillates in time and propagates is the electric field \(E\).
+
+More generally, the electric field is often written in complex form:
+\[
+  E(t)=\mathrm{Re}\left[\mathcal E e^{-i\omega t}\right],
+\]
+where \(\mathcal E\) is the complex amplitude, containing both amplitude and phase information:
+\[
+  \mathcal E=E_0 e^{i\phi}.
+\]
+
+Detectors, such as CCDs, PMTs, and APDs, cannot directly measure this rapidly oscillating electric field. The reason is simple: the frequency of visible light is roughly
+\[
+  \nu\sim 5\times 10^{14}\ {\rm Hz},
+\]
+corresponding to a period
+\[
+  T=\frac{1}{\nu}\sim 2\times 10^{-15}\ {\rm s}.
+\]
+Ordinary electronics fall far short of keeping up with such an oscillation speed. Therefore what the detector actually measures is not \(E(t)\) itself, but the time-averaged intensity. For an electromagnetic wave, the intensity is proportional to the time average of the square of the electric field:
+\[
+  I\propto \langle E^2(t)\rangle_t.
+\]
+If
+\[
+  E(t)=E_0\cos(\omega t+\phi),
+\]
+then
+\[
+  \langle E^2(t)\rangle_t
+  =
+  E_0^2\left\langle \cos^2(\omega t+\phi)\right\rangle_t
+  =
+  \frac{E_0^2}{2}.
+\]
+So
+\[
+  I\propto \frac{E_0^2}{2}.
+\]
+In complex-amplitude notation, the intensity is often written as
+\[
+  I\propto |\mathcal E|^2.
+\]
+\begin{formulaexplain}[Reading the intensity formula]
+\(I\) is the intensity recorded by the detector; \(\mathcal E\) is the complex amplitude; \(|\mathcal E|^2\) is the squared amplitude. This expression connects ``the language of waves'' with ``the language of detectors'': the phase is hidden inside the complex amplitude, but an ordinary detector mainly responds to energy.
+\end{formulaexplain}
+This is the single most important point in understanding intensity interferometry: the fundamental variable of light is the electric field, but what the detector measures is the intensity.
+
+Ordinary interferometry starts precisely from the superposition of electric fields. Suppose there are two beams of the same frequency:
+\[
+  E_1(t)=A\cos\omega t,
+\]
+\[
+  E_2(t)=A\cos(\omega t+\phi).
+\]
+After the two beams superpose,
+\[
+  E(t)=E_1(t)+E_2(t).
+\]
+What the detector measures is
+\[
+  I\propto \left\langle E^2(t)\right\rangle_t
+  =
+  \left\langle \left(E_1+E_2\right)^2\right\rangle_t.
+\]
+Expanding gives
+\[
+  I
+  \propto
+  \left\langle E_1^2\right\rangle_t
+  +
+  \left\langle E_2^2\right\rangle_t
+  +
+  2\left\langle E_1E_2\right\rangle_t.
+\]
+where
+\[
+  \left\langle E_1^2\right\rangle_t
+  =
+  \left\langle A^2\cos^2\omega t\right\rangle_t
+  =
+  \frac{A^2}{2},
+\]
+\[
+  \left\langle E_2^2\right\rangle_t
+  =
+  \left\langle A^2\cos^2(\omega t+\phi)\right\rangle_t
+  =
+  \frac{A^2}{2}.
+\]
+The cross term is
+\[
+  \left\langle E_1E_2\right\rangle_t
+  =
+  A^2\left\langle
+  \cos\omega t\cos(\omega t+\phi)
+  \right\rangle_t.
+\]
+Using the identity
+\[
+  \cos a\cos b
+  =
+  \frac{1}{2}\left[\cos(a-b)+\cos(a+b)\right],
+\]
+we obtain
+\[
+  \left\langle E_1E_2\right\rangle_t
+  =
+  \frac{A^2}{2}\cos\phi.
+\]
+Therefore
+\[
+  I
+  \propto
+  \frac{A^2}{2}
+  +
+  \frac{A^2}{2}
+  +
+  2\cdot \frac{A^2}{2}\cos\phi,
+\]
+that is,
+\[
+  I
+  \propto
+  A^2(1+\cos\phi).
+\]
+If we define the intensity of a single beam as
+\[
+  I_0\propto \frac{A^2}{2},
+\]
+then the total intensity is
+\[
+  I
+  =
+  2I_0(1+\cos\phi).
+\]
+\begin{formulaexplain}[Reading ordinary interference]
+\(I_0\) is the intensity of a single beam; \(\phi\) is the phase difference between the two beams; \(\cos\phi\) controls constructive or destructive interference. This result shows that ordinary interferometry measures the electric-field cross term: the phase difference is not seen directly, yet it manifests itself through the bright and dark fringes of the intensity.
+\end{formulaexplain}
+Therefore, as the phase difference \(\phi\) varies, the detector sees bright fringes and dark fringes. This is ordinary interferometry. What truly does the work here is the cross term
+\[
+  2\left\langle E_1E_2\right\rangle_t.
+\]
+In other words, ordinary interferometry is essentially comparing two electric fields, and so it is also called amplitude interferometry.
+
+The problem is that starlight is not laser light. The phase of a laser can remain stable over a relatively long time, so it can form stable interference fringes. But the surface of a star has an enormous number of atoms and plasma elements, each of which radiates randomly. The total electric field can be written as
+\[
+  E(t)=\sum_i E_i(t).
+\]
+Each term can be approximately written as
+\[
+  E_i(t)=A_i(t)\cos[\omega_i t+\phi_i(t)].
+\]
+Because the phase \(\phi_i(t)\) of each radiating unit varies randomly, the phase of the total electric field also changes constantly. After waiting a somewhat longer time,
+\[
+  \langle E(t)\rangle=0.
+\]
+This does not mean that the star does not shine, but rather that the electric field, as a quantity carrying phase, cancels itself out after its positive and negative oscillations and random phases are averaged. The detector can still measure a nonzero intensity, because
+\[
+  I\propto \langle |E(t)|^2\rangle.
+\]
+
+Although the phase of starlight is random, it does not vary randomly infinitely fast. Over a very short time, the electric field still maintains a certain correlation. This time scale over which correlation is maintained is called the coherence time, denoted
+\[
+  \tau_c.
+\]
+More precisely, the coherence time can be defined through the temporal coherence function. For the electric field at the same location, define
+\[
+  g^{(1)}(\tau)
+  =
+  \frac{
+    \langle E(t)E^\ast(t+\tau)\rangle
+  }{
+    \langle |E(t)|^2\rangle
+  }.
+\]
+When \(|\tau|\ll \tau_c\),
+\[
+  |g^{(1)}(\tau)|\approx 1.
+\]
+When \(|\tau|\gg \tau_c\),
+\[
+  |g^{(1)}(\tau)|\rightarrow 0.
+\]
+So \(\tau_c\) represents the time scale over which the electric field still retains its phase memory. If the frequency bandwidth of the light is \(\Delta \nu\), there is usually the order-of-magnitude relation
+\[
+  \tau_c\sim \frac{1}{\Delta \nu}.
+\]
+The corresponding coherence length is
+\[
+  l_c=c\tau_c\sim \frac{c}{\Delta \nu}.
+\]
+
+Now consider two telescopes. One measures \(E_1(t)\), the other measures \(E_2(t)\). If the two telescopes are very close together, they receive almost the same wavefront, so
+\[
+  E_1(t)\approx E_2(t).
+\]
+To describe how similar the electric fields at the two locations are, we define the first-order spatial coherence function
+\[
+  g^{(1)}_{12}
+  =
+  \frac{
+    \langle E_1(t)E_2^\ast(t)\rangle
+  }{
+    \sqrt{
+      \langle |E_1(t)|^2\rangle
+      \langle |E_2(t)|^2\rangle
+    }
+  }.
+\]
+If we also account for a time delay \(\tau\), it is written as
+\[
+  g^{(1)}_{12}(\tau)
+  =
+  \frac{
+    \langle E_1(t)E_2^\ast(t+\tau)\rangle
+  }{
+    \sqrt{
+      \langle |E_1(t)|^2\rangle
+      \langle |E_2(t+\tau)|^2\rangle
+    }
+  }.
+\]
+\begin{formulaexplain}[Reading first-order coherence]
+\(g^{(1)}_{12}(\tau)\) compares the two electric fields at the two telescopes separated by \(\tau\); the numerator is the electric-field correlation, and the denominator normalizes by each intensity. Its modulus close to 1 means the two electric fields still share a common phase memory, while close to 0 means the phase relationship has already been lost.
+\end{formulaexplain}
+The physical meaning of this quantity is very direct: it compares whether the electric fields at two locations and two instants are correlated. If
+\[
+  |g^{(1)}_{12}|=1,
+\]
+the two electric fields are fully correlated; if
+\[
+  |g^{(1)}_{12}|=0,
+\]
+the two electric fields have no correlation. What ordinary amplitude interferometry measures directly is exactly \(g^{(1)}_{12}\).
+
+But ordinary optical interferometry is very hard to do, because it requires actually merging the two beams and requires the optical-path error to be smaller than the wavelength. For visible light,
+\[
+  \lambda\sim 500\ {\rm nm}.
+\]
+This means the entire optical system must be stable to the level of tens of nanometers. For telescopes separated by a large distance, this is extremely difficult.
+
+The idea of Hanbury Brown and Twiss begins precisely here. Since the detector cannot measure the electric field \(E\) in the first place and can only measure the intensity \(I\), might one avoid comparing \(E_1(t)\) and \(E_2(t)\), and instead directly compare the intensities measured by the two telescopes,
+\[
+  I_1(t),\qquad I_2(t)?
+\]
+This is intensity interferometry.
+
+On the surface this seems strange. The intensity is already \(|E|^2\), which appears to have averaged away the phase information, so why would there still be interference? The key is that although the mean intensity of thermal light is approximately constant, the instantaneous intensity is not strictly constant, but has small random fluctuations. It can be written as
+\[
+  I(t)=\langle I\rangle+\Delta I(t),
+\]
+\begin{formulaexplain}[Reading the intensity fluctuation]
+\(I(t)\) is the instantaneous intensity; \(\langle I\rangle\) is the mean intensity; \(\Delta I(t)\) is the fluctuation about the mean. Intensity interferometry does not merge electric fields, but compares whether these small fluctuations at the two telescopes are synchronized.
+\end{formulaexplain}
+where
+\[
+  \Delta I(t)=I(t)-\langle I\rangle.
+\]
+Therefore
+\[
+  \langle \Delta I(t)\rangle=0.
+\]
+These fluctuations come from the random-phase superposition of thermal light. One can picture the electric field contributed by each atom or radiating unit as a small vector in the complex plane. At a given instant, if many of the small vectors point in nearly the same direction, the total electric field is large, and therefore
+\[
+  I=|E|^2
+\]
+is also large. At another instant, if these small vectors point in disordered directions and cancel one another, the total electric field is small, and the intensity weakens. Thus thermal light naturally exhibits random flickering, that is, intensity fluctuations.
+
+If the two telescopes receive light from the same coherence region, then these intensity fluctuations are not completely independent. At some instant, when the radiation from a certain part of the star happens to strengthen, both telescopes will see the increase; at the next instant, when it dims, both telescopes will also see the decrease. Therefore
+\[
+  \left\langle \Delta I_1(t)\Delta I_2(t)\right\rangle>0.
+\]
+What intensity interferometry measures is precisely this correlation between the intensity fluctuations, not the mean intensity itself.
+
+If the distance between the two telescopes gradually increases, the wavefronts they receive are no longer completely identical, and the coherence regions they see also gradually differ. Then the bright-dark variations seen by one telescope are not necessarily seen synchronously by the other. The correlation gradually decreases, finally approaching zero:
+\[
+  \left\langle \Delta I_1(t)\Delta I_2(t)\right\rangle\rightarrow 0.
+\]
+Therefore, the degree of correlation of the intensity fluctuations tells us the spatial coherence scale of the light source.
+
+This immediately connects to the size of the star. If the star is very small, approximately a point source, then the wavefront reaching the Earth is still coherent over a large range. Even if the two telescopes are separated by a relatively large distance, they can still see similar fluctuations, and the correlation decreases relatively slowly.
+
+If the angular diameter of the star is relatively large, different regions radiate independently of one another. When the two telescopes are separated by a large distance, their phase weighting of different regions of the star differs, so the intensity-fluctuation correlation decreases more quickly. Thus the larger the star, the faster the coherence decreases with baseline. By measuring the correlation at different baselines \(B\), one can infer the angular diameter of the star.
+
+Now this idea can be put into mathematical form. Define
+\[
+  I_1(t)=\bar I_1+\Delta I_1(t),
+\]
+\[
+  I_2(t)=\bar I_2+\Delta I_2(t),
+\]
+where
+\[
+  \bar I_1=\langle I_1(t)\rangle,\qquad
+  \bar I_2=\langle I_2(t)\rangle.
+\]
+The product of the intensities measured by the two telescopes is
+\[
+  I_1(t)I_2(t)
+  =
+  [\bar I_1+\Delta I_1(t)]
+  [\bar I_2+\Delta I_2(t)].
+\]
+Expanding gives
+\[
+  I_1I_2
+  =
+  \bar I_1\bar I_2
+  +
+  \bar I_1\Delta I_2
+  +
+  \bar I_2\Delta I_1
+  +
+  \Delta I_1\Delta I_2.
+\]
+After averaging, since
+\[
+  \langle \Delta I_1\rangle=
+  \langle \Delta I_2\rangle=0,
+\]
+the two middle terms vanish, and therefore
+\[
+  \langle I_1I_2\rangle
+  =
+  \bar I_1\bar I_2+
+  \langle \Delta I_1\Delta I_2\rangle.
+\]
+We then define the normalized second-order coherence function
+\[
+  g^{(2)}_{12}(0)
+  =
+  \frac{
+    \langle I_1(t)I_2(t)\rangle
+  }{
+    \langle I_1(t)\rangle
+    \langle I_2(t)\rangle
+  }.
+\]
+\begin{formulaexplain}[Reading second-order coherence]
+\(g^{(2)}_{12}(0)\) is the normalized intensity product at zero delay; \(I_1,I_2\) are the intensities at the two telescopes; the denominator removes the effect of the mean brightness. If it is greater than 1, it means the intensity fluctuations of the two paths have excess synchrony.
+\end{formulaexplain}
+Substituting into the above gives
+\[
+  g^{(2)}_{12}(0)
+  =
+  1+
+  \frac{
+    \langle \Delta I_1(t)\Delta I_2(t)\rangle
+  }{
+    \bar I_1\bar I_2
+  }.
+\]
+If we consider a time delay \(\tau\), then
+\[
+  g^{(2)}_{12}(\tau)
+  =
+  \frac{
+    \langle I_1(t)I_2(t+\tau)\rangle
+  }{
+    \langle I_1(t)\rangle
+    \langle I_2(t+\tau)\rangle
+  }.
+\]
+Correspondingly,
+\[
+  g^{(2)}_{12}(\tau)
+  =
+  1+
+  \frac{
+    \langle \Delta I_1(t)\Delta I_2(t+\tau)\rangle
+  }{
+    \bar I_1\bar I_2
+  }.
+\]
+So the second-order coherence function is just the normalized intensity-fluctuation correlation.
+
+The key question that follows is: why is this quantity related to the square of the first-order coherence function? That is, why does thermal light satisfy
+\[
+  g^{(2)}_{12}(\tau)=1+\left|g^{(1)}_{12}(\tau)\right|^2?
+\]
+\begin{formulaexplain}[Reading the Siegert problem]
+\(g^{(2)}\) is the intensity correlation; \(g^{(1)}\) is the electric-field correlation; the squared modulus means only the magnitude of the first-order coherence is retained. This question is at the core of HBT: why, without measuring the electric-field phase, can the squared modulus of the first-order coherence still be read out from the statistics of thermal light.
+\end{formulaexplain}
+This is not a coincidence, but is because thermal light can be well approximated as a complex Gaussian random field. For a Gaussian random variable, the fourth-order moment can be expressed in terms of the second-order moments; this is Isserlis' theorem, which is the Wick theorem for classical random variables.
+
+Let the electric fields at the two locations be \(E_1\) and \(E_2\), with intensities
+\[
+  I_1=|E_1|^2=E_1E_1^\ast,
+\]
+\[
+  I_2=|E_2|^2=E_2E_2^\ast.
+\]
+Then
+\[
+  \langle I_1 I_2\rangle
+  =
+  \langle E_1E_1^\ast E_2E_2^\ast\rangle.
+\]
+For a zero-mean complex Gaussian random field,
+\[
+  \langle E_1E_1^\ast E_2E_2^\ast\rangle
+  =
+  \langle E_1E_1^\ast\rangle
+  \langle E_2E_2^\ast\rangle
+  +
+  \langle E_1E_2^\ast\rangle
+  \langle E_1^\ast E_2\rangle.
+\]
+Since
+\[
+  \langle E_1^\ast E_2\rangle
+  =
+  \langle E_1E_2^\ast\rangle^\ast,
+\]
+the second term can be written as
+\[
+  \langle E_1E_2^\ast\rangle
+  \langle E_1^\ast E_2\rangle
+  =
+  \left|
+  \langle E_1E_2^\ast\rangle
+  \right|^2.
+\]
+Therefore
+\[
+  \langle I_1 I_2\rangle
+  =
+  \langle |E_1|^2\rangle
+  \langle |E_2|^2\rangle
+  +
+  \left|
+  \langle E_1E_2^\ast\rangle
+  \right|^2.
+\]
+Dividing both sides by
+\[
+  \langle |E_1|^2\rangle
+  \langle |E_2|^2\rangle
+\]
+gives
+\[
+  \frac{
+    \langle I_1 I_2\rangle
+  }{
+    \langle I_1\rangle
+    \langle I_2\rangle
+  }
+  =
+  1+
+  \frac{
+    \left|
+    \langle E_1E_2^\ast\rangle
+    \right|^2
+  }{
+    \langle |E_1|^2\rangle
+    \langle |E_2|^2\rangle
+  }.
+\]
+By the definition of the first-order coherence function,
+\[
+  g^{(1)}_{12}
+  =
+  \frac{
+    \langle E_1E_2^\ast\rangle
+  }{
+    \sqrt{
+      \langle |E_1|^2\rangle
+      \langle |E_2|^2\rangle
+    }
+  },
+\]
+so
+\[
+  \left|g^{(1)}_{12}\right|^2
+  =
+  \frac{
+    \left|
+    \langle E_1E_2^\ast\rangle
+    \right|^2
+  }{
+    \langle |E_1|^2\rangle
+    \langle |E_2|^2\rangle
+  }.
+\]
+Finally we obtain the Siegert relation:
+\[
+  g^{(2)}_{12}
+  =
+  1+
+  \left|g^{(1)}_{12}\right|^2.
+\]
+\begin{formulaexplain}[Reading the core HBT relation]
+On the left, \(g^{(2)}_{12}\) is the quantity measured directly by intensity interferometry; on the right, the 1 is the baseline in the absence of correlation, and \(|g^{(1)}_{12}|^2\) is the squared modulus of the electric-field coherence. It shows that the intensity correlation of thermal light retains the spatial-coherence information.
+\end{formulaexplain}
+If one accounts for the finite number of polarizations, the detection time resolution, and the finite bandwidth, the correlation amplitude actually observed is diluted, and is often written as
+\[
+  g^{(2)}_{12}(0)
+  =
+  1+\beta \left|g^{(1)}_{12}\right|^2,
+\]
+where \(0<\beta\leq 1\). In the ideal case of a single polarization and sufficiently high time resolution, \(\beta=1\). In real intensity-interferometry experiments, \(\beta\) is affected by the detector time resolution, the spectral bandwidth, and the polarization selection.
+
+This shows that although intensity interferometry does not directly measure the electric field, because of the Gaussian statistical nature of thermal light, the information of the electric-field correlation is still preserved in the correlation function of the intensity fluctuations. This is the theoretical core of intensity interferometry.
+
+Now there is one last astronomical question to answer: why does measuring the correlation between different telescopes tell us how large a star is?
+
+Suppose a star is very far away, for example
+\[
+  D=100\ {\rm pc}.
+\]
+When the spherical wave emitted by the star propagates to near the Earth, since
+\[
+  D\gg R_{\rm Earth},
+\]
+it can be locally approximated as a plane wave. The wavefront is the surface composed of positions with the same phase. For a point source, the entire wavefront is almost uniform, so the spatial coherence is very high.
+
+A real star is not a point source, but a disk with an angular diameter. One can divide the surface of the star into many small area elements, each of which is approximately treated as a point source. Different area elements lie in different directions in the sky, so when reaching the two telescopes they produce different path differences.
+
+Let the baseline between the two telescopes be \(\mathbf B\), and let the direction of a certain area element be the unit vector \(\mathbf s\). The path difference is
+\[
+  \Delta l=\mathbf B\cdot \mathbf s.
+\]
+The corresponding phase difference is
+\[
+  \Delta\phi
+  =
+  \frac{2\pi}{\lambda}\mathbf B\cdot\mathbf s.
+\]
+Here \(\lambda\) is the wavelength, \(\mathbf B\cdot\mathbf s\) is the path difference, and \(2\pi/\lambda\) converts the path difference into a phase difference.
+
+If the brightness of the star in direction \(\mathbf s\) is \(I(\mathbf s)\), then adding up the contributions of all area elements gives
+\[
+  g^{(1)}(\mathbf B)
+  =
+  \frac{
+    \int
+    I(\mathbf s)
+    e^{-i2\pi\mathbf B\cdot\mathbf s/\lambda}
+    \,d\Omega
+  }{
+    \int
+    I(\mathbf s)\,d\Omega
+  }.
+\]
+\begin{formulaexplain}[Reading spatial coherence]
+\(\mathbf B\) is the telescope baseline; \(I(\mathbf s)\) is the brightness in sky direction \(\mathbf s\); the exponential factor gives the phase difference of that direction between the two telescopes; the denominator normalizes by the total brightness. It turns the sky brightness distribution into the first-order coherence on the baseline.
+\end{formulaexplain}
+The physical meaning of this formula is not complicated. Each area element contributes an electric-field amplitude, but because the directions differ, it carries a different phase factor between the two telescopes,
+\[
+  e^{-i2\pi\mathbf B\cdot\mathbf s/\lambda}.
+\]
+Adding up the contributions of all directions gives the first-order coherence function between the two telescopes.
+
+In the small-field approximation, the sky direction can be expressed by angular coordinates \((\alpha,\delta)\). If the projection of the baseline on the sky plane is \((B_x,B_y)\), define
+\[
+  u=\frac{B_x}{\lambda},
+  \qquad
+  v=\frac{B_y}{\lambda}.
+\]
+Then the Van Cittert--Zernike theorem can be written as
+\[
+  g^{(1)}(u,v)
+  =
+  \frac{
+    \iint
+    I(\alpha,\delta)
+    e^{-i2\pi(u\alpha+v\delta)}
+    \,d\alpha\,d\delta
+  }{
+    \iint
+    I(\alpha,\delta)
+    \,d\alpha\,d\delta
+  }.
+\]
+This shows that the first-order spatial coherence function of a far-field source equals the normalized Fourier transform of the source's brightness distribution:
+\[
+  g^{(1)}(u,v)
+  =
+  \frac{
+    \mathcal F[I(\alpha,\delta)]
+  }{
+    \mathcal F[I(\alpha,\delta)]_{u=0,v=0}
+  }.
+\]
+This normalized Fourier transform is usually called the complex visibility:
+\[
+  V(u,v)=g^{(1)}(u,v).
+\]
+Changing the baseline length and direction is equivalent to sampling different positions in Fourier space. As the Earth rotates, the projection of the baseline relative to the sky also changes, so the sampling points move across the \(u,v\) plane; this is the basic idea of Earth-rotation synthesis.
+
+For a star that is a uniform-brightness disk, the brightness distribution can be written as
+\[
+  I(\rho)=
+  \begin{cases}
+    I_0, & \rho\leq \theta/2,\\
+    0, & \rho>\theta/2,
+  \end{cases}
+\]
+where \(\theta\) is the angular diameter of the star and \(\rho\) is the angular distance from the center of the disk.
+
+Because the disk is axisymmetric, the complex visibility depends only on the baseline length
+\[
+  B=|\mathbf B|.
+\]
+The Fourier transform can be computed analytically, giving
+\[
+  V(B)
+  =
+  \frac{2J_1(x)}{x},
+\]
+\begin{formulaexplain}[Reading the uniform disk]
+\(V(B)\) is the visibility at baseline length \(B\); \(J_1\) is the first-order Bessel function; \(x\) combines the angular diameter, baseline, and wavelength into a dimensionless parameter. The larger the disk, the faster \(V(B)\) decreases with baseline.
+\end{formulaexplain}
+where
+\[
+  x=
+  \pi\theta\frac{B}{\lambda}.
+\]
+Here \(J_1\) is the first-order Bessel function of the first kind. Therefore
+\[
+  |V(B)|^2
+  =
+  \left[
+  \frac{2J_1(x)}{x}
+  \right]^2.
+\]
+This function decreases as the baseline increases, and becomes zero at certain baselines. The first zero satisfies
+\[
+  J_1(x)=0,
+\]
+where the first zero is
+\[
+  x_1\simeq 3.8317.
+\]
+Therefore
+\[
+  \pi\theta\frac{B_{\rm null}}{\lambda}
+  =
+  3.8317.
+\]
+Solving gives
+\[
+  B_{\rm null}
+  =
+  \frac{3.8317}{\pi}
+  \frac{\lambda}{\theta}.
+\]
+Since
+\[
+  \frac{3.8317}{\pi}\simeq 1.22,
+\]
+we have
+\[
+  B_{\rm null}
+  \simeq
+  1.22\frac{\lambda}{\theta}.
+\]
+Conversely, if the first null baseline \(B_{\rm null}\) is observed, the angular diameter can be estimated:
+\[
+  \theta
+  \simeq
+  1.22\frac{\lambda}{B_{\rm null}}.
+\]
+This result has the same mathematical origin as the position of the first dark ring of the Airy pattern in circular-aperture diffraction, because both come from the Fourier transform of a disk.
+
+Ordinary amplitude interferometry directly measures
+\[
+  V(B)=g^{(1)}(B),
+\]
+so it can obtain both the amplitude and the phase of the Fourier transform. HBT intensity interferometry measures
+\[
+  g^{(2)}(B)=1+|g^{(1)}(B)|^2.
+\]
+Since
+\[
+  V(B)=g^{(1)}(B),
+\]
+we have
+\[
+  g^{(2)}(B)=1+|V(B)|^2.
+\]
+In real observations this is often written as
+\[
+  g^{(2)}(B)-1
+  =
+  \beta |V(B)|^2.
+\]
+\begin{formulaexplain}[Reading the intensity-interferometry observable]
+\(g^{(2)}(B)-1\) is the HBT signal after subtracting the uncorrelated baseline; \(\beta\) is the dilution factor from finite time resolution, bandwidth, and polarization; \(|V(B)|^2\) is the squared modulus of the Fourier transform of the source brightness. This is the direct observational expression for measuring stellar size with intensity correlation.
+\end{formulaexplain}
+That is to say, what intensity interferometry directly obtains is
+\[
+  |V(B)|^2
+  =
+  \frac{g^{(2)}(B)-1}{\beta}.
+\]
+It retains the squared modulus of the Fourier transform, but does not directly give the phase. Therefore intensity interferometry is very well suited to measuring model parameters such as stellar angular diameters and binary separations; but if one wants to directly recover a two-dimensional image, it is more difficult than amplitude interferometry, and requires additional information such as model fitting, closure phase, or higher-order correlations.
+
+At this point, the complete logical chain is as follows.
+
+The fundamental variable of light is the electric field \(E\), but what the detector measures is the intensity
+\[
+  I\propto |E|^2.
+\]
+Ordinary interferometry measures the first-order coherence function by comparing the electric fields at two locations,
+\[
+  g^{(1)}_{12}
+  =
+  \frac{
+    \langle E_1E_2^\ast\rangle
+  }{
+    \sqrt{
+      \langle |E_1|^2\rangle
+      \langle |E_2|^2\rangle
+    }
+  },
+\]
+and therefore requires maintaining optical-path stability and phase information. The electric-field phase of thermal light is random, but the intensity has small fluctuations. When the two telescopes receive light from the same coherence region, these fluctuations are correlated. What intensity interferometry measures is the normalized intensity-fluctuation correlation, that is, the second-order coherence function
+\[
+  g^{(2)}_{12}
+  =
+  \frac{
+    \langle I_1I_2\rangle
+  }{
+    \langle I_1\rangle\langle I_2\rangle
+  }.
+\]
+For thermal light, since the electric field can be approximated as a complex Gaussian random field, the Siegert relation gives
+\[
+  g^{(2)}_{12}
+  =
+  1+
+  \left|g^{(1)}_{12}\right|^2.
+\]
+And by the Van Cittert--Zernike theorem,
+\[
+  g^{(1)}(u,v)
+  =
+  \frac{
+    \iint
+    I(\alpha,\delta)
+    e^{-i2\pi(u\alpha+v\delta)}
+    \,d\alpha\,d\delta
+  }{
+    \iint
+    I(\alpha,\delta)
+    \,d\alpha\,d\delta
+  },
+\]
+which is the normalized Fourier transform of the source brightness distribution. Therefore HBT intensity interferometry measures
+\[
+  |V(B)|^2,
+\]
+that is, the squared modulus of the Fourier transform of the source brightness distribution. By changing the baseline length and direction, one can sample different spatial frequencies, and thereby infer the angular diameter and structure of the star.

@@ -1,0 +1,112 @@
+\chapter{常用公式索引}
+\label{app:a}
+
+公式索引列出每个关系第一次稳定出现的位置。后续章节需要同一组量时，优先回到这里和正文对应处查符号、单位、数量级和适用条件。
+
+\section{事件表、计数和似然}
+\label{appsec:a-observables}
+
+\begin{longtable}{p{0.22\linewidth}p{0.31\linewidth}p{0.37\linewidth}}
+\toprule
+主题 & 位置 & 使用时检查 \\
+\midrule
+光子事件表字段 & 第 \ref{chap:e00} 章；仪器层扩展见第 \ref{chap:e13} 章 & 时间基准、探测器或望远镜编号、频率通道、偏振、质量标记、空间像素和权重。 \\
+时间标定 & 第 \ref{chap:e13} 章 & 原始 TDC 时间、时钟漂移、光路延迟、barycentric 校正和绝对同步。 \\
+Poisson 计数 & 第 \ref{chap:e00} 章 & 期望计数是否包含源变化、背景、曝光、选择函数和死时间。 \\
+未分箱点过程似然 & 第 \ref{chap:e14} 章 & 事件时间是否保留；rate model 是否随时间、能量或质量窗口变化。 \\
+分箱 Poisson 似然 & 第 \ref{chap:e14} 章；教学投影见第 \ref{chap:e26} 章 & bin 宽是否比物理时间尺度、仪器响应和统计计数要求都合适。 \\
+延迟和 pair count & 第 \ref{chap:e14} 章 & 延迟窗口、time-shift 背景、随机符合、重复事件和质量筛选。 \\
+\(g^{(2)}\) 估计量 & 第 \ref{chap:e14} 章 & 归一化、背景窗口、零延迟峰宽和不相关通道检查。 \\
+协方差和后验 & 第 \ref{chap:e14} 章 & 数据点之间是否相关；先验和似然是否写在同一个数据向量上。 \\
+\bottomrule
+\end{longtable}
+
+\section{相干、可见度和强度干涉}
+\label{appsec:a-coherence}
+
+\begin{longtable}{p{0.22\linewidth}p{0.31\linewidth}p{0.37\linewidth}}
+\toprule
+主题 & 位置 & 使用时检查 \\
+\midrule
+复可见度 & 第 \ref{chap:e10} 章 & 角坐标单位、投影基线、波长、窄视场近似、带宽平均和源模型。 \\
+均匀圆盘 & 第 \ref{chap:e10} 章 & 角直径是半径还是直径；是否需要边缘昏暗；基线是否覆盖第一零点附近。 \\
+Siegert 关系 & 第 \ref{chap:e08} 章；空间 HBT 见第 \ref{chap:e10} 章 & 热光、混沌光或高斯场近似是否成立；偏振、频谱和模式数是否改变对比度。 \\
+强度干涉观测模型 & 第 \ref{chap:e10} 章；校准模型见第 \ref{chap:e27} 章 & 零基线对比度、峰形、仪器串扰、选择函数和统计噪声是否分开。 \\
+相干时间 & 第 \ref{chap:e08} 章；仪器通道形式见第 \ref{chap:e13} 章 & 滤光片带宽、谱线宽度、中心波长和频率单位。 \\
+对比度稀释 & 第 \ref{chap:e08} 章 & 电子学响应、相关 bin、有效模式数、偏振平均和光谱平均。 \\
+背景稀释 & 第 \ref{chap:e13} 章 & 目标通量分数、夜天光、伴星、谱线连续谱、暗计数和校准星。 \\
+强度干涉 SNR & 第 \ref{chap:e10} 章；观测可行性见第 \ref{chap:e15} 章 & 光子率、望远镜面积、积分时间、等效带宽、\(|V|^2\) 和系统误差地板。 \\
+基线数 & 第 \ref{chap:e10} 章 & 望远镜数增加会二次增加相关任务；数据率和校准复杂度同步上升。 \\
+\bottomrule
+\end{longtable}
+
+\section{仪器响应和数据率}
+\label{appsec:a-instrument}
+
+\begin{longtable}{p{0.22\linewidth}p{0.31\linewidth}p{0.37\linewidth}}
+\toprule
+主题 & 位置 & 使用时检查 \\
+\midrule
+数据率 & 第 \ref{chap:e13} 章 & 采样时间、bit 数、光谱通道数、望远镜数和实时相关器能力。 \\
+响应卷积 & 第 \ref{chap:e13} 章 & 探测器脉冲、线缆、放大器、digitizer 和软件相关窗口共同形成的响应核。 \\
+jitter budget & 第 \ref{chap:e13} 章 & 探测器 jitter、时钟同步、光纤延迟、触发抖动和 barycentric 校正。 \\
+事件表质量筛选 & 第 \ref{chap:e14} 章和第 \ref{chap:e26} 章 & 云层、饱和、死时间附近事件、异常背景、坏通道和目标高度。 \\
+校准项分解 & 第 \ref{chap:e27} 章 & 天体项、仪器项、选择函数项和随机误差不能混在一个自由常数里。 \\
+\bottomrule
+\end{longtable}
+
+\section{估计理论和模式测量}
+\label{appsec:a-estimation}
+
+\begin{longtable}{p{0.22\linewidth}p{0.31\linewidth}p{0.37\linewidth}}
+\toprule
+主题 & 位置 & 使用时检查 \\
+\midrule
+Fisher 信息 & 第 \ref{chap:e14} 章；空间模式例子见第 \ref{chap:e12} 章 & 参数、数据向量、协方差、导数和先验是否匹配实际观测。 \\
+Cramér--Rao 下界 & 第 \ref{chap:e12} 章 & 下界是局部、无偏或渐近条件下的结果；系统误差不自动包含在内。 \\
+高斯源量子 Fisher 信息 & 第 \ref{chap:e12} 章 & 源是否为弱、等亮、非相干双点源；PSF 是否已知。 \\
+SPADE 模式概率 & 第 \ref{chap:e12} 章 & 模式基、中心定位、串扰矩阵、背景和有限光子数。 \\
+SII Fisher 矩阵 & 第 \ref{chap:e12} 章 & \(|V|^2\) 误差、基线覆盖、参数退化和模型假设。 \\
+混合统计 & 第 \ref{chap:e27} 章 & 多个独立成分的通量分数按平方稀释相关超额。 \\
+Fano factor & 第 \ref{chap:e27} 章 & 慢变源、死时间和 afterpulsing 都能造成非 Poisson 计数。 \\
+多重检验 & 第 \ref{chap:e27} 章 & 时间 bin、频率通道、基线、目标数和事后窗口都进入 trial 数。 \\
+\bottomrule
+\end{longtable}
+
+\section{天体源模型}
+\label{appsec:a-sources}
+
+\begin{longtable}{p{0.22\linewidth}p{0.31\linewidth}p{0.37\linewidth}}
+\toprule
+主题 & 位置 & 使用时检查 \\
+\midrule
+亮温 & 第 \ref{chap:e16} 章 & 是否处在 Rayleigh--Jeans 近似；角尺度、距离和通量密度是否独立约束。 \\
+热辐射和占有数 & 第 \ref{chap:e16} 章 & 频率、温度和模式占有数决定热光统计是否明显。 \\
+同步辐射和偏振 & 第 \ref{chap:e16} 章 & 电子能谱、磁场、视角和 Faraday 效应。 \\
+Maser 增益 & 第 \ref{chap:e16} 章 & 反转粒子数、速度相干长度、饱和程度和泵浦涨落。 \\
+恒星有效温度 & 第 \ref{chap:e17} 章；案例版见第 \ref{chap:e25} 章 & 角直径、bolometric flux、消光和标定星。 \\
+双星可见度 & 第 \ref{chap:e17} 章；科学案例见第 \ref{chap:e25} 章 & 通量比、角分离、位置角、多历元轨道和镜像退化。 \\
+谱线/连续谱分离 & 第 \ref{chap:e17} 章；案例版见第 \ref{chap:e25} 章 & 谱线通量分数、连续谱角尺度和滤光片泄漏。 \\
+瞬变角膨胀 & 第 \ref{chap:e20} 章；案例版见第 \ref{chap:e25} 章 & 触发时间、速度模型、非球对称和历元间演化。 \\
+Type Ia 距离 toy model & 第 \ref{chap:e26} 章 & 光球速度、爆炸时间、角半径误差和辐射转移模型。 \\
+\bottomrule
+\end{longtable}
+
+\section{传播、宇宙学和量子网络}
+\label{appsec:a-propagation-network}
+
+\begin{longtable}{p{0.22\linewidth}p{0.31\linewidth}p{0.37\linewidth}}
+\toprule
+主题 & 位置 & 使用时检查 \\
+\midrule
+色散延迟 & 第 \ref{chap:e21} 章 & 频率单位、DM 分解、通道内展宽和等离子体近似。 \\
+Faraday 旋转 & 第 \ref{chap:e21} 章 & 偏振角约定、频率覆盖、内禀角和前景扣除。 \\
+散射卷积 & 第 \ref{chap:e21} 章 & 多径传播、脉冲展宽、去卷积和选择效应。 \\
+引力透镜 & 第 \ref{chap:e21} 章 & 质量模型、源位置、时间延迟和 microlensing。 \\
+轴子偏振旋转 & 第 \ref{chap:e22} 章 & 频率依赖、时间调制、偏振标定和普通 Faraday 项。 \\
+CMB 似然 & 第 \ref{chap:e23} 章 & \(C_\ell\)、协方差、前景和 cosmic variance。 \\
+量子网络资源 & 第 \ref{chap:e24} 章 & 链路损耗、存储时间、频率转换、保真度和实际可用的天文光子率。 \\
+观测误差预算 & 第 \ref{chap:e15} 章 & 统计、校准、背景、模型和选择函数误差是否都进入。 \\
+proposal 里程碑 & 第 \ref{chap:e28} 章 & 可验收观测量、目标精度、null test、交付数据和失败判据。 \\
+\bottomrule
+\end{longtable}

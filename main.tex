@@ -1,0 +1,120 @@
+% ============================================================
+%  量子天文学 (Quantum Astronomy — Teaching Edition)
+%  从本科物理逐级搭建到研究前沿，零跳步推导。
+%  Build:  latexmk -xelatex -interaction=nonstopmode main_zh_edu.tex
+%  这是与 main.tex 平行的独立文档，不改动原稿。
+% ============================================================
+\documentclass[11pt,openany,fontset=fandol]{ctexbook}
+\usepackage{qa-loom-fonts}
+\usepackage{qa-modern-clear}
+\usepackage{amsmath,mathtools}
+\usepackage{graphicx}
+\usepackage{booktabs,longtable,array}
+\usepackage{enumitem}
+\usepackage{newunicodechar}
+\usepackage{eso-pic}
+\usepackage{hyperref}
+\usepackage[round,authoryear]{natbib}
+\input{shared/ads_journal_macros}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=gray,
+  urlcolor=gray
+}
+
+\newcommand{\citationneeded}{\textsuperscript{[citation needed]}}
+\newunicodechar{─}{--}
+\newenvironment{chapteropening}{\begin{quote}\small}{\end{quote}}
+\linespread{1.13}
+\setlength{\emergencystretch}{3em}
+\tolerance=2000
+
+\title{量子天文学}
+\input{shared/author_info}
+\input{shared/cover_page}
+\author{\bookauthorblock}
+\date{教学版工作稿，2026-07}
+
+\begin{document}
+\frontmatter
+\qaModernCenteredLayout
+\makebookimagecover
+\qaModernTitlePage{量子天文学}{\bookauthorblock}{教学版工作稿，2026-07}
+\tableofcontents
+
+\input{frontmatter/zh/preface}
+
+\cleardoublepage
+\qaModernBodyLayout
+\mainmatter
+\cleardoublepage
+\part*{快速入门}
+\input{quickstart/zh/intensity_interferometry}
+
+
+% ============================================================
+\part{预备语言：把本科知识接到量子光学}
+\input{chapters/zh_edu/chapter_00}
+\input{chapters/zh_edu/chapter_01}
+\input{chapters/zh_edu/chapter_02}
+\input{chapters/zh_edu/chapter_03}
+\input{chapters/zh_edu/chapter_04}
+\input{chapters/zh_edu/chapter_05}
+
+% ============================================================
+\part{光的量子态与光子统计}
+\input{chapters/zh_edu/chapter_06}
+\input{chapters/zh_edu/chapter_07}
+\input{chapters/zh_edu/chapter_08}
+
+% ============================================================
+\part{相干、干涉与成像}
+\input{chapters/zh_edu/chapter_09}
+\input{chapters/zh_edu/chapter_10}
+\input{chapters/zh_edu/chapter_11}
+\input{chapters/zh_edu/chapter_12}
+
+% ============================================================
+\part{仪器、事件表与观测设计}
+\input{chapters/zh_edu/chapter_13}
+\input{chapters/zh_edu/chapter_14}
+\input{chapters/zh_edu/chapter_15}
+
+% ============================================================
+\part{天体作为量子光源}
+\input{chapters/zh_edu/chapter_16}
+\input{chapters/zh_edu/chapter_17}
+\input{chapters/zh_edu/chapter_18}
+\input{chapters/zh_edu/chapter_19}
+\input{chapters/zh_edu/chapter_20}
+
+% ============================================================
+\part{传播、宇宙学与新物理}
+\input{chapters/zh_edu/chapter_21}
+\input{chapters/zh_edu/chapter_22}
+\input{chapters/zh_edu/chapter_23}
+
+% ============================================================
+\part{前沿、案例与实践}
+\input{chapters/zh_edu/chapter_24}
+\input{chapters/zh_edu/chapter_25}
+\input{chapters/zh_edu/chapter_26}
+\input{chapters/zh_edu/chapter_27}
+\input{chapters/zh_edu/chapter_28}
+
+% ------------------------------------------------------------
+\appendix
+\input{appendices/zh/appendix_A}
+\input{appendices/zh/appendix_B}
+\input{appendices/zh/appendix_C}
+\input{appendices/zh/appendix_D}
+\input{appendices/zh/appendix_E}
+\input{appendices/zh/appendix_F}
+\input{appendices/zh/appendix_G}
+
+\backmatter
+\bibliographystyle{plainnat}
+\bibliography{references}
+\end{document}

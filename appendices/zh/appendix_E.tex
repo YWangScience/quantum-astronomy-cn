@@ -1,0 +1,70 @@
+\chapter{示例计算代码指南}
+\label{app:e}
+
+每章对应一个 Python 文件，位置为 \texttt{code/chapter\_XX.py}。这些脚本生成正文 PDF 图，也提供复现实验数量级的起点。公式定义以正文第一次出现处为准；代码把公式变成可检查的曲线、标度、模拟数据和误差预算。
+
+\section{目录和运行顺序}
+\label{appsec:e-run}
+
+\begin{enumerate}[leftmargin=*]
+\item 先阅读 \texttt{code/README.md}，确认 Python 版本、依赖包和输出目录。
+\item 查看 \texttt{code/plot\_style.py} 和 \texttt{code/plot\_recipes.py}，了解统一字体、颜色、线宽和保存函数。
+\item 运行单章脚本，例如 \texttt{python code/chapter\_20.py}。单章脚本只应生成该章图，不应改动其他章节。
+\item 检查 PDF 是否写入 \texttt{figures/generated/chapter\_XX/}。
+\item 编译 \texttt{main\_nature.tex}，确认图号、caption、正文引用和 PDF 版面一致。
+\end{enumerate}
+
+\section{脚本和正文的对应关系}
+\label{appsec:e-map}
+
+\begin{longtable}{p{0.18\linewidth}p{0.30\linewidth}p{0.42\linewidth}}
+\toprule
+章节 & 典型图或计算 & 检查重点 \\
+\midrule
+1--2 & 事件表、Poisson 计数、普通光变曲线和信息丢失 & 图中事件表字段和正文符号一致。 \\
+3--4 & 光态、占有数、\(g^{(1)}\)、\(g^{(2)}\)、多模稀释 & 不把理想单模结果画成真实仪器观测值。 \\
+5 & 可见度、均匀圆盘、双星、SII SNR、相位缺失 & 坐标轴带单位；基线用 \(B_\perp\)，不要用阵列物理距离替代。 \\
+6 & 探测器响应、jitter、死时间、背景稀释、数据率 & 响应核归一化；时间单位清楚。 \\
+7 & pair count、time-shift 背景、协方差和 Fisher scaling & 随机符合和物理相关分开画。 \\
+8 & Rayleigh curse、SPADE 模式概率、QFI 和 SII Fisher & 小分离极限下不能用 log 轴制造假改善。 \\
+9--13 & 辐射机制、恒星、紧致天体、黑洞和瞬变 toy model & 典型参数来自正文；不要只画任意归一化曲线。 \\
+14--17 & 传播、偏振、新物理、CMB 和量子网络资源 & 普通天体物理项和新物理项要在图中分开。 \\
+18--22 & 误差预算、科学案例、教学实验、误区和路线图 & 图注要说明可行性、失败模式或决策边界。 \\
+\bottomrule
+\end{longtable}
+
+\section{每张图的最低要求}
+\label{appsec:e-figure-requirements}
+
+\begin{longtable}{p{0.24\linewidth}p{0.66\linewidth}}
+\toprule
+检查项 & 要求 \\
+\midrule
+物理量 & 坐标轴写清量名和单位；无量纲量要明确写 dimensionless 或省略单位。 \\
+数量级 & 至少一个曲线、点或标注应对应正文中的真实数量级。教学放大信号要在 caption 中说明。 \\
+符号 & 图中符号应与正文一致，例如 \(B_\perp\)、\(\lambda\)、\(\theta\)、\(R_\gamma\)、\(\Delta t\)、\(\tau_c\)。 \\
+输出 & 所有正文图用 PDF，不使用截图或低分辨率位图。 \\
+风格 & 使用统一 style；避免过密网格、过多颜色和没有物理含义的装饰。 \\
+可复现性 & 脚本顶部或函数注释应说明输入参数、默认值和输出文件。 \\
+\bottomrule
+\end{longtable}
+
+\section{调试清单}
+\label{appsec:e-debug}
+
+若图看起来和正文不一致，优先检查这些问题：
+
+\begin{enumerate}[leftmargin=*]
+\item 单位是否混用：mas、rad、m、nm、Hz、s 最容易出错。
+\item 角直径是否被当成角半径，或反过来。
+\item 基线是否使用投影基线 \(B_\perp\)，而不是阵列物理距离。
+\item 光谱带宽是否用 \(\Delta\lambda\) 直接替代 \(\Delta\nu\)。
+\item 相关 bin、探测器响应和相干时间是否在同一个时间单位中。
+\item 随机数是否固定 seed；模拟图的误差条是否随 seed 大幅改变。
+\item 生成的文件名是否和 LaTeX 中的 \texttt{\string\includegraphics} 一致。
+\end{enumerate}
+
+\section{课程项目最小提交包}
+\label{appsec:e-project-package}
+
+第 \ref{chap:e26} 章的课程项目提交时，至少包含五个文件或对象：事件表说明、Python 脚本、生成的 PDF 图、短报告和 null test 输出。短报告中每张图都要说明输入参数、单位、物理意义和失败模式；只贴图还不够。

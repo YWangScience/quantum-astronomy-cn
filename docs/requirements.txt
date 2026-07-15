@@ -1,0 +1,5 @@
+sphinx>=8.1
+myst-nb>=1.1
+sphinx-book-theme>=1.1
+sphinxcontrib-bibtex>=2.6
+pybtex>=0.24

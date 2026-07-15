@@ -1,0 +1,38 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{qa-loom-fonts}[2026/07/01 Loom font stack for Quantum Astronomy]
+
+\RequirePackage{libertinus-otf}
+
+\makeatletter
+\@ifpackageloaded{xeCJK}{}{\RequirePackage{xeCJK}}
+\makeatother
+
+\IfFontExistsTF{Noto Serif CJK SC}{%
+  \setCJKmainfont{Noto Serif CJK SC}[
+    BoldFont={Noto Serif CJK SC Bold}, ItalicFont={KaiTi}]
+  \setCJKsansfont{Noto Sans CJK SC}
+  \setCJKmonofont{Noto Sans CJK SC}
+}{\IfFontExistsTF{Source Han Serif SC}{%
+  \setCJKmainfont{Source Han Serif SC}[
+    BoldFont={Source Han Serif SC Bold}, ItalicFont={KaiTi}]
+  \setCJKsansfont{Source Han Sans SC}
+  \setCJKmonofont{Source Han Sans SC}
+}{\IfFontExistsTF{Songti SC}{%
+  \setCJKmainfont{Songti SC}[ItalicFont={Kaiti SC}]
+  \setCJKsansfont{PingFang SC}
+  \setCJKmonofont{PingFang SC}
+}{%
+  \setCJKmainfont{SimSun}[ItalicFont={KaiTi}, BoldFont={SimHei}]
+  \setCJKsansfont{Microsoft YaHei}[ItalicFont={KaiTi}]
+  \setCJKmonofont{Microsoft YaHei}
+}}}%
+\xeCJKsetup{CJKmath=true}
+
+\providecommand{\bm}[1]{\symbf{#1}}
+\providecommand{\circledR}{\mathord{\vcenter{\hbox{\normalfont\scriptsize\textregistered}}}}
+\AtBeginDocument{%
+  \renewcommand{\textregistered}{%
+    \ifmmode\mbox{\normalfont\char"00AE}\else{\normalfont\char"00AE}\fi}%
+}
+
+\endinput

@@ -1,0 +1,47 @@
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# LaTeX intermediates
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.out
+*.run.xml
+*.synctex*
+*.toc
+*.xdv
+missfont.log
+
+# Dropbox / editor conflict artifacts
+*conflicted copy*
+
+# Local scratch and build products
+tmp/
+build/*
+!build/
+!build/main.pdf
+!build/main_loom.pdf
+!build/main_en.pdf
+docs/_build/
+docs/source/generated/
+docs/source/_static/figures/generated/
+.venv-docs/
+output/

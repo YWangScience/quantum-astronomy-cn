@@ -1,0 +1,97 @@
+\chapter{Reading Routes and Ranges of Validity for the Core Relations}
+\label{app:d}
+
+Several relations that recur throughout the main text are presented side by side here. Each relation is annotated with its physical assumptions, the place where it is first used, and the points in later text where it is easily misused; for the full formulas, see Appendix~\ref{app:a}.
+
+\section{The Siegert Relation}
+\label{appsec:d-siegert}
+
+The physical picture of the Siegert relation is established in Chapter~\ref{chap:e00}, its quantum-optical background is developed in Chapter~\ref{chap:e08}, and spatial intensity interferometry uses it in Chapter~\ref{chap:e10}. When reading these chapters, work through the following steps:
+
+\begin{enumerate}[leftmargin=*]
+\item First confirm whether the light field can be approximated as thermal light, chaotic light or a Gaussian random field. This condition allows fourth-order moments to be decomposed into combinations of second-order moments.
+\item Then normalize the first-order coherence function to obtain \(g^{(1)}\) or the spatial degree of coherence \(\gamma_{12}\).
+\item In ideal single-mode thermal light, the zero-delay second-order correlation excess is given by \(|g^{(1)}|^2\).
+\item Once real instruments enter, write finite bandwidth, finite time response, polarization averaging, spatial modes and background as contrast factors.
+\end{enumerate}
+
+\begin{longtable}{p{0.24\linewidth}p{0.34\linewidth}p{0.32\linewidth}}
+\toprule
+Check item & How to use it when satisfied & How it goes wrong when not satisfied \\
+\midrule
+Thermal-light or Gaussian-field approximation & The second-order correlation can be connected to the squared modulus of the first-order coherence. & Stimulated emission, a few emitters or a strongly non-stationary source may change \(g^{(2)}\). \\
+Single mode or known number of modes & The bunching-peak contrast can be interpreted as physical coherence information. & Multimode averaging suppresses the peak and it is misread as an incoherent source. \\
+Known time response & The theoretical peak can be connected to the observed peak. & ns-scale electronics dilute the fs-scale optical coherence peak to \(10^{-6}\)--\(10^{-5}\). \\
+Background already separated & The correlation excess can be turned into the target's \(|V|^2\). & Night-sky brightness, companion stars or continuum dilute the signal as the square of the flux fraction. \\
+\bottomrule
+\end{longtable}
+
+When writing \(g^{(2)}-1\) later, give the coherence time, correlation bin, effective number of modes, background flux fraction and null test at the same time. A single zero-delay peak height alone is not enough to establish that it is astrophysical bunching.
+
+\section{The van Cittert--Zernike Theorem}
+\label{appsec:d-vcz}
+
+The VCZ theorem links the sky brightness of a far-field incoherent source to the first-order spatial coherence. Chapter~\ref{chap:e00} gives the definition of complex visibility, Chapter~\ref{chap:e10} applies it to intensity interferometry, and Chapter~\ref{chap:e15} puts it into observation design. When using this relation, follow the path below:
+
+\begin{enumerate}[leftmargin=*]
+\item Write the celestial surface brightness as a function \(I(\boldsymbol\theta)\) of angular coordinates.
+\item Divide the projected baseline of the two telescopes by the wavelength to obtain the spatial frequency \(\boldsymbol u=\boldsymbol B_\perp/\lambda\).
+\item Take the normalized Fourier transform of the brightness to obtain the complex visibility \(V(\boldsymbol u)\).
+\item Intensity interferometry can give only \(|V|^2\) directly, so phase, mirror images and asymmetric structure require additional information.
+\end{enumerate}
+
+\begin{longtable}{p{0.24\linewidth}p{0.34\linewidth}p{0.32\linewidth}}
+\toprule
+Condition & Usage in the main text & Typical sources of breakdown \\
+\midrule
+Far-field approximation & The angular structure of stars, binaries, disks and transients can be described in the \(u,v\) plane. & Near-field experiments, extreme space-baseline geometry or unmodeled wavefront curvature. \\
+Narrowband or already-handled bandwidth & Each channel can use a single-\(\lambda\) approximation. & Broadband averaging washes out high-frequency visibility structure. \\
+Source stable within the integration & Each epoch has one visibility model. & Outbursts, rotation, pulsation and rapid structural change mix different models. \\
+Nonnegative brightness with a reasonable model & Phase retrieval can be constrained with priors. & \(|V|^2\) alone makes it hard to distinguish mirror images from complex asymmetric structure. \\
+\bottomrule
+\end{longtable}
+
+\section{The Atmospheric-Phase Immunity of Intensity Interferometry}
+\label{appsec:d-atmosphere}
+
+Intensity interferometry is insensitive to atmospheric piston phase because it measures intensity-fluctuation correlations and does not rely on the direct coherent superposition of the two light fields. This advantage has clear boundaries:
+
+\begin{itemize}[leftmargin=*]
+\item Transparency variations remain. Transparency changes the photon rate, and also the accidental coincidences and background normalization.
+\item Scintillation remains. Scintillation introduces intensity correlations on slower time scales, requiring time-shift and block checks.
+\item Electronic crosstalk remains. Crosstalk can produce a zero-delay structure narrower and higher than the astrophysical peak.
+\item Background dilution remains. Even if uncorrelated, the background can suppress the target signal through the flux fraction.
+\end{itemize}
+
+When invoking the ``atmospheric-phase immunity'' advantage, also report how non-phase errors are monitored: use at least a few of calibrator stars, off-source, off-band, wrong-polarization, dark field, time-shift and injection-recovery.
+
+\section{The Rayleigh Limit and Fisher Information}
+\label{appsec:d-rayleigh}
+
+The Rayleigh criterion is an empirical imaging scale, not the information limit of every parameter-estimation problem. Chapter~\ref{chap:e12} shows the difference between direct imaging and mode measurement, and Chapter~\ref{chap:e26} turns it into a computational experiment. When using this set of results, first check these model ingredients:
+
+\begin{enumerate}[leftmargin=*]
+\item Specify the parameter: is it the two-point-source separation, the centroid, the flux ratio, the angular diameter, or a more complex image.
+\item Specify the data: pixel intensities, mode counts, event times, or \(|V|^2\).
+\item Write out the likelihood or Fisher information; do not just cite the word ``super-resolution.''
+\item Include background, finite photon number, mode mismatch, aberrations and centroid error.
+\end{enumerate}
+
+The conclusions of SPADE apply most clearly to the case of a weak, equally bright, incoherent two-point source with a known Gaussian PSF. For a galaxy, an accretion disk, a strong-lensing arc or a source with coherent components, the source model and the measurement basis must be rewritten.
+
+\section{The Error Budget and Roadmap Relations}
+\label{appsec:d-error-budget}
+
+The error budget in observation design is in Chapter~\ref{chap:e15}, and the readiness and milestones in the roadmap are in Chapter~\ref{chap:e28}. The error budget answers whether the target quantity can be measured; the roadmap answers at which step the project is ready to commit to the next stage.
+
+\begin{longtable}{p{0.24\linewidth}p{0.34\linewidth}p{0.32\linewidth}}
+\toprule
+Error term & Example & Mitigation to be recorded \\
+\midrule
+Statistical error & Shot noise varying with photon number, integration time and bandwidth. & Increase area, integration time, channel accumulation or target brightness. \\
+Calibration error & Zero-baseline contrast, time response, polarization efficiency and filter shape. & Calibrator stars, laboratory response measurements and nightly calibration. \\
+Background error & Night-sky brightness, companion stars, continuum, dark counts. & Off-source, line/continuum separation, background windows and flux-fraction estimates. \\
+Model error & Limb darkening, non-spherical symmetry, velocity model, radiative transfer. & Multi-model comparison, posterior predictive checks and external observational constraints. \\
+Selection error & Triggering, weather, target sample and a posteriori selection windows. & Preregistered target criteria, global significance and failure criteria. \\
+\bottomrule
+\end{longtable}

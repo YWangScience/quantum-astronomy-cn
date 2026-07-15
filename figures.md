@@ -1,0 +1,126 @@
+# Figures
+
+This draft contains generated Python figures for the main equation families in the book.
+
+## Generated Nature-Style Python Figures
+
+Each chapter has a standalone Python plotting script under `code/`. A chapter script may generate more than one figure. Running a script writes PDF output to `figures/generated/chapter_XX/`.
+
+- Chapter 1: `code/chapter_01.py` -> `figures/generated/chapter_01/ch01_event_table_map.pdf`. 光子事件表投影成图像、光谱、光变曲线和相关函数，强调一阶数据产品和事件对统计保留的信息不同。
+- Chapter 1: `code/chapter_01.py` -> `figures/generated/chapter_01/ch01_phase_interference.pdf`. 复振幅相量和两束光干涉示意，显示相位差怎样控制相长和相消。
+- Chapter 1: `code/chapter_01.py` -> `figures/generated/chapter_01/ch01_projected_baseline.pdf`. 物理基线分解为几何延迟和天空切平面投影，投影基线除以波长给出 \(u,v\) 空间频率。
+- Chapter 1: `code/chapter_01.py` -> `figures/generated/chapter_01/ch01_thermal_fluctuation_hbt.pdf`. 热光中随机相量相加导致强度涨落；两台望远镜在同一空间相干区域内会看到部分共同涨落，基线变长或源变大时相关下降。
+- Chapter 1: `code/chapter_01.py` -> `figures/generated/chapter_01/ch01_hbt_schematic.pdf`. HBT 强度干涉不相干合并电场，而是相关两台望远镜的光子计数涨落；零延迟过量相关在热光极限下给出可见度模平方。
+- Chapter 1: `code/chapter_01.py` -> `figures/generated/chapter_01/ch01_fourier_visibility.pdf`. 高斯、双星和均匀圆盘三类亮度分布给出不同的归一化可见度曲线。源的角尺度越大，可见度在空间频率轴上下降越快；双星的振荡项保留了角分离信息。
+- Chapter 1: `code/chapter_01.py` -> `figures/generated/chapter_01/ch01_photon_count_statistics.pdf`. 相同平均光子数下，Poisson 分布、单模热光分布和亚 Poisson toy model 的宽度不同。计数分布的方差决定 Mandel Q 参数，也决定二阶相干函数偏离 1 的方向。
+- Chapter 1: `code/chapter_01.py` -> `figures/generated/chapter_01/ch01_resolution_baseline.pdf`. 角分辨率随波长和基线的标度。可见光进入微角秒量级需要百米到公里级基线；同一公式也说明为什么长基线和短波长是高角分辨率观测的核心资源。
+- Chapter 1: `code/chapter_01.py` -> `figures/generated/chapter_01/ch01_correlation_dilution_budget.pdf`. HBT 相关峰的可见幅度同时受光谱带宽、时间分辨率和背景稀释控制；源光子比例下降时相关幅度按两通道比例乘积损失。
+- Chapter 1: `code/chapter_01.py` -> `figures/generated/chapter_01/ch01_polarization_mueller_matrix.pdf`. Mueller 矩阵中的小串扰会把真实 Stokes 向量推到错误位置，弱偏振信号尤其容易被 I 到 Q/U 泄漏污染。
+- Chapter 1: `code/chapter_01.py` -> `figures/generated/chapter_01/ch01_quantum_detection_map.pdf`. 密度矩阵、partial trace 和正规序光电探测之间的流程图，把量子记号连接到单光子计数和符合计数。
+- Chapter 1: `code/chapter_01.py` -> `figures/generated/chapter_01/ch01_fisher_visibility_design.pdf`. Fisher 信息由可见度曲线斜率、误差模型和有效光子对共同决定；统计误差下降到系统地板后，继续积分收益变小。
+- Chapter 2: `code/chapter_02.py` -> `figures/generated/chapter_02/ch02_mean_intensity_vs_correlation.pdf`. 两束光可以有相同的平均强度和光变曲线，却有不同的二阶相干函数。平均强度只记录一阶统计量，光子到达时间之间的联合概率保存在 g2 中。
+- Chapter 2: `code/chapter_02.py` -> `figures/generated/chapter_02/ch02_event_table_information.pdf`. 光子事件表把时间、望远镜位置、频率通道和偏振标签放在同一个数据结构中。不同的边缘化方式分别给出光变曲线、谱线、偏振量和强度相关函数。
+- Chapter 2: `code/chapter_02.py` -> `figures/generated/chapter_02/ch02_contrast_dilution.pdf`. 观测到的二阶相关对比度会被有效模式数、光谱带宽和时间 bin 同时稀释。
+- Chapter 2: `code/chapter_02.py` -> `figures/generated/chapter_02/ch02_revival_timeline.pdf`. 从 HBT、Narrabri 到现代 Cherenkov 阵列的时间线，突出沉寂期的工程瓶颈和数字相关带来的复兴。
+- Chapter 2: `code/chapter_02.py` -> `figures/generated/chapter_02/ch02_science_case_map.pdf`. 第一代量子天文学科学问题的可行性和新增信息量，显示亮星角直径、Be 星盘、自然 laser、Type Ia 和量子网络的相对位置。
+- Chapter 3: `code/chapter_03.py` -> `figures/generated/chapter_03/ch03_phase_space_states.pdf`. 相干态、热态和压缩态在相空间中的示意。相干态近似圆形最小不确定度分布，热态更宽，压缩态在一个正交量上变窄但在另一个正交量上变宽。
+- Chapter 3: `code/chapter_03.py` -> `figures/generated/chapter_03/ch03_coherence_time_dilution.pdf`. 有限时间分辨率会稀释热光聚束信号。当时间 bin 大于相干时间时，测得的 g2 峰值按相干时间与 bin 宽的比值下降；多模平均会进一步降低对比度。
+- Chapter 3: `code/chapter_03.py` -> `figures/generated/chapter_03/ch03_state_count_distributions.pdf`. 数态、相干态和热态在相同平均光子数附近给出不同计数分布，直接对应不同的 \(g^{(2)}(0)\)。
+- Chapter 3: `code/chapter_03.py` -> `figures/generated/chapter_03/ch03_blackbody_mode_occupation.pdf`. 不同亮温黑体的单模占有数随波长变化，显示可见光恒星通常处在每模式弱光极限。
+- Chapter 3: `code/chapter_03.py` -> `figures/generated/chapter_03/ch03_detection_loss_background.pdf`. 有限探测效率、天空背景和暗计数会降低源光子比例，并按比例平方稀释归一化相关幅度。
+- Chapter 3: `code/chapter_03.py` -> `figures/generated/chapter_03/ch03_nonclassical_mixing_boundary.pdf`. 背景和多源混合会把反聚束或热光聚束信号拉回 \(g^{(2)}=1\)，说明天体非经典光为什么难以保留。
+- Chapter 4: `code/chapter_04.py` -> `figures/generated/chapter_04/ch04_mandel_q_g2.pdf`. Mandel Q 参数把计数方差和 g2 的零延迟值联系起来。Q 大于零对应超 Poisson 统计，Q 等于零回到 Poisson 线，Q 小于零则表示亚 Poisson 统计。
+- Chapter 4: `code/chapter_04.py` -> `figures/generated/chapter_04/ch04_siegert_relation.pdf`. Siegert 关系把热光的一阶相干函数和二阶强度相关联系起来。一阶相干随延迟衰减时，二阶相干峰以其模平方的形式变窄并回到 1。
+- Chapter 4: `code/chapter_04.py` -> `figures/generated/chapter_04/ch04_factorial_moments.pdf`. 普通矩和 factorial moment 对同一计数分布给出不同权重。符合计数天然依赖 N 乘以 N-1，因此 factorial moment 比普通二阶矩更贴近多光子探测问题。
+- Chapter 4: `code/chapter_04.py` -> `figures/generated/chapter_04/ch04_response_convolution.pdf`. 有限时间响应会把 ps 量级热光聚束峰拉宽并压低，峰高按响应宽度与相干时间的比值下降。
+- Chapter 4: `code/chapter_04.py` -> `figures/generated/chapter_04/ch04_delay_histogram_estimator.pdf`. 延迟直方图估计量通过同源符合和移位参考的差值恢复 \(g^{(2)}-1\) 的小 excess。
+- Chapter 4: `code/chapter_04.py` -> `figures/generated/chapter_04/ch04_deadtime_pileup_bias.pdf`. 死时间、pile-up 和 afterpulsing 会在短延迟相关中制造空洞和假峰，分束交叉相关可减轻这些仪器效应。
+- Chapter 4: `code/chapter_04.py` -> `figures/generated/chapter_04/ch04_g3_closure_phase.pdf`. 三阶强度相关包含 \(\gamma_{12}\gamma_{23}\gamma_{31}\) 的实部，因此对闭合相位组合敏感。
+- Chapter 4: `code/chapter_04.py` -> `figures/generated/chapter_04/ch04_frequency_polarization_matrix.pdf`. 频率和偏振分辨 \(g^{(2)}\) 可以写成跨通道矩阵，谱线通道和同偏振通道通常有更高 excess。
+- Chapter 5: `code/chapter_05.py` -> `figures/generated/chapter_05/ch05_vcz_visibility_models.pdf`. van Cittert-Zernike 定理把天空亮度分布和空间相干函数联系起来。圆盘、环和双源在可见度空间留下不同的零点、振荡和包络。
+- Chapter 5: `code/chapter_05.py` -> `figures/generated/chapter_05/ch05_sii_signal_vs_baseline.pdf`. 强度干涉测得的相关信号正比于可见度模平方。较大的角直径在较短基线上就被分辨，因此 g2 相关信号随基线更快下降。
+- Chapter 5: `code/chapter_05.py` -> `figures/generated/chapter_05/ch05_uv_coverage.pdf`. 地球自转把固定望远镜基线投影到不同的 u,v 位置。覆盖越稠密，重建二维亮度分布时对模型假设的依赖越低。
+- Chapter 5: `code/chapter_05.py` -> `figures/generated/chapter_05/ch05_uniform_disk_resolution.pdf`. 均匀圆盘第一零点基线随角直径变化，展示蓝光 SII 进入亚毫角秒和几十微角秒尺度所需的基线。
+- Chapter 5: `code/chapter_05.py` -> `figures/generated/chapter_05/ch05_snr_scaling.pdf`. 强度干涉 SNR 随星等、积分时间和电子带宽的相对标度，显示亮星选择和高速电子学为什么关键。
+- Chapter 5: `code/chapter_05.py` -> `figures/generated/chapter_05/ch05_zero_baseline_calibration.pdf`. 零基线相关幅度 \(N_0\) 的夜间漂移会整体拉伸 \(|V|^2\)，直接影响角直径和形状拟合。
+- Chapter 5: `code/chapter_05.py` -> `figures/generated/chapter_05/ch05_phase_ambiguity.pdf`. 源和镜像源可以有相同的 \(|V|^2\)，说明只测模平方会丢失 Fourier 相位并产生成像退化。
+- Chapter 5: `code/chapter_05.py` -> `figures/generated/chapter_05/ch05_error_budget.pdf`. 强度干涉角直径误差由统计、零基线、背景、模型和选择函数共同组成，现代阵列不只受 photon noise 限制。
+- Chapter 6: `code/chapter_06.py` -> `figures/generated/chapter_06/ch06_detector_timing_response.pdf`. 探测器时间响应会把真实相关峰卷积变宽并降低峰值。相关峰的面积近似守恒，但峰高决定了有限计数下能否显著检出。
+- Chapter 6: `code/chapter_06.py` -> `figures/generated/chapter_06/ch06_deadtime_saturation.pdf`. 探测器死时间会使观测计数率在高入射光子率下饱和。非延长和延长死时间模型的偏差不同，必须在事件表分析前单独标定。
+- Chapter 7: `code/chapter_07.py` -> `figures/generated/chapter_07/ch07_poisson_likelihood.pdf`. 非齐次 Poisson 过程把瞬时光子率映射为事件到达时间。似然函数同时使用每个事件位置处的率和整个观测窗口中的积分率。
+- Chapter 7: `code/chapter_07.py` -> `figures/generated/chapter_07/ch07_covariance_matrix.pdf`. 多望远镜事件表可以写成协方差矩阵。对角项主要记录单通道噪声，非对角项记录望远镜对之间的真实相关和系统串扰。
+- Chapter 7: `code/chapter_07.py` -> `figures/generated/chapter_07/ch07_fisher_scaling.pdf`. 参数误差随 Fisher 信息增加而下降。对于独立事件，信息量通常近似随有效光子数线性增加，因此误差按光子数的平方根标度下降。
+- Chapter 8: `code/chapter_08.py` -> `figures/generated/chapter_08/ch08_rayleigh_information.pdf`. Rayleigh 判据给出成像分辨的经验尺度，但参数估计的信息量不必在该尺度处突然消失。直接成像和模式测量在小分离极限下有不同的信息行为。
+- Chapter 8: `code/chapter_08.py` -> `figures/generated/chapter_08/ch08_spade_probabilities.pdf`. SPADE 把两点源分离信息转移到高阶空间模式的占有概率中。小分离时零阶模式仍占主导，高阶模式的微小概率携带了分离参数的信息。
+- Chapter 8: `code/chapter_08.py` -> `figures/generated/chapter_08/ch08_cramer_rao_bound.pdf`. Cramer-Rao 下界给出无偏估计量方差的理想下限。随着光子数增加，统计下限下降；加入背景或模型不匹配后，误差会出现平台。
+- Chapter 9: `code/chapter_09.py` -> `figures/generated/chapter_09/ch09_radiation_g2_diagnostics.pdf`. 不同辐射机制可以有相同的平均亮度，却在 g2 延迟曲线上表现不同。热辐射产生聚束峰，相干或受激成分会把曲线推向 Poisson 极限。
+- Chapter 9: `code/chapter_09.py` -> `figures/generated/chapter_09/ch09_diagnostic_plane.pdf`. 谱宽、偏振度和二阶相干对比度共同组成辐射机制诊断平面。单一观测量通常不足以区分热辐射、同步辐射、maser 和散射放大。
+- Chapter 10: `code/chapter_10.py` -> `figures/generated/chapter_10/ch10_stellar_diameter_visibility.pdf`. 恒星角直径决定可见度模平方随基线下降的速度。强度干涉直接测量的是这个下降曲线，而不是图像中的恒星边缘。
+- Chapter 10: `code/chapter_10.py` -> `figures/generated/chapter_10/ch10_binary_visibility.pdf`. 双星会在可见度空间中产生周期性振荡。振荡周期主要由角分离决定，振幅则受流量比和单星角直径调制。
+- Chapter 10: `code/chapter_10.py` -> `figures/generated/chapter_10/ch10_limb_darkening.pdf`. 边缘昏暗改变圆盘亮度分布，也改变可见度零点和旁瓣高度。精密角直径和有效温度估计需要把这种表面亮度模型写进拟合。
+- Chapter 11: `code/chapter_11.py` -> `figures/generated/chapter_11/ch11_stokes_qu_track.pdf`. Q-U 平面中的轨迹显示偏振角旋转如何改变观测 Stokes 参数。强场源的偏振信号必须和仪器 Mueller 矩阵共同拟合。
+- Chapter 11: `code/chapter_11.py` -> `figures/generated/chapter_11/ch11_birefringence_energy.pdf`. 强场双折射或传播效应可以让偏振角随能量发生系统旋转。观测上需要同时比较偏振角、偏振度和仪器响应随能量的变化。
+- Chapter 12: `code/chapter_12.py` -> `figures/generated/chapter_12/ch12_photon_ring_visibility.pdf`. 薄环 toy model 的可见度模平方出现振荡零点。黑洞 photon ring 的几何尺度越清楚，长基线可见度中的振荡结构越容易成为可测量目标。
+- Chapter 12: `code/chapter_12.py` -> `figures/generated/chapter_12/ch12_variability_autocorrelation.pdf`. 吸积流的短时标涨落会在自相关函数中留下特征宽度。事件表保留单光子时间信息后，可以把平均光变和相关时间尺度分开估计。
+- Chapter 13: `code/chapter_13.py` -> `figures/generated/chapter_13/ch13_transient_event_likelihood.pdf`. 瞬变事件表的似然来自时间依赖光子率。快上升慢下降的率模型对应非均匀事件密度，触发时间和背景项都会影响参数后验。
+- Chapter 13: `code/chapter_13.py` -> `figures/generated/chapter_13/ch13_multimessenger_delay.pdf`. 多信使观测比较的是不同信号通道的到达时间和不确定度。真正的物理延迟必须和触发误差、传播效应以及仪器时间基准一起建模。
+- Chapter 14: `code/chapter_14.py` -> `figures/generated/chapter_14/ch14_dispersion_delay.pdf`. 冷等离子体色散使低频光子相对高频光子更晚到达。延迟随频率平方倒数变化，因此宽频段事件表能同时约束 DM 和本征发射时间。
+- Chapter 14: `code/chapter_14.py` -> `figures/generated/chapter_14/ch14_faraday_rotation.pdf`. Faraday 旋转让偏振角随波长平方线性变化。斜率给出 RM，但偏振角的模 pi 周期性会在窄频段中引入缠绕歧义。
+- Chapter 14: `code/chapter_14.py` -> `figures/generated/chapter_14/ch14_lensing_time_delay.pdf`. 简化透镜势给出多像位置和时间延迟面。量子天文学中的透镜问题仍然要回到可观测的到达时间、放大率和角位置。
+- Chapter 15: `code/chapter_15.py` -> `figures/generated/chapter_15/ch15_axion_conversion.pdf`. 轴子-光子耦合的 toy model 展示转换概率如何随有效耦合、路径长度和相干长度变化。图只说明标度关系，不代表具体实验排除线。
+- Chapter 15: `code/chapter_15.py` -> `figures/generated/chapter_15/ch15_cosmic_birefringence.pdf`. 宇宙双折射会把线偏振角整体旋转，并在 Q-U 平面中表现为同心轨迹。真正的宇宙学约束需要同时控制仪器偏振角标定。
+- Chapter 15: `code/chapter_15.py` -> `figures/generated/chapter_15/ch15_dark_matter_lensing.pdf`. 小尺度质量结构会改变透镜放大率和到达时间。微小扰动不应直接解释为新物理，必须先和源结构、传播效应和仪器系统误差比较。
+- Chapter 16: `code/chapter_16.py` -> `figures/generated/chapter_16/ch16_cmb_power_spectrum.pdf`. CMB 角功率谱把早期涨落投影到多极矩空间。峰的位置和高度分别反映角尺度、物质组分和声学振荡历史；图为教学 toy model。
+- Chapter 16: `code/chapter_16.py` -> `figures/generated/chapter_16/ch16_birefringence_eb.pdf`. 偏振角整体旋转会把 E 模泄漏到 B 模，并产生 EB 相关。这个信号的解释依赖绝对偏振角标定和前景偏振模型。
+- Chapter 17: `code/chapter_17.py` -> `figures/generated/chapter_17/ch17_entanglement_resources.pdf`. 量子网络望远镜的两个基本资源标度：纠缠分发率需要跟上有效光子率，量子存储时间至少要覆盖基线对应的光行时。
+- Chapter 17: `code/chapter_17.py` -> `figures/generated/chapter_17/ch17_fidelity_distance.pdf`. 链路损耗和存储退相干共同决定长基线量子网络的有效保真度。即使光子率足够，高损耗也会把可用纠缠率压到不可行区域。
+- Chapter 17: `code/chapter_17.py` -> `figures/generated/chapter_17/ch17_network_parameter_space.pdf`. 基线、纠缠率和存储时间构成量子网络望远镜的资源空间。近期实验更接近短基线和低光子率角落，天文应用需要同时推进多个轴。
+- Chapter 18: `code/chapter_18.py` -> `figures/generated/chapter_18/ch18_photon_rate_magnitude.pdf`. AB 星等通过 10 的负 0.4m 次方快速压低光子率。望远镜面积和效率只能线性补偿，因此目标亮度是可行性估算的第一道门槛。
+- Chapter 18: `code/chapter_18.py` -> `figures/generated/chapter_18/ch18_snr_heatmap.pdf`. 强度相关信噪比随光子率和积分时间增加而提高。图中的等值线显示，提高时间分辨率以外，目标亮度和累计时间同样控制检出能力。
+- Chapter 18: `code/chapter_18.py` -> `figures/generated/chapter_18/ch18_error_budget.pdf`. 误差预算把统计噪声、背景、时间标定和偏振标定放在同一尺度上。总误差通常由最大的几项主导，改进仪器时应先压低主导项。
+- Chapter 19: `code/chapter_19.py` -> `figures/generated/chapter_19/ch19_science_case_feasibility.pdf`. 第一代科学案例可以放在角尺度和光子率平面中比较。右上区域更适合早期实验，左下区域通常需要更长积分、更大阵列或新的量子资源。
+- Chapter 19: `code/chapter_19.py` -> `figures/generated/chapter_19/ch19_priority_matrix.pdf`. 科学价值、技术成熟度和系统误差风险给出项目优先级矩阵。高价值但低成熟度的问题适合研究计划，高成熟度且风险低的问题适合作为第一代验证。
+- Chapter 20: `code/chapter_20.py` -> `figures/generated/chapter_20/ch20_hbt_lab_histogram.pdf`. 桌面 HBT 实验比较同时时间轴符合直方图和 time-shift 背景，并把零延迟峰归一化为 \(\hat g^{(2)}(\tau)\)。
+- Chapter 20: `code/chapter_20.py` -> `figures/generated/chapter_20/ch20_event_table_simulation.pdf`. 非齐次 Poisson 事件表保留到达时间、等效波长通道和质量标记，随后才投影成光变曲线或筛选后的计数率。
+- Chapter 20: `code/chapter_20.py` -> `figures/generated/chapter_20/ch20_uniform_disk_fit.pdf`. 均匀圆盘强度干涉拟合把基线上的 \(|V|^2\) 点转成角直径后验，第一零点附近的点对直径最敏感。
+- Chapter 20: `code/chapter_20.py` -> `figures/generated/chapter_20/ch20_binary_visibility.pdf`. 双星可见度练习显示通量比如何控制振荡深度，以及轨道投影如何改变固定基线上的 \(|V|^2\)。
+- Chapter 20: `code/chapter_20.py` -> `figures/generated/chapter_20/ch20_correlator_scaling.pdf`. 多望远镜相关器标度显示基线数随望远镜数二次增长，数据率随时间 bin 变窄和光谱通道增多而上升。
+- Chapter 20: `code/chapter_20.py` -> `figures/generated/chapter_20/ch20_spade_exercise.pdf`. SPADE 计算实验比较直接成像和模式排序在小分离处的 Fisher 信息，并显示 Hermite--Gaussian 模式概率。
+- Chapter 20: `code/chapter_20.py` -> `figures/generated/chapter_20/ch20_typeia_distance_posterior.pdf`. Type Ia 超新星 toy model 把速度模型给出的物理半径和强度干涉角半径合成角直径距离后验。
+- Chapter 21: `code/chapter_21.py` -> `figures/generated/chapter_21/ch21_g2_scaling_mistake.pdf`. 时间 bin、滤光片带宽和有效模式数共同稀释热光聚束峰，宽带可见光很容易落到系统误差地板以下。
+- Chapter 21: `code/chapter_21.py` -> `figures/generated/chapter_21/ch21_calibration_artifacts.pdf`. 电子串扰和校准残差可以比天体聚束峰更大，积分时间只能压低统计误差，不能自动消除系统误差地板。
+- Chapter 21: `code/chapter_21.py` -> `figures/generated/chapter_21/ch21_phase_loss.pdf`. 只测 \(|V|^2\) 会留下镜像退化；同一可见度平方可以对应相位符号相反的天空亮度。
+- Chapter 21: `code/chapter_21.py` -> `figures/generated/chapter_21/ch21_superresolution_budget.pdf`. 模式排序能降低小分离估计的统计误差，但光子数、模式串扰和质心误差仍然限制量子超分辨。
+- Chapter 21: `code/chapter_21.py` -> `figures/generated/chapter_21/ch21_maser_mixed_statistics.pdf`. 天体 maser/laser 候选的 \(g^{(2)}\) 由窄线通量分数、热背景、强度噪声和谱线宽度共同决定。
+- Chapter 21: `code/chapter_21.py` -> `figures/generated/chapter_21/ch21_nonpoisson_diagnostics.pdf`. 变源、死时间和 afterpulsing 都能造成非 Poisson 统计，但它们在 Fano 因子和短延迟相关中留下不同形状。
+- Chapter 21: `code/chapter_21.py` -> `figures/generated/chapter_21/ch21_poisson_false_alarm.pdf`. 单个 Poisson 尾部事件在大量 trial 中会变常见，事件表搜索必须报告全局假警报概率。
+- Chapter 22: `code/chapter_22.py` -> `figures/generated/chapter_22/ch22_roadmap_trade_space.pdf`. 路线图把技术成熟度、科学回报、成本和风险放在同一平面中，帮助区分近期 proposal 和远期路径验证。
+- Chapter 22: `code/chapter_22.py` -> `figures/generated/chapter_22/ch22_data_product_stack.pdf`. 数据产品链从事件表经过相关函数和可见度进入似然、后验和公开归档，proposal 应逐项说明交付物。
+- Chapter 22: `code/chapter_22.py` -> `figures/generated/chapter_22/ch22_program_timeline.pdf`. 阶段性时间线从课程 HBT、探测器和恒星样本推进到多通道相关、瞬变跟进、本地模式排序和量子网络 pathfinder。
+- Chapter 22: `code/chapter_22.py` -> `figures/generated/chapter_22/ch22_milestone_gates.pdf`. 里程碑门槛矩阵把光子率、计时、校准、pipeline 和科学样本分别量化，避免用单一硬件指标代表 readiness。
+- Chapter 22: `code/chapter_22.py` -> `figures/generated/chapter_22/ch22_risk_register.pdf`. 风险登记图按概率和影响排列目标过暗、计时漂移、零基线偏差、选择效应、模型退化、数据量和网络损耗。
+
+## Figure Policy
+
+- Chapter 1: add future figures only when they explain a specific equation, dataset, scaling law, or observational diagnostic.
+- Chapter 2: add future figures only when they explain a specific equation, dataset, scaling law, or observational diagnostic.
+- Chapter 3: add future figures only when they explain a specific equation, dataset, scaling law, or observational diagnostic.
+- Chapter 4: add future figures only when they explain a specific equation, dataset, scaling law, or observational diagnostic.
+- Chapter 5: add future figures only when they explain a specific equation, dataset, scaling law, or observational diagnostic.
+- Chapter 6: add future figures only when they explain a specific equation, dataset, scaling law, or observational diagnostic.
+- Chapter 7: add future figures only when they explain a specific equation, dataset, scaling law, or observational diagnostic.
+- Chapter 8: add future figures only when they explain a specific equation, dataset, scaling law, or observational diagnostic.
+- Chapter 9: add future figures only when they explain a specific equation, dataset, scaling law, or observational diagnostic.
+- Chapter 10: add future figures only when they explain a specific equation, dataset, scaling law, or observational diagnostic.
+- Chapter 11: add future figures only when they explain a specific equation, dataset, scaling law, or observational diagnostic.
+- Chapter 12: add future figures only when they explain a specific equation, dataset, scaling law, or observational diagnostic.
+- Chapter 13: add future figures only when they explain a specific equation, dataset, scaling law, or observational diagnostic.
+- Chapter 14: add future figures only when they explain a specific equation, dataset, scaling law, or observational diagnostic.
+- Chapter 15: add future figures only when they explain a specific equation, dataset, scaling law, or observational diagnostic.
+- Chapter 16: add future figures only when they explain a specific equation, dataset, scaling law, or observational diagnostic.
+- Chapter 17: add future figures only when they explain a specific equation, dataset, scaling law, or observational diagnostic.
+- Chapter 18: add future figures only when they explain a specific equation, dataset, scaling law, or observational diagnostic.
+- Chapter 19: add future figures only when they explain a specific equation, dataset, scaling law, or observational diagnostic.
+- Chapter 20: add future figures only when they explain a specific equation, dataset, scaling law, or observational diagnostic.
+- Chapter 21: add future figures only when they explain a specific equation, dataset, scaling law, or observational diagnostic.
+- Chapter 22: add future figures only when they explain a specific equation, dataset, scaling law, or observational diagnostic.

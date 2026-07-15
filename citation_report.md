@@ -1,0 +1,628 @@
+# ADS Citation Report
+
+## Summary
+
+- Unique ADS BibTeX entries exported: 473
+- Target references per chapter: 25
+
+## Chapter citation map
+
+### Chapter 1: 数学和物理基础
+- References assigned: 25
+- `2005RvMP...77..633F` (2005) Electromagnetically induced transparency: Optics in coherent media
+- `1991Sci...254.1178H` (1991) Optical Coherence Tomography
+- `1963PhRv..130.2529G` (1963) The Quantum Theory of Optical Coherence
+- `1995ocqo.book.....M` (1995) Optical Coherence and Quantum Optics
+- `2005Natur.438...65V` (2005) Active control of slow light on a chip with photonic crystal waveguides
+- `2012Natur.491..232B` (2012) Non-invasive imaging through opaque scattering layers
+- `2003RPPh...66..239F` (2003) Optical coherence tomography - principles and applications
+- `2003OExpr..11..889L` (2003) Performance of fourier domain vs. time domain optical coherence tomography
+- `2017uost.book.....Z` (2017) Understanding optical systems through theory and case studies
+- `1985stop.book.....G` (1985) Statistical Optics
+- `2013Natur.494...68T` (2013) Reconstructing state mixtures from diffraction measurements
+- `2004PhRvL..92i3903C` (2004) Incoherent Coincidence Imaging and Its Applicability in X-ray Diffraction
+- `1978ITAP...26..318O` (1978) The aR<SUP>b</SUP>relation in the calculation of rain attenuation
+- `1996A&A...305...42H` (1996) Statistics of optical intraday variability in a complete sample of radio-selected BL Lacertae objects.
+- `2000stop.book.....G` (2000) Statistical Optics
+- `2001ApJ...551..153D` (2001) Metallicity Gradients in X-Ray Clusters of Galaxies
+- `2005ifo..book.....G` (2005) Introduction to Fourier optics
+- `2001ITMTT..49.1581S` (2001) Three-Dimensional Millimeter-Wave Imaging for Concealed Weapon Detection
+- `2007PhRvL..98c4801R` (2007) Hard-X-Ray Lensless Imaging of Extended Objects
+- `2004PhRvL..93b3903F` (2004) Movable Aperture Lensless Transmission Microscopy: A Novel Phase Retrieval Algorithm
+- `2016fpim.book.....Z` (2016) Fourier Ptychographic Imaging; A MATLAB<SUP>®</SUP> tutorial
+- `2001RScI...72.1810D` (2001) Computer-generated holographic optical tweezer arrays
+- `2019Sci...365.1839R` (2019) Matrix Fourier optics enables a compact full-Stokes polarization camera
+- `1978OptCo..25...26B` (1978) The Wigner distribution function applied to optical signals and systems
+- `2022ApJ...941..208I` (2022) Forecasting the Detection Capabilities of Third-generation Gravitational-wave Detectors Using GWFAST
+
+### Chapter 2: 为什么需要量子天文学
+- References assigned: 25
+- `1977MNRAS.180..177B` (1977) Stellar angular diameters from infrared photometry. Application to Arcturus and other stars; with effective temperatures.
+- `1990RvMP...62..553B` (1990) Intensity interferometry in subatomic physics
+- `1974MNRAS.167..121H` (1974) The Angular Diameters of 32 Stars
+- `1964AmJPh..32..919M` (1964) Coherence and Fluctuations in Light Beams
+- `2019PhRvL.123m2301A` (2019) Polarization of Λ (Λ ̄) Hyperons along the Beam Direction in Au +Au Collisions at √{s<SUB>N N</SUB> }=200 GeV
+- `1974MNRAS.167..475H` (1974) The effects of limb darkening on measurements of angular size with an intensity interferometer
+- `1998AcPPB..29.1839B` (1998) The Physics of Hanbury Brown--Twiss Intensity Interferometry: from Stars to Nuclear Collisions
+- `1964BOTT....3..305J` (1964) The colors, Bolometric corrections and effective temperatures of the bright stars
+- `1965RvMP...37..231M` (1965) Coherence Properties of Optical Fields
+- `2003PhRvC..68c4913T` (2003) Effect of shear viscosity on spectra, elliptic flow, and Hanbury Brown Twiss radii
+- `2002PhRvC..66e4905H` (2002) Collective flow and two-pion correlations from a relativistic hydrodynamic model with early chemical freeze-out
+- `2005Natur.434..481F` (2005) Spatial quantum noise interferometry in expanding ultracold atom clouds
+- `1979PhRvC..20.2267G` (1979) Pion interferometry of nuclear collisions. I. Theory
+- `1999PhR...319..145W` (1999) Particle interferometry for relativistic heavy-ion collisions
+- `1999Sci...284..296H` (1999) The Fermionic Hanbury Brown and Twiss Experiment
+- `2017MNRAS.472.4126G` (2017) Temporal intensity interferometry: photon bunching in three bright stars
+- `2014ApJ...789L..10T` (2014) Measuring Temporal Photon Bunching in Blackbody Radiation
+- `2019MNRAS.486.5400S` (2019) Microlensing masses via photon bunching
+- `2014arXiv1403.7432K` (2014) Measuring Temporal Photon Bunching in Blackbody Radiation
+- `2018iss..confE..36T` (2018) Solar Temporal Photon Bunching
+- `2020MNRAS.491.5789L` (2020) Microlensing and photon bunching: the impact of decoherence
+- `2024arXiv241216975K` (2024) X-Ray-Driven Photon Bunching
+- `1996PASP..108..500B` (1996) Attaining Doppler Precision of 3 M s-1
+- `1993ApJ...412..479D` (1993) A Catalog of Intracluster Gas Temperatures
+- `1988PASP..100..754G` (1988) Time-Resolved CCD Photometry of an Ensemble of Stars
+
+### Chapter 3: 量子光学基础
+- References assigned: 25
+- `1997quop.book.....S` (1997) Quantum Optics
+- `1995ocqo.book.....M` (1995) Optical Coherence and Quantum Optics
+- `1998RvMP...70..101P` (1998) The quantum-jump approach to dissipative dynamics in quantum optics
+- `1972PhRvA...6.2211A` (1972) Atomic Coherent States in Quantum Optics
+- `2011Natur.474..589Y` (2011) Atomic physics and quantum optics using superconducting circuits
+- `2001qops.book.....S` (2001) Quantum Optics in Phase Space
+- `2013quop.book.....A` (2013) Quantum optics
+- `2006PhRvL..97e3002C` (2006) Quantum Optics with Surface Plasmons
+- `1965RvMP...37..231M` (1965) Coherence Properties of Optical Fields
+- `2010NatNa...5..391K` (2010) Nanostructured materials for photon detection
+- `2016PhRvL.117k0801V` (2016) Detection of 15 dB Squeezed States of Light and their Application for the Absolute Calibration of Photoelectric Quantum Efficiency
+- `1996ApOpt..35.1956C` (1996) Avalanche photodiodes and quenching circuits for single-photon detection
+- `1986PhRvL..56...58H` (1986) Experimental realization of a localized one-photon state
+- `2009NanoL...9.1039X` (2009) Photocurrent Imaging and Efficient Photon Detection in a Graphene Transistor
+- `2003PhRvL..90y3601D` (2003) Efficient Engineering of Multiatom Entanglement through Single-Photon Detections
+- `2004PhRvL..93i3602G` (2004) Ghost Imaging with Thermal Light: Comparing Entanglement and Classical Correlation
+- `2005PhRvL..94f3601V` (2005) Two-Photon Imaging with Thermal Light
+- `2017OptCo.398....1A` (2017) Quantum phase fluctuations of coherent and thermal light coupled to a non-degenerate parametric oscillator beyond rotating wave approximation
+- `2024arXiv240418606N` (2024) Interference with (Pseudo) Thermal Light; The Hanbury Brown and Twiss Effect
+- `2023cleo.conf.1035L` (2023) Coherent Two-Photon LIDAR with Incoherent Thermal Light
+- `2021arXiv210303419Z` (2021) Direct observation of photon bunching in thermal light in quantum Fourier transform spectroscopy
+- `2009cleo.conf.1234Y` (2009) Observation of nontrivial 3-photon correlation of chaotic thermal light
+- `2007cleo.conf..105Z` (2007) Quantum optical coherence tomography with true thermal light
+- `1983Natur.306..141W` (1983) Squeezed states of light
+- `1987JMOp...34..709L` (1987) Squeezed Light
+
+### Chapter 4: 光子统计与相干函数
+- References assigned: 25
+- `1965RvMP...37..231M` (1965) Coherence Properties of Optical Fields
+- `2002Sci...298..199D` (2002) Condensation of Semiconductor Microcavity Exciton Polaritons
+- `2007itcp.book.....W` (2007) Introduction to the Theory of Coherence and Polarization of Light
+- `1999PhRvA..59.4595N` (1999) Spatial coherence and density correlations of trapped Bose gases
+- `2015NanoL..15.7567K` (2015) Strain-Induced Spatial and Spectral Isolation of Quantum Emitters in Mono- and Bilayer WSe2
+- `2018ApPhL.112i3106S` (2018) On-demand generation of background-free single photons from a solid-state source
+- `2000PhRvA..62d3816S` (2000) Duality between partial coherence and partial entanglement
+- `2012PhRvL.109n7404Z` (2012) Visible-to-Telecom Quantum Frequency Conversion of Light from a Single Quantum Emitter
+- `1963PhRv..131.2766G` (1963) Coherent and Incoherent States of the Radiation Field
+- `1993PhRvL..71.4287Z` (1993) ``Event-ready-detectors'' Bell experiment via entanglement swapping
+- `1986PhRvA..33.4033Y` (1986) SU(2) and SU(1,1) interferometers
+- `2005Natur.436...87B` (2005) Photon blockade in an optical cavity with one trapped atom
+- `2008PhRvA..78f1802S` (2008) Computational ghost imaging
+- `1979OptL....4..205M` (1979) Sub-Poissonian photon statistics in resonance fluorescence
+- `1996PASP..108..500B` (1996) Attaining Doppler Precision of 3 M s-1
+- `2003AJ....125.1559P` (2003) Astrometric Calibration of the Sloan Digital Sky Survey
+- `2018ApJ...868...31Y` (2018) Bunching Coherent Curvature Radiation in Three-dimensional Magnetic Field Geometry: Application to Pulsars and Fast Radio Bursts
+- `1977ApJ...212..800C` (1977) Bunching mechanism for coherent curvature radiation in pulsar magnetospheres.
+- `2022ApJ...927..105W` (2022) Magnetospheric Curvature Radiation by Bunches as Emission Mechanism for Repeating Fast Radio Bursts
+- `2017MNRAS.472.4126G` (2017) Temporal intensity interferometry: photon bunching in three bright stars
+- `2014ApJ...789L..10T` (2014) Measuring Temporal Photon Bunching in Blackbody Radiation
+- `2022SCPMA..6589511W` (2022) Repeating fast radio bursts: Coherent circular polarization by bunches
+- `1991ApJ...383..808M` (1991) Formation of Dense Charged Bunches in Vacuum Gaps
+- `1981PhRvB..24.2533M` (1981) Flux bunching in type-II superconductors
+- `1965PhRv..140..676T` (1965) Correlation Functions for Coherent Fields
+
+### Chapter 5: 空间相干与强度干涉
+- References assigned: 25
+- `1974MNRAS.167..121H` (1974) The Angular Diameters of 32 Stars
+- `1967MNRAS.137..393H` (1967) The stellar interferometer at Narrabri Observatory-II. The angular diameters of 15 stars
+- `1971MNRAS.151..161H` (1971) A study of alpha Virginis with an intensity interferometer.
+- `1967MNRAS.137..375H` (1967) The stellar interferometer at Narrabri Observatory I. A. description of the instrument and the observational procedure
+- `1970MNRAS.148..103H` (1970) A study of γ<SUP>2</SUP> Velorum with a stellar intensity interferometer.
+- `2020NatAs...4.1164A` (2020) Demonstration of stellar intensity interferometry with the four VERITAS telescopes
+- `2012MNRAS.419..172N` (2012) High angular resolution imaging with stellar intensity interferometry using air Cherenkov telescope arrays
+- `2009A&A...507.1719F` (2009) Intensity interferometry and the second-order correlation function g<SUP>(2)</SUP> in astrophysics
+- `2013APh....43..331D` (2013) Optical intensity interferometry with the Cherenkov Telescope Array
+- `2006ApJ...649..399L` (2006) Optical Intensity Interferometry with Atmospheric Cerenkov Telescope Arrays
+- `2012MNRAS.424.1006N` (2012) Imaging submilliarcsecond stellar features with intensity interferometry using air Cherenkov telescope arrays
+- `2008AIPC..984..205L` (2008) Stellar Intensity Interferometry with Air Cherenkov Telescope arrays
+- `2014SPIE.9146E..0ZD` (2014) Stellar intensity interferometry over kilometer baselines: laboratory simulation of observations with the Cherenkov Telescope Array
+- `2010SPIE.7734E..1CN` (2010) Stellar intensity interferometry: imaging capabilities of air Cherenkov telescope arrays
+- `2010SPIE.7734E..1TJ` (2010) Stellar intensity interferometry: optimizing air Cherenkov telescope array layouts
+- `2024ApJ...966...28A` (2024) An Angular Diameter Measurement of β UMa via Stellar Intensity Interferometry with the VERITAS Observatory
+- `2022icrc.confE.803K` (2022) The VERITAS-Stellar Intensity Interferometry (VSII) survey of Stellar Diameters
+- `2019ICRC...36..740M` (2019) Astrophysical measurements with the VERITAS Stellar Intensity Interferometer
+- `2025ApJ...995..191A` (2025) Measurement of the Photosphere Oblateness of γ Cassiopeiae via Stellar Intensity Interferometry with the VERITAS Observatory
+- `2019ICRC...36..714K` (2019) Augmentation of VERITAS Imaging Atmospheric Cherenkov Telescopes for Stellar Intensity Interferometry
+- `2022SPIE12183E..0DK` (2022) Performance of the upgraded VERITAS Stellar Intensity Interferometer (VSII)
+- `2019nsf....1913552B` (2019) WoU-MMA: Operations of VERITAS in the Epoch 2019 to 2022
+- `1975mpth.conf..199D` (1975) a Proposed Successor to the Narrabri Stellar Intensity Interferometer
+- `2014SPIE.9146E..0CT` (2014) The Narrabri Stellar Intensity Interferometer: a 50th birthday tribute
+- `2024SPIE13095E..0IT` (2024) Stellar intensity interferometery: from Narrabri to CTA
+
+### Chapter 6: 探测器、时钟和事件表
+- References assigned: 25
+- `2001Natur.414..413D` (2001) Long-distance quantum communication with atomic ensembles and linear optics
+- `2020Sci...370.1460Z` (2020) Quantum computational advantage using photons
+- `2009NaPho...3..696H` (2009) Single-photon detectors for optical quantum information applications
+- `2015PhRvL.115y0402S` (2015) Strong Loophole-Free Test of Local Realism<SUP>*</SUP>
+- `2011RScI...82g1101E` (2011) Invited Review Article: Single-photon sources and detectors
+- `2013NaPho...7..210M` (2013) Detecting single infrared photons with 93% system efficiency
+- `2007Sci...318.1567O` (2007) Optical Quantum Computing
+- `2012SuScT..25f3001N` (2012) Superconducting nanowire single-photon detectors: physics and applications
+- `2012NatPh...8..795R` (2012) The fractional a.c. Josephson effect in a semiconductor-superconductor nanowire as a signature of Majorana particles
+- `2013PhRvB..87x1401C` (2013) Superconductor-nanowire devices from tunneling to the multichannel regime: Zero-bias oscillations and magnetoconductance crossover
+- `2020NaPho..14..250K` (2020) Demonstration of sub-3 ps temporal resolution with a superconducting nanowire single-photon detector
+- `2017PhRvB..96g5161L` (2017) Andreev bound states versus Majorana bound states in quantum dot-nanowire-superconductor hybrid structures: Trivial versus topological zero-bias conductance peaks
+- `2012NatCo...3.1325P` (2012) High-speed and high-efficiency travelling wave single-photon detectors embedded in nanophotonic circuits
+- `2013PhRvB..87b4515R` (2013) Towards a realistic transport modeling in a superconducting nanowire with Majorana fermions
+- `2020RScI...91a3108W` (2020) Photon arrival time tagging with many channels, sub-nanosecond deadtime, very high throughput, and fiber optic remote synchronization
+- `2024ApJS..272....4Z` (2024) Application of Deep-learning Methods for Distinguishing Gamma-Ray Bursts from Fermi/GBM Time-tagged Event Data
+- `1989MNRAS.238..791R` (1989) Image sharpening of time-tagged counts from a photon counting detector : application of a modified Wiener filter.
+- `2025ApJ...988...23P` (2025) BatAnalysis—A Comprehensive Python Pipeline for Swift BAT Time-tagged Event Data Analysis
+- `2016ITUFF..63..945D` (2016) White Rabbit Precision Time Protocol on Long-Distance Fiber Links
+- `2018ITUFF..65.1726R` (2018) White Rabbit Clock Synchronization: Ultimate Limits on Close-In Phase Noise and Short-Term Stability Due to FPGA Implementation
+- `2011ispc.conf....9L` (2011) White rabbit: a PTP application for robust sub-nanosecond synchronization
+- `2018ITNS...65..514D` (2018) Fully Digital and White Rabbit-Synchronized Low-Level RF System for LIPAc
+- `2013NIMPA.725..187J` (2013) White Rabbit: Sub-nanosecond timing over Ethernet
+- `2015ITNS...62.1021L` (2015) Temperature Effect on White Rabbit Timing Link
+- `2019ITIM...68..632J` (2019) A Fully Programmable White-Rabbit Node for the SKA Telescope PPS Distribution System
+
+### Chapter 7: 事件表的数据分析
+- References assigned: 25
+- `2019MsT..........1W` (2019) Stellar Photon Correlation Detection with the Southern Connecticut Stellar Interferometer
+- `2008AIPC..984..216D` (2008) Photon Correlation Spectroscopy for Observing Natural Lasers
+- `2021JOSAB..38.3105B` (2021) Architecture of photonics correlation for infrared heterodyne interferometry: demonstration of amplitude-modulation based correlation
+- `2023cleo.conf.1372A` (2023) Demonstration of Photonic Correlation of GHz Signals for 10.6 μm Astronomical Heterodyne Interferometry
+- `2024sf2a.conf..179A` (2024) Laboratory demonstration of mid-infrared heterodyne interferometry using analog photonics correlation.
+- `2024SPIE12885E..0IB` (2024) Multi-delay real-time photonic correlator for broadband RF signal processing
+- `2024NJPh...26f3014B` (2024) Phase retrieval in incoherent diffractive imaging using higher-order photon correlation functions
+- `1977ZhPmR..26...95M` (1977) Reconstruction of the nonstationary optical picture from two-photon correlations, and stellar interferometry
+- `2008NIMPA.595..480C` (2008) Evaluation of three methods for calculating statistical significance when incorporating a systematic uncertainty into a test of the background-only hypothesis for a Poisson process
+- `2009InvPr..25l3006B` (2009) TOPICAL REVIEW:  Image deblurring with Poisson data: from cells to galaxies
+- `2009GeoRL..3616702E` (2009) Visibility network of United States hurricanes
+- `1993ApJ...409..517S` (1993) Objective Detection of Voids and High-Density Structures in the First CfA Redshift Survey Slice
+- `2007SpWea...512003T` (2007) Long-term occurrence probabilities of intense geomagnetic storm events
+- `2013MNRAS.428.1911W` (2013) Knock-on processes in superfluid vortex avalanches and pulsar glitch statistics
+- `2017AJ....154..117L` (2017) The Nonhomogeneous Poisson Process for Fast Radio Burst Rates
+- `1999A&AS..140..235L` (1999) Comparison between ISRA and RLA algorithms. Use of a Wiener Filter based stopping criterion
+- `2009PhRvL.102j0401P` (2009) Entanglement, Nonlinear Dynamics, and the Heisenberg Limit
+- `2014JPhA...47P4006T` (2014) Quantum metrology from a quantum information science perspective
+- `2012PhRvA..85b2322T` (2012) Multipartite entanglement and high-precision metrology
+- `2012PhRvA..85b2321H` (2012) Fisher information and multiparticle entanglement
+- `2013PhRvA..87b2337Z` (2013) Fisher information under decoherence in Bloch representation
+- `2007PhRvD..75d2003B` (2007) Using LISA extreme-mass-ratio inspiral sources to test off-Kerr deviations in the geometry of massive black holes
+- `2011PhRvL.106o3603G` (2011) Optical Phase Estimation in the Presence of Phase Diffusion
+- `2014PhRvX...4a1031J` (2014) Technical Advantages for Weak-Value Amplification: When Less Is More
+- `1990RvMP...62..553B` (1990) Intensity interferometry in subatomic physics
+
+### Chapter 8: 量子估计、Rayleigh 限制和亚分辨信息
+- References assigned: 25
+- `1992ITIP....1..205A` (1992) Image coding using wavelet transform
+- `1994Sci...264.1740H` (1994) Near-Field Spectroscopy of the Quantum Constituents of a Luminescent System
+- `2017JCAP...06..028D` (2017) Quantum break-time of de Sitter
+- `2021NatMa..20.1615T` (2021) Single organic molecules for photonic quantum technologies
+- `2009JHEP...05..002D` (2009) Quantizing Script N = 2 multicenter solutions
+- `2000JChPh.112.7790Z` (2000) A close look on single quantum dots
+- `2012PhRvD..86d3513C` (2012) Quantum resolution of cosmological singularities using AdS/CFT correspondence
+- `2003ITPE...18..301P` (2003) Quantization Resolution and Limit Cycling in Digitally Controlled PWM Converters
+- `1998ApOpt..37.1735F` (1998) High-Spatial-Resolution Distributed Strain Measurement in Optical Fiber with Rayleigh Scatter
+- `2004PhFl...16.1668D` (2004) A comparative study of the turbulent Rayleigh-Taylor instability using high-resolution three-dimensional numerical simulations: The Alpha-Group collaboration
+- `1983JCoPh..49..241G` (1983) Spatial Resolution Requirements for Direct Numerical Simulation of the Rayleigh-Bénard Convection
+- `2008PApGe.165..903L` (2008) Rayleigh-Wave Dispersive Energy Imaging Using a High-Resolution Linear Radon Transform
+- `1983PhRvB..27.3662B` (1983) High-resolution helium time-of-flight studies of Rayleigh surface-phonon dispersion curves of LiF, NaF, and KCl
+- `2006PNAS..103.4457R` (2006) Beyond Rayleigh's criterion: A resolution measure with application to single-molecule microscopy
+- `2008ApPhL..92j3119C` (2008) Hard-x-ray microscopy with Fresnel zone plates reaches 40 nm Rayleigh resolution
+- `2000PNAS...97.7232F` (2000) True optical resolution beyond the Rayleigh limit achieved by standing wave illumination
+- `2014OExpr..2215599L` (2014) Efficient and mode selective spatial mode multiplexer based on multi-plane light conversion
+- `2017NatSR...7.1786P` (2017) Fabrication-constrained nanophotonic inverse design
+- `2022LSA....11..144W` (2022) Divergence-degenerate spatial multiplexing towards future ultrahigh capacity, low error-rate optical communications
+- `2017NJPh...19b3054T` (2017) Subdiffraction incoherent optical imaging via spatial-mode demultiplexing
+- `2014NatSR...4.7210P` (2014) Inverse design and implementation of a wavelength demultiplexing grating coupler
+- `2019IEEEA...784401Y` (2019) Performance Enhancement of an Orbital-Angular-Momentum-Multiplexed Free-Space Optical Link Under Atmospheric Turbulence Effects Using Spatial-Mode Multiplexing and Hybrid Diversity Based on Adaptive MIMO Equalization
+- `2019OptCo.436..197Y` (2019) Atmospheric turbulence mitigation using spatial mode multiplexing and modified pulse position modulation in hybrid RF/FSO orbital-angular-momentum multiplexed based on MIMO wireless communications system
+- `1994GeoRL..21.2567B` (1994) Tracer-tracer relationships and lower stratospheric dynamics: CO<SUB>2</SUB> and N<SUB>2</SUB>O correlations during SPADE
+- `2010PhLA..374.4801F` (2010) Classical and quantum Fisher information in the geometrical formulation of quantum mechanics
+
+### Chapter 9: 天体辐射机制的量子语言
+- References assigned: 25
+- `1978bllo.conf..328B` (1978) Some comments on radiation mechanisms in Lacertids.
+- `1999MNRAS.309..496G` (1999) Radiation mechanisms and geometry of Cygnus X-1 in the soft state
+- `1997ApJ...477..439T` (1997) Theory of High-Energy Emission from the Pulsar/Be Star System PSR 1259-63. I. Radiation Mechanisms and Interaction Geometry
+- `2012ApJ...752..157Z` (2012) Radiation Mechanisms and Physical Properties of GeV-TeV BL Lac Objects
+- `2018MNRAS.477.2470L` (2018) On the radiation mechanism of repeating fast radio bursts
+- `2013ApJ...765..103L` (2013) Photospheric Emission as the Dominant Radiation Mechanism in Long-duration Gamma-Ray Bursts
+- `1981Ap&SS..75..193R` (1981) Synchrotron cooling and annihilation of ane<SUP>+</SUP>-e<SUP>−</SUP> plasma: The radiation mechanism for the 5 March, 1979 transient
+- `2011MNRAS.417..280S` (2011) Evidence for a change in the X-ray radiation mechanism in the hard state of Galactic black holes
+- `1982ApJ...259..844M` (1982) Electron-cyclotron masers as the source of certain solar and stellar radio bursts.
+- `2006A&ARv..13..229T` (2006) The electron-cyclotron maser for astrophysical application
+- `2008ApJ...684..644H` (2008) Confirmation of the Electron Cyclotron Maser Instability as the Dominant Source of Radio Emission from Very Low Mass Stars and Brown Dwarfs
+- `2000ApJ...538..456E` (2000) Electron-Cyclotron Maser Driven by Charged-Particle Acceleration from Magnetic Field-aligned Electric Fields
+- `2012ApJ...760...59N` (2012) Origin of Electron Cyclotron Maser Induced Radio Emissions at Ultracool Dwarfs: Magnetosphere-Ionosphere Coupling Currents
+- `1986ApJ...309L..59W` (1986) A Search for Cyclotron Maser Radiation from Substellar and Planet-like Companions of Nearby Stars
+- `1988ApJ...332..447A` (1988) On the Electron-Cyclotron Maser Instability. I. Quasi-linear Diffusion in the Loss Cone
+- `1985ApJ...291..160W` (1985) Effects of a finite plasma temperature on electron-cyclotron maser emission
+- `1973ApJ...179..111G` (1973) Astrophysical Masers. 11. Polarization Properties
+- `1972ApJ...174..517G` (1972) Astrophysical Masers. I. Source Size and Saturation
+- `1978A&A....66...13G` (1978) Structure and kinematics of H<SUB>2</SUB>O sources in clusters of newly-formed OB stars.
+- `1974ApJ...190...27G` (1974) Astrophysical Masers.IV. Line Widths
+- `1974ApJ...191...93G` (1974) Astrophysical Masers. V. Pump Mechanism for H2O Masers
+- `1973ApJ...182...55G` (1973) Astrophysical Masers. 111. Trapped Infrared Lines and Cross-Relaxation
+- `1991ApJ...367L..63N` (1991) Spectral Line Profiles and Luminosities of Astrophysical Water Masers
+- `2019ApJS..244...35L` (2019) A Census of Early-phase High-mass Star Formation in the Central Molecular Zone
+- `2003AJ....125.1559P` (2003) Astrometric Calibration of the Sloan Digital Sky Survey
+
+### Chapter 10: 恒星作为量子光源
+- References assigned: 25
+- `1970MNRAS.148..103H` (1970) A study of γ<SUP>2</SUP> Velorum with a stellar intensity interferometer.
+- `2020NatAs...4.1164A` (2020) Demonstration of stellar intensity interferometry with the four VERITAS telescopes
+- `2012MNRAS.419..172N` (2012) High angular resolution imaging with stellar intensity interferometry using air Cherenkov telescope arrays
+- `2024MNRAS.529.4387A` (2024) Performance and first measurements of the MAGIC stellar intensity interferometer
+- `2012NewAR..56..143D` (2012) Stellar intensity interferometry: Prospects for sub-milliarcsecond optical imaging
+- `2013MNRAS.430.3187R` (2013) Monte Carlo simulation of stellar intensity interferometry
+- `2021MNRAS.506.1585Z` (2021) Stellar intensity interferometry of Vega in photon counting mode
+- `2024ApJ...966...28A` (2024) An Angular Diameter Measurement of β UMa via Stellar Intensity Interferometry with the VERITAS Observatory
+- `1977MNRAS.180..177B` (1977) Stellar angular diameters from infrared photometry. Application to Arcturus and other stars; with effective temperatures.
+- `1974MNRAS.167..121H` (1974) The Angular Diameters of 32 Stars
+- `2005ApJ...626..446R` (2005) The Effective Temperature Scale of FGK Stars. I. Determination of Temperatures and Angular Diameters with the Infrared Flux Method
+- `1967MNRAS.137..393H` (1967) The stellar interferometer at Narrabri Observatory-II. The angular diameters of 15 stars
+- `2003AJ....126.2502M` (2003) Angular Diameters of Stars from the Mark III Optical Interferometer
+- `1991AJ....101.2207M` (1991) Angular Diameter Measurements of Stars
+- `1994A&A...282..899B` (1994) Stellar effective temperatures and angular diameters determined by the infrared flux method (IRFM) : revisions using improved Kurucz LTE stellar atmospheres.
+- `1997A&A...320..799F` (1997) An improved calibration of Cepheid visual and infrared surface brightness relations from accurate angular diameter measurements of cool giants and supergiants.
+- `2015MNRAS.453.3821P` (2015) LDTK: Limb Darkening Toolkit
+- `1974MNRAS.167..475H` (1974) The effects of limb darkening on measurements of angular size with an intensity interferometer
+- `2007A&A...467.1215S` (2007) Eclipsing binaries observed with the WIRE satellite. II. β Aurigae and non-linear limb darkening in light curves
+- `1992A&A...259..227D` (1992) A new nonlinear approximation to the limb-darkening of hot stars
+- `1997A&A...327..199H` (1997) Centre to limb darkening of stars. New model and application to stellar interferometry.
+- `1987A&A...186..200S` (1987) Model study of wavelength-dependent limb-darkening and radii of M-type giants and supergiants.
+- `1998A&A...339..846H` (1998) Limb-darkening and radii of M-type Mira models
+- `2004A&A...413..711W` (2004) Tests of stellar model atmospheres by optical interferometry. VLTI/VINCI limb-darkening measurements of the M4 giant ψ Phe
+- `2007A&A...476...73F` (2007) A new calibration of Galactic Cepheid period-luminosity relations from B to K bands, and a comparison to LMC relations
+
+### Chapter 11: 白矮星、中子星和强场物理
+- References assigned: 25
+- `2001Natur.411..662C` (2001) An efficient photoelectric X-ray polarimeter for the study of black holes and neutron stars
+- `2017MNRAS.465..492M` (2017) Evidence for vacuum birefringence from the first optical-polarimetry measurement of the isolated neutron star RX J1856.5-3754
+- `2015MNRAS.454.3254T` (2015) Polarization of neutron star surface emission: a systematic analysis
+- `2023MNRAS.519.3681F` (2023) Accretion geometry of the neutron star low mass X-ray binary Cyg X-2 from X-ray polarization measurements
+- `2018ApJ...854...98W` (2018) Resonant Inverse Compton Scattering Spectra from Highly Magnetized Neutron Stars
+- `2023A&A...674L..10C` (2023) Discovery of strongly variable X-ray polarization in the neutron star low-mass X-ray binary transient XTE J1701‒462
+- `2016MNRAS.459.3585G` (2016) Polarized thermal emission from X-ray dim isolated neutron stars: the case of RX J1856.5-3754
+- `2019AIPC.2127b0008W` (2019) Constraining the neutron star equation of state using pulse profile modeling
+- `1998PhRvD..58k6002C` (1998) Lorentz-violating extension of the standard model
+- `2006OptCo.267..318H` (2006) On the observation of vacuum birefringence
+- `2021PhRvL.127e2302A` (2021) Measurement of e<SUP>+</SUP>e<SUP>-</SUP> Momentum and Angular Distributions from Linearly Polarized Photon Collisions
+- `2008ApJ...689L...1K` (2008) Astrophysical Tests of Lorentz and CPT Violation with Photons
+- `2022ForPh..70....7S` (2022) Introductory Notes on Non-linear Electrodynamics and its Applications
+- `2014PhRvD..89l5003D` (2014) Vacuum refractive indices and helicity flip in strong-field QED
+- `2015AnPhy.353..299K` (2015) A model of nonlinear electrodynamics
+- `2001A&A...378..918K` (2001) The Crab pulsar in the 0.75-30 MeV range as seen by CGRO COMPTEL. A coherent high-energy picture from soft X-rays up to high-energy gamma-rays
+- `1972ApJ...175..217B` (1972) Optical Timing of the Crab Pulsar, NP 0532
+- `2008ApJ...680.1378H` (2008) High-Altitude Emission from Pulsar Slot Gaps: The Crab Pulsar
+- `1992ApJ...397..187B` (1992) An Axisymmetric Magnetohydrodynamic Model for the Crab Pulsar Wind Bubble
+- `1996ApJ...468..779M` (1996) Multifrequency Radio Observations of the Crab Pulsar
+- `2009MNRAS.397..103S` (2009) Optical polarization of the Crab pulsar: precision measurements and comparison to the radio emission
+- `2000ApJ...537..861S` (2000) Observations of the Crab Nebula and Its Pulsar in the Far-Ultraviolet and in the Optical
+- `1984ApJ...283..279H` (1984) Einstein observations of the Crab Nebula pulsar.
+- `2000PASP..112..873W` (2000) Magnetism in Isolated and Binary White Dwarfs
+- `1970ApJ...160L.147A` (1970) Magnetic Observations of White Dwarfs
+
+### Chapter 12: 黑洞、吸积盘和 photon ring
+- References assigned: 25
+- `2019ApJ...875L...1E` (2019) First M87 Event Horizon Telescope Results. I. The Shadow of the Supermassive Black Hole
+- `2022ApJ...930L..12E` (2022) First Sagittarius A* Event Horizon Telescope Results. I. The Shadow of the Supermassive Black Hole in the Center of the Milky Way
+- `2019ApJ...875L...6E` (2019) First M87 Event Horizon Telescope Results. VI. The Shadow and Mass of the Central Black Hole
+- `2019ApJ...875L...4E` (2019) First M87 Event Horizon Telescope Results. IV. Imaging the Central Supermassive Black Hole
+- `2019ApJ...875L...5E` (2019) First M87 Event Horizon Telescope Results. V. Physical Origin of the Asymmetric Ring
+- `2019ApJ...875L...2E` (2019) First M87 Event Horizon Telescope Results. II. Array and Instrumentation
+- `2019ApJ...875L...3E` (2019) First M87 Event Horizon Telescope Results. III. Data Processing and Calibration
+- `2021ApJ...910L..13E` (2021) First M87 Event Horizon Telescope Results. VIII. Magnetic Field Structure near The Event Horizon
+- `2019PhRvD.100b4018G` (2019) Black hole shadows, photon rings, and lensing rings
+- `2020SciA....6.1310J` (2020) Universal interferometric signatures of a black hole's photon ring
+- `2020PhRvD.102l4004G` (2020) The shape of the black hole photon ring: A precise test of strong-field general relativity
+- `2013ApJ...777..170J` (2013) Photon Rings around Kerr and Kerr-like Black Holes
+- `2021PhRvD.104d4049G` (2021) Photon ring and observational appearance of a hairy black hole
+- `2021ChPhC..45h5103P` (2021) Influence of quantum correction on black hole shadows, photon rings, and lensing rings
+- `2020PhRvD.101h4020H` (2020) Universal polarimetric signatures of the black hole photon ring
+- `2022PhRvD.106d3021C` (2022) Superradiant evolution of the shadow and photon ring of Sgr A<SUP>⋆</SUP>
+- `2016PhRvL.116f1102A` (2016) Observation of Gravitational Waves from a Binary Black Hole Merger
+- `2016PhRvL.116x1103A` (2016) GW151226: Observation of Gravitational Waves from a 22-Solar-Mass Binary Black Hole Coalescence
+- `2017PhRvL.118v1101A` (2017) GW170104: Observation of a 50-Solar-Mass Binary Black Hole Coalescence at Redshift 0.2
+- `2017ApJ...851L..35A` (2017) GW170608: Observation of a 19 Solar-mass Binary Black Hole Coalescence
+- `1993ApJ...406..420M` (1993) Accretion Disk Models for Optical and Ultraviolet Microvariability in Active Galactic Nuclei
+- `2011ApJ...727L..24D` (2011) Quasar Accretion Disks are Strongly Inhomogeneous
+- `2021Sci...373..789B` (2021) A characteristic optical variability time scale in astrophysical accretion disks
+- `2016Natur.534...75M` (2016) Regulation of black-hole accretion by a disk wind during a violent outburst of V404 Cygni
+- `2006ApJ...642...87P` (2006) Characteristic QSO Accretion Disk Temperatures from Spectroscopic Continuum Variability
+
+### Chapter 13: 爆发、瞬变和多信使量子天文学
+- References assigned: 25
+- `2017ApJ...835...29Y` (2017) A New Electron-density Model for Estimation of Pulsar and FRB Distances
+- `2013Sci...341...53T` (2013) A Population of Fast Radio Bursts at Cosmological Distances
+- `2020Natur.587...59B` (2020) A fast radio burst associated with a Galactic magnetar
+- `2016Natur.531..202S` (2016) A repeating fast radio burst
+- `2020Natur.587...54C` (2020) A bright millisecond-duration radio burst from a Galactic magnetar
+- `2017Natur.541...58C` (2017) A direct localization of a fast radio burst and its host
+- `2017ApJ...834L...7T` (2017) The Host Galaxy and Redshift of the Repeating Fast Radio Burst FRB 121102
+- `2020Natur.581..391M` (2020) A census of baryons in the Universe from localized fast radio bursts
+- `2004ApJ...611.1005G` (2004) The Swift Gamma-Ray Burst Mission
+- `1998ApJ...497L..17S` (1998) Spectra and Light Curves of Gamma-Ray Burst Afterglows
+- `1998Natur.395..670G` (1998) An unusual supernova in the error box of the γ-ray burst of 25 April 1998
+- `2004RvMP...76.1143P` (2004) The physics of gamma-ray bursts
+- `2006ARA&A..44..507W` (2006) The Supernova Gamma-Ray Burst Connection
+- `1999PhR...314..575P` (1999) Gamma-ray bursts and the fireball model
+- `2003Natur.423..847H` (2003) A very energetic supernova associated with the γ-ray burst of 29 March 2003
+- `1997ApJ...476..232M` (1997) Optical and Long-Wavelength Afterglow from Gamma-Ray Bursts
+- `2017ApJ...848L..17C` (2017) The Electromagnetic Counterpart of the Binary Neutron Star Merger LIGO/Virgo GW170817. II. UV, Optical, and Near-infrared Light Curves and Comparison to Kilonova Models
+- `2017Natur.551...75S` (2017) A kilonova as the electromagnetic counterpart to a gravitational-wave source
+- `2017ApJ...848L..27T` (2017) The Emergence of a Lanthanide-rich Kilonova Following the Merger of Two Neutron Stars
+- `2017ApJ...851L..21V` (2017) The Combined Ultraviolet, Optical, and Near-infrared Light Curves of the Kilonova Associated with the Binary Neutron Star Merger GW170817: Unified Data Set, Analytic Models, and Physical Implications
+- `2017Sci...358.1565E` (2017) Swift and NuSTAR observations of GW170817: Detection of a blue kilonova
+- `2017ApJ...848L..24V` (2017) The Discovery of the Electromagnetic Counterpart of GW170817: Kilonova AT 2017gfo/DLT17ck
+- `2022Natur.612..223R` (2022) A kilonova following a long-duration gamma-ray burst at 350 Mpc
+- `2017ApJ...848L..18N` (2017) The Electromagnetic Counterpart of the Binary Neutron Star Merger LIGO/Virgo GW170817. III. Optical and UV Spectra of a Blue Kilonova from Fast Polar Ejecta
+- `2011Sci...333..203B` (2011) A Possible Relativistic Jetted Outburst from a Massive Black Hole Fed by a Tidally Disrupted Star
+
+### Chapter 14: 传播效应：等离子体、尘埃和引力透镜
+- References assigned: 25
+- `2002astro.ph..7156C` (2002) NE2001.I. A New Model for the Galactic Distribution of Free Electrons and its Fluctuations
+- `2017ApJ...835...29Y` (2017) A New Electron-density Model for Estimation of Pulsar and FRB Distances
+- `1990ARA&A..28..561R` (1990) Radio propagation through the turbulent interstellar plasma.
+- `2008Natur.455...78D` (2008) Event-horizon-scale structure in the supermassive black hole candidate at the Galactic Centre
+- `2006MNRAS.372.1549E` (2006) TEMPO2, a new pulsar timing package - II. The timing model and precision estimates
+- `2014ApJ...790..101S` (2014) Fast Radio Burst Discovered in the Arecibo Pulsar ALFA Survey
+- `2022ApJ...930L..14E` (2022) First Sagittarius A* Event Horizon Telescope Results. III. Imaging of the Galactic Center Supermassive Black Hole
+- `2022ApJ...930L..15E` (2022) First Sagittarius A* Event Horizon Telescope Results. IV. Variability, Morphology, and Black Hole Mass
+- `1966MNRAS.133...67B` (1966) On the depolarization of discrete radio sources by Faraday dispersion
+- `1998PhRvL..80.4313K` (1998) Resonant Spin Amplification in n-Type GaAs
+- `1998PASP..110..493O` (1998) The Compact Steep-Spectrum and Gigahertz Peaked-Spectrum Radio Sources
+- `1995ApJ...443..209A` (1995) Electron Density Power Spectrum in the Local Interstellar Medium
+- `1988xrec.book.....S` (1988) X-ray emission from clusters of galaxies
+- `2005A&A...441.1217B` (2005) Faraday rotation measure synthesis
+- `2021ApJ...910L..13E` (2021) First M87 Event Horizon Telescope Results. VIII. Magnetic Field Structure near The Event Horizon
+- `2002ARA&A..40..319C` (2002) Cluster Magnetic Fields
+- `2016Natur.530..190S` (2016) Multistage coupling of independent laser-plasma accelerators
+- `2010MNRAS.404.1790B` (2010) Gravitational lensing in a non-uniform plasma
+- `2017ApJ...842...35C` (2017) Lensing of Fast Radio Bursts by Plasma Structures in Host Galaxies
+- `2015PhRvL.115r4802V` (2015) Active Plasma Lensing for Relativistic Laser-Plasma-Accelerated Electron Beams
+- `1998ApJ...496..253C` (1998) The Gaussian Plasma Lens in Astrophysics: Refraction
+- `2011PhRvL.107z5002W` (2011) Laser Shaping of a Relativistic Intense, Short Gaussian Pulse by a Plasma Lens
+- `2001PhRvE..63b6411R` (2001) Compressing and focusing a short laser pulse by a thin plasma lens
+- `2014MNRAS.437.2180E` (2014) Effects of plasma on gravitational lensing
+- `1985ApJ...288..422G` (1985) Gravitational lensing effects of vacuum strings - Exact solutions
+
+### Chapter 15: 暗物质、轴子和偏振量子通道
+- References assigned: 25
+- `2016Sci...354.1124W` (2016) Quantized Faraday and Kerr rotation and axion electrodynamics of a 3D topological insulator
+- `2004hep.th....9059F` (2004) Probing a QCD String Axion with Precision Cosmological Measurements
+- `2014JHEP...06..037D` (2014) The quest for an intermediate-scale accidental axion and further ALPs
+- `2020PhRvL.124f1102C` (2020) Probing Axions with Event Horizon Telescope Polarimetric Measurements
+- `2018PhRvD..97d3506T` (2018) Finding the chiral gravitational wave background of an axion-S U (2 ) inflationary model using CMB observations and laser interferometers
+- `2010JCAP...05..010B` (2010) Axion-like particle effects on the polarization of cosmic high-energy gamma sources
+- `2022NatAs...6..592C` (2022) Stringent axion constraints with Event Horizon Telescope polarimetric measurements of M87<SUP>⋆</SUP>
+- `2019PhRvL.122s1101F` (2019) Hunting Axion Dark Matter with Protoplanetary Disk Polarimetry
+- `2020PhRvL.125v1301M` (2020) New Extraction of the Cosmic Birefringence from the Planck 2018 Polarization Data
+- `2019PhRvD.100a5040F` (2019) Axion dark matter detection with CMB polarization
+- `2022NatRP...4..452K` (2022) New physics from the polarized light of the cosmic microwave background
+- `2018JCAP...04..017D` (2018) Exploring cosmic origins with CORE: Cosmological parameters
+- `2022PhRvL.128i1302D` (2022) Cosmic Birefringence from the Planck Data Release 4
+- `2022arXiv220305728T` (2022) Snowmass2021 CMB-HD White Paper
+- `2022PhRvD.106f3503E` (2022) Improved constraints on cosmic birefringence from the WMAP and Planck cosmic microwave background polarization data
+- `2024PhRvD.109l1305T` (2024) Quintessential interpretation of the evolving dark energy in light of DESI observations
+- `1999ApJ...524L..19M` (1999) Dark Matter Substructure within Galactic Halos
+- `2006ApJ...648L.109C` (2006) A Direct Empirical Proof of the Existence of Dark Matter
+- `2019MNRAS.488.3143B` (2019) UNIVERSEMACHINE: The correlation between galaxy growth and dark matter halo assembly from z = 0-10
+- `2000MNRAS.318..203S` (2000) Analytic model for galaxy and dark matter clustering
+- `2016PhRvD..94h3504C` (2016) Primordial black holes as dark matter
+- `1994ApJ...427L...1F` (1994) Observational and Theoretical Constraints on Singular Dark Matter Halos
+- `1993ApJ...404..441K` (1993) Mapping the Dark Matter with Weak Gravitational Lensing
+- `2008Natur.454..735D` (2008) Clumps and streams in the local dark matter distribution
+- `2017MNRAS.465..492M` (2017) Evidence for vacuum birefringence from the first optical-polarimetry measurement of the isolated neutron star RX J1856.5-3754
+
+### Chapter 16: 宇宙学中的量子问题
+- References assigned: 25
+- `2020A&A...641A...6P` (2020) Planck 2018 results. VI. Cosmological parameters
+- `2020A&A...641A..10P` (2020) Planck 2018 results. X. Constraints on inflation
+- `2020A&A...641A...1P` (2020) Planck 2018 results. I. Overview and the cosmological legacy of Planck
+- `2021A&A...652C...4P` (2021) Planck 2018 results. VI. Cosmological parameters (Corrigendum)
+- `2020A&A...641A...5P` (2020) Planck 2018 results. V. CMB power spectra and likelihoods
+- `2020A&A...641A...8P` (2020) Planck 2018 results. VIII. Gravitational lensing
+- `2020A&A...641A...9P` (2020) Planck 2018 results. IX. Constraints on primordial non-Gaussianity
+- `2020A&A...641A...4P` (2020) Planck 2018 results. IV. Diffuse component separation
+- `1996ApJ...473..576F` (1996) The Cosmic Microwave Background Spectrum from the Full COBE FIRAS Data Set
+- `1994ApJ...420..439M` (1994) Measurement of the Cosmic Microwave Background Spectrum by the COBE FIRAS Instrument
+- `1990ApJ...354L..37M` (1990) A Preliminary Measurement of the Cosmic Microwave Background Spectrum by the Cosmic Background Explorer (COBE) Satellite
+- `2003PhRvD..68l3523T` (2003) High resolution foreground cleaned CMB map from WMAP
+- `2017MNRAS.472.1195C` (2017) Rethinking CMB foregrounds: systematic extension of foreground parametrizations
+- `2008PhRvL.101m1801J` (2008) Signatures of a Hidden Cosmic Microwave Background
+- `2008A&A...485..377R` (2008) Lines in the cosmic microwave background spectrum from the epoch of cosmological helium recombination
+- `1967PhRvL..19.1199S` (1967) New Measurements of the Cosmic Microwave Background at λ=3.2 cm and λ=1.58 cm-Evidence in Support of a Blackbody Spectrum
+- `2016A&A...594A..13P` (2016) Planck 2015 results. XIII. Cosmological parameters
+- `2000ApJ...538..473L` (2000) Efficient Computation of Cosmic Microwave Background Anisotropies in Closed Friedmann-Robertson-Walker Models
+- `2016A&A...594A..20P` (2016) Planck 2015 results. XX. Constraints on inflation
+- `2010PhRvD..81l3530A` (2010) String axiverse
+- `1996ApJ...469..437S` (1996) A Line-of-Sight Integration Approach to Cosmic Microwave Background Anisotropies
+- `2014A&A...571A...1P` (2014) Planck 2013 results. I. Overview of products and scientific results
+- `2019JCAP...02..056A` (2019) The Simons Observatory: science goals and forecasts
+- `2021PhRvD.103h3533A` (2021) Completed SDSS-IV extended Baryon Oscillation Spectroscopic Survey: Cosmological implications from two decades of spectroscopic surveys at the Apache Point Observatory
+- `2020PhRvL.125v1301M` (2020) New Extraction of the Cosmic Birefringence from the Planck 2018 Polarization Data
+
+### Chapter 17: 量子网络望远镜
+- References assigned: 25
+- `2012PhRvL.109g0503G` (2012) Longer-Baseline Telescopes Using Quantum Repeaters
+- `2018nsf....1842559G` (2018) RAISE-EQuIP: Quantum repeater for long-distance quantum communication enabled by non-Gaussian cluster states on a scalable hybrid aluminum nitride and silicon nanophotonic platform
+- `2019PhRvL.123g0504K` (2019) Optical Interferometry with Quantum Networks
+- `2012IEEEN..26d..59V` (2012) Quantum Networking and Internetworking
+- `2026Natur.651..326S` (2026) Entanglement-assisted non-local optical interferometry in a quantum network
+- `2017cleo.conf.1140H` (2017) The dawn of quantum networks
+- `2013NatCo...4.1782S` (2013) Suppression of population transport and control of exciton distributions by entangled photons
+- `2006quant.ph..7182U` (2006) Free-Space distribution of entanglement and single photons over 144 km
+- `2026PhRvA.113a2608P` (2026) Quantum resolution limit of long-baseline imaging using distributed entanglement
+- `2021IJGMM..1850120H` (2021) Dynamics and redistribution of entanglement and coherence in three time-dependent coupled harmonic oscillators
+- `2023arXiv230908442R` (2023) Toward responsible face datasets: modeling the distribution of a disentangled latent space for sampling face images from demographic groups
+- `2023nsf....2326803S` (2023) QuSeC-TAQS: Distributed Entangled Quantum-Enhanced Interferometric Imaging for Telescopy and Metrology
+- `2023btas.conf...15R` (2023) Toward responsible face datasets: modeling the distribution of a disentangled latent space for sampling face images from demographic groups
+- `2024arXiv241104019L` (2024) Low-depth quantum symmetrization
+- `2023OExpr..3144246C` (2023) Towards quantum telescopes: demonstration of a two-photon interferometer for precision astrometry
+- `2022PhRvA.106c2424C` (2022) Quantum telescopy clock games
+- `2014A&G....55c3.28K` (2014) Quantum telescopes
+- `2016OptL...41.1094K` (2016) Quantum telescope: feasibility and constraints
+- `2025PhRvR...7d3278Z` (2025) Criteria for optimal entanglement-assisted long baseline telescopy
+- `2025PhRvA.111d3701M` (2025) Large-baseline quantum telescopes assisted by partially distinguishable photons
+- `2024SPIE13095E..1NR` (2024) Towards quantum-enhanced long-baseline optical/near-IR interferometry
+- `1963PhRv..130.2529G` (1963) The Quantum Theory of Optical Coherence
+- `1995ocqo.book.....M` (1995) Optical Coherence and Quantum Optics
+- `1985stop.book.....G` (1985) Statistical Optics
+- `1956Natur.178.1046H` (1956) A Test of a New Type of Stellar Interferometer on Sirius
+
+### Chapter 18: 观测设计、误差预算和可行性计算
+- References assigned: 25
+- `2014MNRAS.437..798M` (2014) Intensity interferometry with more than two detectors?
+- `2012NewAR..56..143D` (2012) Stellar intensity interferometry: Prospects for sub-milliarcsecond optical imaging
+- `2021MNRAS.506.1585Z` (2021) Stellar intensity interferometry of Vega in photon counting mode
+- `2010SPIE.7734E..0AD` (2010) Stellar intensity interferometry: astrophysical targets for sub-milliarcsecond imaging
+- `2013PhRvA..88e3837S` (2013) Intensity interferometry for observation of dark objects
+- `1966JOSA...56..441G` (1966) Stellar Intensity Interferometer. I. Signal-to-Noise Ratio for High-Intensity Radiation
+- `2010SPIE.7734E..1TJ` (2010) Stellar intensity interferometry: optimizing air Cherenkov telescope array layouts
+- `2022MNRAS.512.1722K` (2022) Comparing different approaches for stellar intensity interferometry
+- `2013APh....43..331D` (2013) Optical intensity interferometry with the Cherenkov Telescope Array
+- `2006ApJ...649..399L` (2006) Optical Intensity Interferometry with Atmospheric Cerenkov Telescope Arrays
+- `2012MNRAS.419..172N` (2012) High angular resolution imaging with stellar intensity interferometry using air Cherenkov telescope arrays
+- `2012MNRAS.424.1006N` (2012) Imaging submilliarcsecond stellar features with intensity interferometry using air Cherenkov telescope arrays
+- `2008AIPC..984..205L` (2008) Stellar Intensity Interferometry with Air Cherenkov Telescope arrays
+- `2014SPIE.9146E..0ZD` (2014) Stellar intensity interferometry over kilometer baselines: laboratory simulation of observations with the Cherenkov Telescope Array
+- `2010SPIE.7734E..1CN` (2010) Stellar intensity interferometry: imaging capabilities of air Cherenkov telescope arrays
+- `2012SuScT..25f3001N` (2012) Superconducting nanowire single-photon detectors: physics and applications
+- `2007NaPho...1..343T` (2007) Quantum key distribution over a 40-dB channel loss using superconducting single-photon detectors
+- `2020NaPho..14..250K` (2020) Demonstration of sub-3 ps temporal resolution with a superconducting nanowire single-photon detector
+- `2012NatCo...3.1325P` (2012) High-speed and high-efficiency travelling wave single-photon detectors embedded in nanophotonic circuits
+- `2003PhRvA..68d3814F` (2003) Photon-number resolution using time-multiplexed single-photon detectors
+- `2020Optic...7.1649R` (2020) Superconducting nanowire single-photon detectors with 98% system detection efficiency at 1550 nm
+- `2000Natur.403..405K` (2000) A single-photon detector in the far-infrared range
+- `2015NatCo...6.5873N` (2015) On-chip detection of non-classical light by scalable integration of single-photon detectors
+- `1970MNRAS.148..103H` (1970) A study of γ<SUP>2</SUP> Velorum with a stellar intensity interferometer.
+- `2020NatAs...4.1164A` (2020) Demonstration of stellar intensity interferometry with the four VERITAS telescopes
+
+### Chapter 19: 第一代量子天文学科学案例
+- References assigned: 25
+- `2025PhRvD.111h3047K` (2025) Measuring type Ia supernova angular-diameter distances with intensity interferometry
+- `1977MNRAS.180..177B` (1977) Stellar angular diameters from infrared photometry. Application to Arcturus and other stars; with effective temperatures.
+- `1974MNRAS.167..121H` (1974) The Angular Diameters of 32 Stars
+- `1967MNRAS.137..393H` (1967) The stellar interferometer at Narrabri Observatory-II. The angular diameters of 15 stars
+- `1979MNRAS.188..847B` (1979) The infrared flux method for determining stellar angular diameters and effective temperatures.
+- `1986Natur.323..234D` (1986) New determination of the angular diameter of Sirius
+- `1982AJ.....87..680R` (1982) Angular diameters by the lunar occultation technique. IV - Alpha Leo and the Cepheid Zeta GEM
+- `2024ApJ...966...28A` (2024) An Angular Diameter Measurement of β UMa via Stellar Intensity Interferometry with the VERITAS Observatory
+- `1976ApJ...207..994E` (1976) The occultation of beta Scorpii by Jupiter. VII. The angular diameter of beta Scorpii A<SUB>1</SUB> and A<SUB>2</SUB>.
+- `2004A&A...428..497J` (2004) Astrophysical lasers operating in optical Fe II lines in stellar ejecta of η Carinae
+- `2005MNRAS.364..731J` (2005) Astrophysical laser operating in the OI 8446-Åline in the Weigelt blobs of η Carinae
+- `2005MNRAS.361..206H` (2005) The FERRUM project: experimentally determined metastable lifetimes and transition probabilities for forbidden [TiII] lines observed in η Carinae
+- `2005NewA...10..361J` (2005) Possibility of measuring the width of narrow Fe II astrophysical laser lines in the vicinity of η Carinae by means of Brown-Twiss-Townes heterodyne correlation interferometry
+- `1996swhs.conf..361J` (1996) Is there a Dichromatic UV Laser in Eta Carinae?
+- `2009AAS...21349122M` (2009) Fluorescence and Lasing in Fe II lines Driven by Diluted Continuum of Eta Carinae
+- `2005AAS...206.3203N` (2005) Improved Cr II f-values with Application in the Eta Car -146 km/s Ejecta
+- `2007AJ....133.1810B` (2007) Hubble Space Telescope Fine Guidance Sensor Parallaxes of Galactic Cepheid Variable Stars: Period-Luminosity Relations
+- `2007A&A...476...73F` (2007) A new calibration of Galactic Cepheid period-luminosity relations from B to K bands, and a comparison to LMC relations
+- `2009ApJ...693..406M` (2009) Trigonometric Parallaxes of Massive Star-Forming Regions. II. Cep A and NGC 7538
+- `1981ApJ...243..769L` (1981) VLBI observations of the water vapor masers in Cepheus A, S 252 a, Gl2789, GL 2139, CO 59.79+0.04, W 33 b, and U Orionis.
+- `1984MNRAS.210..425C` (1984) The source of the bipolar outflow in Cepheus A.
+- `2004A&A...415..531S` (2004) The effect of metallicity on the Cepheid Period-Luminosity relation from a Baade-Wesselink analysis of Cepheids  in the Galaxy and in the Small Magellanic Cloud
+- `1997A&A...320..799F` (1997) An improved calibration of Cepheid visual and infrared surface brightness relations from accurate angular diameter measurements of cool giants and supergiants.
+- `2002AJ....124.1695B` (2002) Astrometry with the Hubble Space Telescope: A Parallax of the Fundamental Distance Calibrator δ Cephei
+- `1963PhRv..130.2529G` (1963) The Quantum Theory of Optical Coherence
+
+### Chapter 20: 教学实验和计算实验
+- References assigned: 25
+- `2002SPIE.4588..593L` (2002) Up-to-date teaching and learning of quantum optics at the beginning of the XXIst century
+- `2007NIMPA.581..485L` (2007) Timepix, a 65k programmable pixel readout chip for arrival time, energy and/or photon counting measurements
+- `2008PMB....53.4031S` (2008) Experimental feasibility of multi-energy photon-counting K-edge imaging in pre-clinical computed tomography
+- `1996PhRvL..76.4344B` (1996) Direct Probing of Quantum Phase Space by Photon Counting
+- `1991PhRvL..67.1426N` (1991) Measurement of the quantum phase by photon counting
+- `2011PhRvL.107u7401C` (2011) Microwave Photon Counter Based on Josephson Junctions
+- `2009JSynR..16..368K` (2009) Performance of single-photon-counting PILATUS detector modules
+- `1999PhRvA..60..674B` (1999) Direct measurement of the Wigner function by photon counting
+- `2018RSEnv.208..154P` (2018) Photon counting LiDAR: An adaptive ground and canopy height retrieval algorithm for ICESat-2 data
+- `2003PhRvL..91z2301A` (2003) Three-Pion Hanbury Brown Twiss Correlations in Relativistic Heavy-Ion Collisions from the STAR Experiment
+- `2000PhDT........46H` (2000) Hanbury-Brown and Twiss correlations between pion pairs from gold + gold collisions at 6, 8, and 10.8 GeV/u
+- `2024arXiv240418606N` (2024) Interference with (Pseudo) Thermal Light; The Hanbury Brown and Twiss Effect
+- `2014PhDT.......247A` (2014) Energy dependent Hanbury Brown -- Twiss interferometry and the freeze-out eccentricity of heavy ion collisions at STAR
+- `1997quant.ph..3010V` (1997) Quantum Computations and Images Recognition
+- `2009IJSSC..44.1829N` (2009) Focal-Plane Algorithmically-Multiplying CMOS Computational Image Sensor
+- `2017SPIE10071E..0ZW` (2017) Quantitative evaluation of the accuracy and variance of individual pixels in a scientific CMOS (sCMOS) camera for computational imaging
+- `2018AIPC.1936b0016S` (2018) Computational imaging with a single-pixel detector and a consumer video projector
+- `2020ITCI....6.1258S` (2020) Sharp Computational Images From Diffuse Beams: Factorization of the Discrete Delta Function
+- `2025AdvFM..3519958B` (2025) Bidirectional-Sensitive Dual-Narrowband Self-Powered Single Perovskite Photodetector for Fast Computational Imaging
+- `2026LPRv...2001267Z` (2026) Multiplexing-Enhanced Computational Imaging: High-Fidelity Reconstruction and Color Imaging in Multimode Fibers
+- `1991nsf....9101991S` (1991) Stochastic Inverse Problems for Computational Imaging
+- `1963PhRv..130.2529G` (1963) The Quantum Theory of Optical Coherence
+- `1995ocqo.book.....M` (1995) Optical Coherence and Quantum Optics
+- `1985stop.book.....G` (1985) Statistical Optics
+- `1956Natur.178.1046H` (1956) A Test of a New Type of Stellar Interferometer on Sirius
+
+### Chapter 21: 常见误区
+- References assigned: 25
+- `1965RvMP...37..231M` (1965) Coherence Properties of Optical Fields
+- `2003PhRvC..68c4913T` (2003) Effect of shear viscosity on spectra, elliptic flow, and Hanbury Brown Twiss radii
+- `2002PhRvC..66e4905H` (2002) Collective flow and two-pion correlations from a relativistic hydrodynamic model with early chemical freeze-out
+- `2005Natur.434..481F` (2005) Spatial quantum noise interferometry in expanding ultracold atom clouds
+- `1990RvMP...62..553B` (1990) Intensity interferometry in subatomic physics
+- `1979PhRvC..20.2267G` (1979) Pion interferometry of nuclear collisions. I. Theory
+- `1999PhR...319..145W` (1999) Particle interferometry for relativistic heavy-ion collisions
+- `1999Sci...284..296H` (1999) The Fermionic Hanbury Brown and Twiss Experiment
+- `1977MNRAS.180..177B` (1977) Stellar angular diameters from infrared photometry. Application to Arcturus and other stars; with effective temperatures.
+- `1974MNRAS.167..121H` (1974) The Angular Diameters of 32 Stars
+- `1964AmJPh..32..919M` (1964) Coherence and Fluctuations in Light Beams
+- `2019PhRvL.123m2301A` (2019) Polarization of Λ (Λ ̄) Hyperons along the Beam Direction in Au +Au Collisions at √{s<SUB>N N</SUB> }=200 GeV
+- `1974MNRAS.167..475H` (1974) The effects of limb darkening on measurements of angular size with an intensity interferometer
+- `1998AcPPB..29.1839B` (1998) The Physics of Hanbury Brown--Twiss Intensity Interferometry: from Stars to Nuclear Collisions
+- `1964BOTT....3..305J` (1964) The colors, Bolometric corrections and effective temperatures of the bright stars
+- `1992ITIP....1..205A` (1992) Image coding using wavelet transform
+- `1994Sci...264.1740H` (1994) Near-Field Spectroscopy of the Quantum Constituents of a Luminescent System
+- `2017JCAP...06..028D` (2017) Quantum break-time of de Sitter
+- `2021NatMa..20.1615T` (2021) Single organic molecules for photonic quantum technologies
+- `2009JHEP...05..002D` (2009) Quantizing Script N = 2 multicenter solutions
+- `2000JChPh.112.7790Z` (2000) A close look on single quantum dots
+- `2012PhRvD..86d3513C` (2012) Quantum resolution of cosmological singularities using AdS/CFT correspondence
+- `2003ITPE...18..301P` (2003) Quantization Resolution and Limit Cycling in Digitally Controlled PWM Converters
+- `1963PhRv..131.2766G` (1963) Coherent and Incoherent States of the Radiation Field
+- `1993PhRvL..71.4287Z` (1993) ``Event-ready-detectors'' Bell experiment via entanglement swapping
+
+### Chapter 22: 从白皮书到研究计划
+- References assigned: 25
+- `2020MNRAS.498.4577B` (2020) Towards a polarization prediction for LISA via intensity interferometry
+- `1990SPIE.1370..217C` (1990) Optical coherence domain polarimetry: intensity and interferometric type for quasi-distributed optical fiber sensors
+- `2017ICRC...35..828K` (2017) Stellar Intensity Interferometric Capabilities of IACT Arrays
+- `2021sf2a.conf..335L` (2021) Spectral multiplexing in Intensity Interferometry
+- `2025MNRAS.537.2527M` (2025) Intensity interferometer results on Sirius with 0.25 m telescopes
+- `2019ICRC...36..714K` (2019) Augmentation of VERITAS Imaging Atmospheric Cherenkov Telescopes for Stellar Intensity Interferometry
+- `2026arXiv260212717K` (2026) ESO White Paper on Intensity Interferometry: Cosmology, Fundamental Physics, Quantum Optics
+- `2017AAS...23010306K` (2017) Stellar Intensity Interferometric Capabilities of IACT Arrays
+- `2001PNAS...98.7107P` (2001) Titration of chaos with added noise
+- `2016SPIE.9907E..0NZ` (2016) Intensity interferometry with Aqueye+ and Iqueye in Asiago
+- `2019CoSka..49...85Z` (2019) (Very) Fast astronomical photometry for meter-class telescopes
+- `2010SPIE.7702E..0MC` (2010) Quantum astronomy with Iqueye
+- `2023Astro...2..180B` (2023) Quantum Astronomy at the University and INAF Astronomical Observatory of Padova, Italy
+- `2011ccts.conf..100Z` (2011) Fast n-point Correlation Function Approximation with Recursive Convolution for Scalar Fields
+- `2018SPIE10548E..1KO` (2018) Quantum astronomy: scientific background, technologies, achieved results, and future developments
+- `2007mss..conf..287C` (2007) From the Qubit to the Quantum Search Algorithms
+- `1975ApJ...196...51R` (1975) Theory of pulsars: polar gaps, sparks, and coherent microwave radiation.
+- `2014NatPh..10..496S` (2014) Cosmic structure as the quantum interference of a coherent dark wave
+- `1996CQGra..13..377P` (1996) Semiclassicality and decoherence of cosmological perturbations
+- `2006PhRvD..74j5014D` (2006) Simulation of coherent nonlinear neutrino flavor transformation in the supernova environment: Correlated neutrino trajectories
+- `2016ApJ...831L..14F` (2016) Discovery of Coherent Pulsations from the Ultraluminous X-Ray Source NGC 7793 P13
+- `2013PhPl...20a2303K` (2013) Coherent structures, intermittent turbulence, and dissipation in high-temperature plasmas
+- `1965MNRAS.130..295A` (1965) Non-coherent scattering, II: Line formation with a frequency independent source function
+- `2016ApJ...828...27N` (2016) Where Stars Form: Inside-out Growth and Coherent Star Formation from HST Hα Maps of 3200 Galaxies across the Main Sequence at 0.7 &lt; z &lt; 1.5
+- `2019PhRvL.123g0504K` (2019) Optical Interferometry with Quantum Networks
+
+## Search failures
+
+- None

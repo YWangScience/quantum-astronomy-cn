@@ -1,0 +1,102 @@
+\chapter{Common Units and Numerical Values}
+\label{app:b}
+
+These tables collect the units and orders of magnitude most often needed when writing, making estimates and refereeing. For specific formulas, return to where they are first defined in the main text; when estimating, check the units, order of magnitude and conditions of validity together.
+
+\section{Fundamental Constants and Astronomical Conversions}
+\label{appsec:b-constants}
+
+\begin{longtable}{p{0.22\linewidth}p{0.30\linewidth}p{0.38\linewidth}}
+\toprule
+Quantity & Common value & Reminder when using \\
+\midrule
+Speed of light & \(c=2.998\times10^{10}\,{\rm cm\,s^{-1}}\) & Baseline light travel time \(B/c\): \(1\,{\rm km}\) is about \(3.3\,\mu{\rm s}\), \(1000\,{\rm km}\) about \(3.3\,{\rm ms}\). \\
+Planck constant & \(h=6.626\times10^{-27}\,{\rm erg\,s}\) & Single-photon energy \(E=h\nu=hc/\lambda\). \\
+Boltzmann constant & \(k_{\rm B}=1.381\times10^{-16}\,{\rm erg\,K^{-1}}\) & Brightness temperature, Planck occupation number and thermal noise all need it. \\
+Jansky & \(1\,{\rm Jy}=10^{-23}\,{\rm erg\,s^{-1}\,cm^{-2}\,Hz^{-1}}\) & AB magnitude and photon-rate estimates often start from Jy. \\
+Parsec & \(1\,{\rm pc}=3.086\times10^{18}\,{\rm cm}\) & \(1\,{\rm AU}\) subtends \(1''\) at \(1\,{\rm pc}\). \\
+Solar radius & \(R_\odot=6.96\times10^{10}\,{\rm cm}\) & Very often used when estimating stellar angular diameters and binary-star scales. \\
+Solar luminosity & \(L_\odot=3.83\times10^{33}\,{\rm erg\,s^{-1}}\) & Used together with \(F_{\rm bol}\), \(T_{\rm eff}\) and \(\theta\). \\
+\bottomrule
+\end{longtable}
+
+\section{Angles, Wavelengths and Baselines}
+\label{appsec:b-angle}
+
+\begin{longtable}{p{0.22\linewidth}p{0.30\linewidth}p{0.38\linewidth}}
+\toprule
+Quantity & Common value & Related location in the text \\
+\midrule
+Angular conversions & \(1\,{\rm rad}=206265''\); \(1\,{\rm mas}=4.848\times10^{-9}\,{\rm rad}\); \(1\,\mu{\rm as}=4.848\times10^{-12}\,{\rm rad}\) & Chapter~\ref{chap:e00}, Chapter~\ref{chap:e10}. \\
+Optical wavelengths & Blue-light intensity interferometry is often at \(400\)--\(450\,{\rm nm}\); broadband imaging often uses \(500\)--\(800\,{\rm nm}\) & Chapter~\ref{chap:e10}, Chapter~\ref{chap:e15}. \\
+Diffraction scale & \(\lambda/B\) is about \(1\,{\rm mas}\) at \(500\,{\rm nm}\) and \(100\,{\rm m}\) & Hundred-meter-scale arrays are suited to the angular diameters of bright stars. \\
+First-null scale & The first null of a \(1\,{\rm mas}\) uniform disk near \(416\,{\rm nm}\) is at about \(100\,{\rm m}\) & Chapter~\ref{chap:e10}. \\
+\(\mu{\rm as}\) structure & \(10\,\mu{\rm as}\) at \(500\,{\rm nm}\) corresponds to \(\lambda/\theta\sim10\,{\rm km}\) & Nearby supernovae, small-scale AGN structure and far-future long-baseline cases. \\
+Projected baseline & \(B_\perp\) varies with target altitude, hour angle and array geometry & A fixed physical baseline cannot substitute for a full night of \(u,v\) coverage. \\
+\bottomrule
+\end{longtable}
+
+\section{Time, Frequency and Coherence}
+\label{appsec:b-time}
+
+\begin{longtable}{p{0.22\linewidth}p{0.30\linewidth}p{0.38\linewidth}}
+\toprule
+Quantity & Common value & Related location in the text \\
+\midrule
+Frequency conversion & \(500\,{\rm nm}\) corresponds to \(6.0\times10^{14}\,{\rm Hz}\) & Optical bandwidth often needs conversion between \(\Delta\lambda\) and \(\Delta\nu\). \\
+Optical coherence time & A filter of order \(10\,{\rm nm}\) in the visible typically gives \(10^{-14}\)--\(10^{-13}\,{\rm s}\) & Chapter~\ref{chap:e08}. \\
+Correlation bin & Tabletop experiments can reach ps--ns; astronomical intensity interferometry is often limited by electronic response and data rate & Chapter~\ref{chap:e14}, Chapter~\ref{chap:e26}. \\
+Detector jitter & Excellent SPAD, PMT and TDC systems can reach tens of ps--ns; system synchronization must be calibrated separately & Chapter~\ref{chap:e13}. \\
+Dead time & SPADs are often at ns--\(\mu{\rm s}\); PMTs and electronic chains also have recovery times & Dead time creates negative correlation at short delays. \\
+Afterpulsing & Probability can reach the \(10^{-4}\)--\(10^{-2}\) level & Creates positive correlation at the detector's characteristic delay. \\
+Integration-time scaling & Purely statistical errors usually fall as \(T^{-1/2}\) & Once the systematic-error floor is reached, continued integration does not improve things automatically. \\
+\bottomrule
+\end{longtable}
+
+\section{Photon Rates, Magnitudes and Background}
+\label{appsec:b-photon-rate}
+
+\begin{longtable}{p{0.22\linewidth}p{0.30\linewidth}p{0.38\linewidth}}
+\toprule
+Quantity & Common value & Related location in the text \\
+\midrule
+AB-magnitude flux & AB zero point in Chapter~\ref{chap:e15}; photon-rate estimate in Chapter~\ref{chap:e00} & When writing a proposal, give the bandwidth, efficiency, area and background at the same time. \\
+Change in magnitude & For a target \(1\,{\rm mag}\) fainter, the photon rate drops to about \(10^{-0.4}\simeq0.40\) of the original & Chapter~\ref{chap:e15}, Chapter~\ref{chap:e28}. \\
+Telescope area & A \(D=12\,{\rm m}\) ideal geometric area is about \(113\,{\rm m^2}\); the actual effective area must be multiplied by efficiency and obscuration & Cherenkov-telescope optical efficiency, filters and detector QE all enter. \\
+Background dilution & When the target flux fraction is \(f\), the second-order correlation excess is suppressed roughly as \(f^2\) & Chapter~\ref{chap:e13}. \\
+Narrow-line observation & The narrower the line, the longer the coherence time, but the total photon number and filter leakage may worsen & Be-star disks, maser/laser and BLR cases all need to report line/continuum separation. \\
+Night-sky brightness & Varies with lunar phase, zenith distance, filter and field-lens size & Do not treat a dark-field background as applicable at every target position. \\
+\bottomrule
+\end{longtable}
+
+\section{Instrumentation and Data Volume}
+\label{appsec:b-instrument}
+
+\begin{longtable}{p{0.22\linewidth}p{0.30\linewidth}p{0.38\linewidth}}
+\toprule
+Quantity & Common value & Related location in the text \\
+\midrule
+Single-channel sampling data rate & At \(\Delta t=4\,{\rm ns}\), \(16\) bit and a single channel, about \(4\,{\rm Gb\,s^{-1}}\) & Chapter~\ref{chap:e13}. \\
+Multichannel inflation & 64 spectral channels push the same example to about \(256\,{\rm Gb\,s^{-1}}\) per telescope & Requires real-time correlation, compression or on-chip accumulation. \\
+Number of baselines & 4 telescopes give 6 baselines; 60 give 1770 baselines & Chapter~\ref{chap:e10}. \\
+Calibrator star & Should be as close as possible to the target in sky position, color and brightness, and have a known angular diameter & Chapter~\ref{chap:e15}. \\
+Quality slicing & Slice by sky transparency, target altitude, background rate, dead time and channel status & Reporting only wall-clock time is not enough to reproduce the experiment. \\
+Systematic floor & A correlation-amplitude floor at the \(10^{-5}\)--\(10^{-4}\) level is already enough to dominate many SII targets & Chapter~\ref{chap:e27}. \\
+\bottomrule
+\end{longtable}
+
+\section{Astrophysical Orders of Magnitude}
+\label{appsec:b-astro}
+
+\begin{longtable}{p{0.22\linewidth}p{0.30\linewidth}p{0.38\linewidth}}
+\toprule
+Quantity & Common value & Related location in the text \\
+\midrule
+Bright-star angular diameter & Nearby bright stars are often of order \(0.2\)--\(5\,{\rm mas}\) & Chapter~\ref{chap:e17}, Chapter~\ref{chap:e25}. \\
+Early Type Ia velocity & Photospheric velocities are often \(8000\)--\(15000\,{\rm km\,s^{-1}}\) & Chapter~\ref{chap:e20}, Chapter~\ref{chap:e26}. \\
+Nearby-supernova angular radius & At \(20\,{\rm Mpc}\), \(v=10^4\,{\rm km\,s^{-1}}\), day 15 is about a few \(\mu{\rm as}\) & Only km- to ten-km-scale baselines carry appreciable information. \\
+Crab period & About \(33\,{\rm ms}\) & Phase-resolved photon statistics require preserving absolute time. \\
+AGN broad-line region & Light-curve lags are often days to months, and the angular scale is usually extremely small & Requires combining reverberation, angular displacement and model priors. \\
+CMB temperature & \(2.725\,{\rm K}\) & Chapter~\ref{chap:e23}; optical photon statistics cannot be applied directly. \\
+\bottomrule
+\end{longtable}

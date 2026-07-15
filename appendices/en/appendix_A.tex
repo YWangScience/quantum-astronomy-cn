@@ -1,0 +1,112 @@
+\chapter{Index of Common Formulas}
+\label{app:a}
+
+This formula index lists where each relation first appears in a settled form. When a later chapter needs the same set of quantities, return here and to the corresponding place in the main text first to check symbols, units, orders of magnitude and conditions of validity.
+
+\section{Event Tables, Counts and Likelihoods}
+\label{appsec:a-observables}
+
+\begin{longtable}{p{0.22\linewidth}p{0.31\linewidth}p{0.37\linewidth}}
+\toprule
+Topic & Location & Check when using \\
+\midrule
+Photon event-table fields & Chapter~\ref{chap:e00}; instrument-level extensions in Chapter~\ref{chap:e13} & Time reference, detector or telescope index, frequency channel, polarization, quality flags, spatial pixel and weight. \\
+Time calibration & Chapter~\ref{chap:e13} & Raw TDC time, clock drift, optical-path delay, barycentric correction and absolute synchronization. \\
+Poisson counts & Chapter~\ref{chap:e00} & Whether the expected count includes source variability, background, exposure, selection function and dead time. \\
+Unbinned point-process likelihood & Chapter~\ref{chap:e14} & Whether event times are preserved; whether the rate model varies with time, energy or quality window. \\
+Binned Poisson likelihood & Chapter~\ref{chap:e14}; pedagogical projection in Chapter~\ref{chap:e26} & Whether the bin width is appropriate relative to the physical time scale, the instrument response and the statistical count requirement. \\
+Delay and pair count & Chapter~\ref{chap:e14} & Delay window, time-shift background, accidental coincidences, duplicate events and quality selection. \\
+\(g^{(2)}\) estimator & Chapter~\ref{chap:e14} & Normalization, background window, width of the zero-delay peak and uncorrelated-channel checks. \\
+Covariance and posterior & Chapter~\ref{chap:e14} & Whether the data points are correlated; whether the prior and likelihood are written on the same data vector. \\
+\bottomrule
+\end{longtable}
+
+\section{Coherence, Visibility and Intensity Interferometry}
+\label{appsec:a-coherence}
+
+\begin{longtable}{p{0.22\linewidth}p{0.31\linewidth}p{0.37\linewidth}}
+\toprule
+Topic & Location & Check when using \\
+\midrule
+Complex visibility & Chapter~\ref{chap:e10} & Angular-coordinate units, projected baseline, wavelength, narrow-field approximation, bandwidth averaging and source model. \\
+Uniform disk & Chapter~\ref{chap:e10} & Whether the angular diameter is a radius or a diameter; whether limb darkening is needed; whether the baseline reaches near the first null. \\
+Siegert relation & Chapter~\ref{chap:e08}; spatial HBT in Chapter~\ref{chap:e10} & Whether the thermal-light, chaotic-light or Gaussian-field approximation holds; whether polarization, spectrum and number of modes change the contrast. \\
+Intensity-interferometry observation model & Chapter~\ref{chap:e10}; calibration model in Chapter~\ref{chap:e27} & Whether zero-baseline contrast, peak shape, instrumental crosstalk, selection function and statistical noise are kept separate. \\
+Coherence time & Chapter~\ref{chap:e08}; instrument-channel form in Chapter~\ref{chap:e13} & Filter bandwidth, line width, central wavelength and frequency units. \\
+Contrast dilution & Chapter~\ref{chap:e08} & Electronic response, correlation bin, effective number of modes, polarization averaging and spectral averaging. \\
+Background dilution & Chapter~\ref{chap:e13} & Target flux fraction, night-sky brightness, companion stars, line-to-continuum ratio, dark counts and calibrator stars. \\
+Intensity-interferometry SNR & Chapter~\ref{chap:e10}; observational feasibility in Chapter~\ref{chap:e15} & Photon rate, telescope area, integration time, equivalent bandwidth, \(|V|^2\) and the systematic-error floor. \\
+Number of baselines & Chapter~\ref{chap:e10} & Adding telescopes increases the number of correlation tasks quadratically; data rate and calibration complexity rise in step. \\
+\bottomrule
+\end{longtable}
+
+\section{Instrument Response and Data Rates}
+\label{appsec:a-instrument}
+
+\begin{longtable}{p{0.22\linewidth}p{0.31\linewidth}p{0.37\linewidth}}
+\toprule
+Topic & Location & Check when using \\
+\midrule
+Data rate & Chapter~\ref{chap:e13} & Sampling time, number of bits, number of spectral channels, number of telescopes and real-time correlator capacity. \\
+Response convolution & Chapter~\ref{chap:e13} & The response kernel formed jointly by the detector pulse, cabling, amplifier, digitizer and software correlation window. \\
+Jitter budget & Chapter~\ref{chap:e13} & Detector jitter, clock synchronization, fiber delay, trigger jitter and barycentric correction. \\
+Event-table quality selection & Chapters~\ref{chap:e14} and~\ref{chap:e26} & Clouds, saturation, events near dead time, anomalous background, bad channels and target altitude. \\
+Decomposition of calibration terms & Chapter~\ref{chap:e27} & Astrophysical terms, instrumental terms, selection-function terms and random errors must not be mixed into a single free constant. \\
+\bottomrule
+\end{longtable}
+
+\section{Estimation Theory and Mode Measurement}
+\label{appsec:a-estimation}
+
+\begin{longtable}{p{0.22\linewidth}p{0.31\linewidth}p{0.37\linewidth}}
+\toprule
+Topic & Location & Check when using \\
+\midrule
+Fisher information & Chapter~\ref{chap:e14}; spatial-mode example in Chapter~\ref{chap:e12} & Whether the parameters, data vector, covariance, derivatives and prior match the actual observation. \\
+Cramér--Rao lower bound & Chapter~\ref{chap:e12} & The bound is a result under local, unbiased or asymptotic conditions; systematic errors are not automatically included. \\
+Quantum Fisher information for a Gaussian source & Chapter~\ref{chap:e12} & Whether the source is a weak, equally bright, incoherent two-point source; whether the PSF is known. \\
+SPADE mode probabilities & Chapter~\ref{chap:e12} & Mode basis, centroid localization, crosstalk matrix, background and finite photon number. \\
+SII Fisher matrix & Chapter~\ref{chap:e12} & \(|V|^2\) errors, baseline coverage, parameter degeneracy and model assumptions. \\
+Mixed statistics & Chapter~\ref{chap:e27} & The flux fractions of several independent components dilute the correlated excess quadratically. \\
+Fano factor & Chapter~\ref{chap:e27} & Slowly varying sources, dead time and afterpulsing can all produce non-Poisson counts. \\
+Multiple testing & Chapter~\ref{chap:e27} & Time bins, frequency channels, baselines, number of targets and a posteriori windows all enter the trial count. \\
+\bottomrule
+\end{longtable}
+
+\section{Astrophysical Source Models}
+\label{appsec:a-sources}
+
+\begin{longtable}{p{0.22\linewidth}p{0.31\linewidth}p{0.37\linewidth}}
+\toprule
+Topic & Location & Check when using \\
+\midrule
+Brightness temperature & Chapter~\ref{chap:e16} & Whether the Rayleigh--Jeans approximation applies; whether angular scale, distance and flux density are independently constrained. \\
+Thermal radiation and occupation number & Chapter~\ref{chap:e16} & Frequency, temperature and mode occupation number determine whether thermal-light statistics are appreciable. \\
+Synchrotron radiation and polarization & Chapter~\ref{chap:e16} & Electron energy spectrum, magnetic field, viewing angle and Faraday effect. \\
+Maser gain & Chapter~\ref{chap:e16} & Population inversion, velocity-coherence length, degree of saturation and pump fluctuations. \\
+Stellar effective temperature & Chapter~\ref{chap:e17}; case-study version in Chapter~\ref{chap:e25} & Angular diameter, bolometric flux, extinction and calibrator stars. \\
+Binary-star visibility & Chapter~\ref{chap:e17}; science case in Chapter~\ref{chap:e25} & Flux ratio, angular separation, position angle, multi-epoch orbit and mirror degeneracy. \\
+Line/continuum separation & Chapter~\ref{chap:e17}; case-study version in Chapter~\ref{chap:e25} & Line flux fraction, continuum angular scale and filter leakage. \\
+Transient angular expansion & Chapter~\ref{chap:e20}; case-study version in Chapter~\ref{chap:e25} & Trigger time, velocity model, departures from spherical symmetry and epoch-to-epoch evolution. \\
+Type Ia distance toy model & Chapter~\ref{chap:e26} & Photospheric velocity, explosion time, angular-radius error and radiative-transfer model. \\
+\bottomrule
+\end{longtable}
+
+\section{Propagation, Cosmology and Quantum Networks}
+\label{appsec:a-propagation-network}
+
+\begin{longtable}{p{0.22\linewidth}p{0.31\linewidth}p{0.37\linewidth}}
+\toprule
+Topic & Location & Check when using \\
+\midrule
+Dispersion delay & Chapter~\ref{chap:e21} & Frequency units, DM decomposition, intra-channel broadening and plasma approximation. \\
+Faraday rotation & Chapter~\ref{chap:e21} & Polarization-angle convention, frequency coverage, intrinsic angle and foreground subtraction. \\
+Scattering convolution & Chapter~\ref{chap:e21} & Multipath propagation, pulse broadening, deconvolution and selection effects. \\
+Gravitational lensing & Chapter~\ref{chap:e21} & Mass model, source position, time delay and microlensing. \\
+Axion polarization rotation & Chapter~\ref{chap:e22} & Frequency dependence, time modulation, polarization calibration and the ordinary Faraday term. \\
+CMB likelihood & Chapter~\ref{chap:e23} & \(C_\ell\), covariance, foregrounds and cosmic variance. \\
+Quantum-network resources & Chapter~\ref{chap:e24} & Link loss, storage time, frequency conversion, fidelity and the astronomical photon rate actually available. \\
+Observational error budget & Chapter~\ref{chap:e15} & Whether statistical, calibration, background, model and selection-function errors are all included. \\
+Proposal milestones & Chapter~\ref{chap:e28} & Verifiable observables, target precision, null tests, deliverable data and failure criteria. \\
+\bottomrule
+\end{longtable}

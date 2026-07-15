@@ -1,0 +1,97 @@
+\chapter{核心关系的阅读路线和适用边界}
+\label{app:d}
+
+正文中反复出现的几个关系在这里并列呈现。每条关系都标出物理假设、第一次使用的位置和后文容易误用的地方；完整公式见附录 \ref{app:a}。
+
+\section{Siegert 关系}
+\label{appsec:d-siegert}
+
+Siegert 关系的物理图像在第 \ref{chap:e00} 章建立，量子光学背景在第 \ref{chap:e08} 章展开，空间强度干涉在第 \ref{chap:e10} 章使用。读这几章时按下面几步检查：
+
+\begin{enumerate}[leftmargin=*]
+\item 先确认光场是否可以近似为热光、混沌光或高斯随机场。这个条件允许四阶矩分解成二阶矩的组合。
+\item 再把一阶相干函数归一化，得到 \(g^{(1)}\) 或空间相干度 \(\gamma_{12}\)。
+\item 在理想单模热光中，零延迟二阶相关超额由 \(|g^{(1)}|^2\) 给出。
+\item 进入真实仪器后，把有限带宽、有限时间响应、偏振平均、空间模式和背景写成对比度因子。
+\end{enumerate}
+
+\begin{longtable}{p{0.24\linewidth}p{0.34\linewidth}p{0.32\linewidth}}
+\toprule
+检查项 & 满足时可以怎样用 & 不满足时会怎样错 \\
+\midrule
+热光或高斯场近似 & 可把二阶相关连接到一阶相干模平方。 & 受激辐射、少数发射体或强非平稳源可能改变 \(g^{(2)}\)。 \\
+单模或模式数已知 & 聚束峰对比度可被解释为物理相干信息。 & 多模平均会把峰压低，误认为源不相干。 \\
+时间响应已知 & 可把理论峰和观测峰联系起来。 & ns 级电子学会把 fs 级光学相干峰稀释到 \(10^{-6}\)--\(10^{-5}\)。 \\
+背景已分离 & 相关超额可转成目标的 \(|V|^2\)。 & 夜天光、伴星或连续谱会按通量分数平方稀释信号。 \\
+\bottomrule
+\end{longtable}
+
+后文写 \(g^{(2)}-1\) 时，同时给出相干时间、相关 bin、有效模式数、背景通量分数和 null test。只有一个零延迟峰高度，还不足以说明它是天体聚束。
+
+\section{van Cittert--Zernike 定理}
+\label{appsec:d-vcz}
+
+VCZ 定理把远场非相干源的天空亮度和一阶空间相干联系起来。第 \ref{chap:e00} 章给出复可见度定义，第 \ref{chap:e10} 章把它用于强度干涉，第 \ref{chap:e15} 章把它放进观测设计。使用这条关系时按下面路径走：
+
+\begin{enumerate}[leftmargin=*]
+\item 把天体表面亮度写成角坐标上的函数 \(I(\boldsymbol\theta)\)。
+\item 把两台望远镜的投影基线除以波长，得到空间频率 \(\boldsymbol u=\boldsymbol B_\perp/\lambda\)。
+\item 对亮度做归一化 Fourier 变换，得到复可见度 \(V(\boldsymbol u)\)。
+\item 强度干涉只能直接给出 \(|V|^2\)，所以相位、镜像和非对称结构需要额外信息。
+\end{enumerate}
+
+\begin{longtable}{p{0.24\linewidth}p{0.34\linewidth}p{0.32\linewidth}}
+\toprule
+条件 & 在正文中的用法 & 典型破坏来源 \\
+\midrule
+远场近似 & 恒星、双星、盘和瞬变的角结构可用 \(u,v\) 平面描述。 & 近场实验、空间基线极端几何或未建模波前曲率。 \\
+窄带或已处理带宽 & 每个通道可用单一 \(\lambda\) 近似。 & 宽带平均会洗掉高频可见度结构。 \\
+源在积分内稳定 & 每个历元有一个可见度模型。 & 爆发、旋转、脉动和快速结构变化会混合不同模型。 \\
+亮度非负且模型合理 & phase retrieval 可用先验约束。 & 只靠 \(|V|^2\) 难以区分镜像和复杂非对称结构。 \\
+\bottomrule
+\end{longtable}
+
+\section{强度干涉的抗大气相位}
+\label{appsec:d-atmosphere}
+
+强度干涉对大气 piston 相位不敏感，是因为它测量强度涨落相关，不依赖两路光场的直接相干叠加。这个优点有明确边界：
+
+\begin{itemize}[leftmargin=*]
+\item 透明度变化仍在。透明度改变光子率，也改变随机符合和背景归一化。
+\item 闪烁仍在。闪烁会在较慢时间尺度上引入强度相关，需要 time-shift 和分块检查。
+\item 电子串扰仍在。串扰可产生比天体峰更窄、更高的零延迟结构。
+\item 背景稀释仍在。背景即使不相关，也能通过通量分数压低目标信号。
+\end{itemize}
+
+使用“抗大气相位”这个优点时，也要报告非相位误差怎样被监测：校准星、off-source、off-band、错偏振、暗场、time-shift 和注入恢复至少选用几项。
+
+\section{Rayleigh 限制和 Fisher 信息}
+\label{appsec:d-rayleigh}
+
+Rayleigh 判据是成像经验尺度，并非所有参数估计问题的信息极限。第 \ref{chap:e12} 章展示了直接成像和模式测量的差别，第 \ref{chap:e26} 章把它变成计算实验。使用这组结果时，先检查这些模型要素：
+
+\begin{enumerate}[leftmargin=*]
+\item 明确参数：是两点源分离、质心、通量比、角直径，还是更复杂图像。
+\item 明确数据：像素强度、模式计数、事件时间，或 \(|V|^2\)。
+\item 写出似然或 Fisher 信息；不要只引用“超分辨”这个词。
+\item 加入背景、有限光子数、模式错配、像差和质心误差。
+\end{enumerate}
+
+SPADE 的结论适用最清楚的情形是弱、等亮、非相干双点源和已知高斯 PSF。换成星系、吸积盘、强透镜弧或含相干成分的源时，需要重新写源模型和测量基。
+
+\section{误差预算和路线图关系}
+\label{appsec:d-error-budget}
+
+观测设计中的误差预算见第 \ref{chap:e15} 章，路线图中的 readiness 和 milestone 见第 \ref{chap:e28} 章。误差预算回答目标量能不能测到；路线图回答项目到哪一步才适合投入下一阶段。
+
+\begin{longtable}{p{0.24\linewidth}p{0.34\linewidth}p{0.32\linewidth}}
+\toprule
+误差项 & 例子 & 应写入的缓解方式 \\
+\midrule
+统计误差 & 随光子数、积分时间和带宽变化的 shot noise。 & 增加面积、积分时间、通道累加或目标亮度。 \\
+校准误差 & 零基线对比度、时间响应、偏振效率和滤光片形状。 & 校准星、实验室响应测量和 nightly calibration。 \\
+背景误差 & 夜天光、伴星、连续谱、暗计数。 & off-source、谱线/连续谱分离、背景窗口和通量分数估计。 \\
+模型误差 & 边缘昏暗、非球对称、速度模型、辐射转移。 & 多模型比较、后验预测检查和外部观测约束。 \\
+选择误差 & 触发、天气、目标样本和事后挑选窗口。 & 预注册目标标准、全局显著性和失败判据。 \\
+\bottomrule
+\end{longtable}

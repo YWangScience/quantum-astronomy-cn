@@ -1,0 +1,160 @@
+\chapter{术语表}
+\label{app:c}
+
+常用术语按工作定义、容易混用的边界和主要阅读位置列出。定义只保留查阅时最需要的边界；完整物理图像、公式、数量级和文献见正文对应章节。
+
+\section{数据、统计和推断}
+\label{appsec:c-data}
+
+\begin{longtable}{p{0.20\linewidth}p{0.45\linewidth}p{0.25\linewidth}}
+\toprule
+术语 & 本书用法 & 主要位置 \\
+\midrule
+事件表 & 逐光子记录，至少包含时间和探测通道；可扩展频率、偏振、位置、质量标记和权重。不要把它等同于已经分箱的光变曲线。 & 第 \ref{chap:e00}、\ref{chap:e13}、\ref{chap:e14} 章。 \\
+光变曲线 & 事件表在时间轴上的投影，通常丢掉通道、偏振和单事件间隔信息。 & 第 \ref{chap:e00}、\ref{chap:e14} 章。 \\
+曝光函数 & 描述有效观测时间、面积、效率和选择函数怎样随时间或通道变化的函数。 & 第 \ref{chap:e14}、\ref{chap:e15} 章。 \\
+live time & 扣除死时间、坏天气、饱和和质量筛选后的有效积分时间。 & 第 \ref{chap:e13}、\ref{chap:e15} 章。 \\
+Poisson 过程 & 给定瞬时率后，事件独立到达的计数模型；非稳态源要使用随时间变化的率。 & 第 \ref{chap:e00}、\ref{chap:e14}、\ref{chap:e27} 章。 \\
+Cox process & 率本身随机变化的 Poisson 过程；可产生 super-Poisson 计数，不必是新物理。 & 第 \ref{chap:e27} 章。 \\
+似然 & 在给定模型参数下得到观测数据的概率密度或概率质量。不要和后验混用。 & 第 \ref{chap:e14}、\ref{chap:e15} 章。 \\
+后验 & 似然与先验结合后的参数分布。报告后验时要说明先验和数据向量。 & 第 \ref{chap:e14}、\ref{chap:e26} 章。 \\
+Fisher 信息 & 似然对参数局部敏感度的度量；不是系统误差的自动替代品。 & 第 \ref{chap:e00}、\ref{chap:e14}、\ref{chap:e12} 章。 \\
+协方差矩阵 & 数据点或参数误差之间相关性的矩阵。多基线 \(|V|^2\) 点通常不能默认独立。 & 第 \ref{chap:e14}、\ref{chap:e15} 章。 \\
+Fano factor & 计数方差与均值的比值，用于诊断慢变源、死时间和 afterpulsing。 & 第 \ref{chap:e27} 章。 \\
+trial factor & 多重检验造成的全局显著性修正。时间 bin、频率通道、基线和目标数都可能贡献 trial。 & 第 \ref{chap:e27} 章。 \\
+null test & 应该消除天体信号而保留仪器或背景结构的检查，例如 time-shift、off-source、off-band、错偏振。 & 第 \ref{chap:e14}、\ref{chap:e26}、\ref{chap:e27} 章。 \\
+\bottomrule
+\end{longtable}
+
+\section{量子光学和相干函数}
+\label{appsec:c-optics}
+
+\begin{longtable}{p{0.20\linewidth}p{0.45\linewidth}p{0.25\linewidth}}
+\toprule
+术语 & 本书用法 & 主要位置 \\
+\midrule
+模式 & 光场的一个可分辨自由度，可以是空间、时间、频率或偏振模式。模式数决定聚束对比度是否被稀释。 & 第 \ref{chap:e06}、\ref{chap:e08} 章。 \\
+占有数 & 单个模式中的平均光子数；射电常大，光学天文单模式常很小。 & 第 \ref{chap:e06}、\ref{chap:e16} 章。 \\
+相干态 & Poisson 光子数分布、\(g^{(2)}(0)=1\) 的理想光态；天体 laser/maser 不一定等同于稳定相干态。 & 第 \ref{chap:e06}、\ref{chap:e27} 章。 \\
+热态 & 单模式下有聚束的混沌光场；多模式和有限响应会降低观测对比度。 & 第 \ref{chap:e06}、\ref{chap:e08} 章。 \\
+压缩态 & 一个正交量噪声低于真空、另一个正交量升高的光场状态；宇宙学涨落中也出现相关语言。 & 第 \ref{chap:e06}、\ref{chap:e23} 章。 \\
+密度矩阵 & 描述纯态或混合态的状态对象；当天体光源由许多不可分辨成分组成时特别自然。 & 第 \ref{chap:e06}、\ref{chap:e24} 章。 \\
+退相干 & 相位关系因环境、平均或未观测自由度而不可用；不要简单等同于“没有量子”。 & 第 \ref{chap:e06}、\ref{chap:e23} 章。 \\
+一阶相干函数 & 描述场振幅相关；振幅干涉和复可见度都依赖这个量。 & 第 \ref{chap:e08}、\ref{chap:e10} 章。 \\
+二阶相干函数 & 描述强度或探测事件的相关；HBT 和光子统计的核心观测量。 & 第 \ref{chap:e08}、\ref{chap:e14} 章。 \\
+聚束 & 热光或混沌光在零延迟附近的正二阶相关超额。 & 第 \ref{chap:e00}、\ref{chap:e08} 章。 \\
+反聚束 & \(g^{(2)}(0)<1\) 的非经典光子统计特征；天文环境中极难保持。 & 第 \ref{chap:e08}、\ref{chap:e27} 章。 \\
+相干时间 & 光场一阶相干显著的时间宽度，通常由光谱带宽控制。 & 第 \ref{chap:e00}、\ref{chap:e08} 章。 \\
+Siegert 关系 & 热光或高斯场下把二阶相关和一阶相干模平方联系起来的关系。 & 第 \ref{chap:e00}、\ref{chap:e08}、\ref{chap:e10} 章。 \\
+Glauber 相关 & 用探测算符定义的量子光学相关函数，是 \(g^{(n)}\) 语言的基础。 & 第 \ref{chap:e06}、\ref{chap:e08} 章。 \\
+\bottomrule
+\end{longtable}
+
+\section{干涉、成像和模式测量}
+\label{appsec:c-interferometry}
+
+\begin{longtable}{p{0.20\linewidth}p{0.45\linewidth}p{0.25\linewidth}}
+\toprule
+术语 & 本书用法 & 主要位置 \\
+\midrule
+复可见度 & 天空亮度分布的归一化 Fourier 分量；振幅和相位都属于一阶相干信息。 & 第 \ref{chap:e00}、\ref{chap:e10} 章。 \\
+基线 & 两个望远镜之间的矢量间隔；进入可见度的是投影到天空平面的 \(B_\perp\)。 & 第 \ref{chap:e10} 章。 \\
+\(u,v\) 覆盖 & 观测在空间频率平面上的采样；决定成像和模型退化。 & 第 \ref{chap:e10}、\ref{chap:e15} 章。 \\
+VCZ 定理 & 把非相干远场源的天空亮度与一阶空间相干联系起来的定理。 & 第 \ref{chap:e10} 章、附录 \ref{app:d}。 \\
+均匀圆盘 & 恒星角直径的最简单模型；真实恒星常需要边缘昏暗或非球对称修正。 & 第 \ref{chap:e00}、\ref{chap:e10}、\ref{chap:e17} 章。 \\
+边缘昏暗 & 恒星盘边缘亮度低于中心的效应，会改变可见度曲线和角直径解释。 & 第 \ref{chap:e17} 章。 \\
+强度干涉 & 用强度涨落相关测量 \(|V|^2\)，对大气 piston 相位不敏感，但对背景、时间响应和校准敏感。 & 第 \ref{chap:e10}、\ref{chap:e15} 章。 \\
+零基线对比度 & 未被空间分辨率压低时的相关峰幅度，常用于标定仪器稀释因子。 & 第 \ref{chap:e10}、\ref{chap:e15} 章。 \\
+相位缺失 & 只测 \(|V|^2\) 时不能直接得到复相位，导致镜像和非对称结构退化。 & 第 \ref{chap:e10}、\ref{chap:e27} 章。 \\
+phase retrieval & 从强度或 \(|V|^2\) 约束恢复相位的算法问题，需要先验和多采样。 & 第 \ref{chap:e10}、\ref{chap:e27} 章。 \\
+SPADE & 把焦平面场投影到空间模式来估计亚 Rayleigh 分离的测量思想。 & 第 \ref{chap:e12}、\ref{chap:e26} 章。 \\
+Rayleigh curse & 直接成像估计小分离双源时 Fisher 信息下降的现象；不是所有测量的极限。 & 第 \ref{chap:e12}、\ref{chap:e27} 章。 \\
+量子 Fisher 信息 & 在允许测量集合上参数信息的上限；只有在模型和测量假设满足时才是可达目标。 & 第 \ref{chap:e12} 章。 \\
+\bottomrule
+\end{longtable}
+
+\section{仪器、探测器和校准}
+\label{appsec:c-instrument}
+
+\begin{longtable}{p{0.20\linewidth}p{0.45\linewidth}p{0.25\linewidth}}
+\toprule
+术语 & 本书用法 & 主要位置 \\
+\midrule
+SPAD & 单光子雪崩二极管，适合时间标签光子计数；需处理死时间和 afterpulsing。 & 第 \ref{chap:e13} 章。 \\
+PMT & 光电倍增管，常用于快速光子计数和 Cherenkov 仪器；增益、脉冲形状和背景要标定。 & 第 \ref{chap:e13}、\ref{chap:e15} 章。 \\
+TDC & time-to-digital converter，把探测脉冲转换成数字时间标签。 & 第 \ref{chap:e13}、\ref{chap:e26} 章。 \\
+jitter & 探测和计时链造成的时间抖动，会展宽相关峰并稀释对比度。 & 第 \ref{chap:e13} 章。 \\
+死时间 & 探测器或电子学在一次事件后短时间不能记录新事件的区间。 & 第 \ref{chap:e13}、\ref{chap:e27} 章。 \\
+afterpulsing & 探测器内部陷阱释放造成的延迟伪事件，会产生短延迟正相关。 & 第 \ref{chap:e13}、\ref{chap:e27} 章。 \\
+暗计数 & 没有天体光子时的探测事件率；温度和偏压会改变它。 & 第 \ref{chap:e13} 章。 \\
+电子串扰 & 一个通道的电子脉冲污染另一个通道，可能伪装成零延迟相关。 & 第 \ref{chap:e13}、\ref{chap:e27} 章。 \\
+White Rabbit & 亚 ns 级网络同步技术之一；是否足够取决于相关峰宽和基线模型。 & 第 \ref{chap:e13} 章。 \\
+光谱通道 & 事件表中的频率或波长标签；窄通道提高相干时间但降低每通道光子数。 & 第 \ref{chap:e13}、\ref{chap:e28} 章。 \\
+偏振通道 & 事件表中的偏振标签；用于区分源物理、散射、Faraday 效应和仪器偏振。 & 第 \ref{chap:e13}、\ref{chap:e22} 章。 \\
+校准星 & 用来确定零基线对比度、系统响应或角直径尺度的参考星。 & 第 \ref{chap:e15}、\ref{chap:e28} 章。 \\
+系统误差地板 & 积分时间继续增加也不再按 \(T^{-1/2}\) 改善的误差下限。 & 第 \ref{chap:e15}、\ref{chap:e27} 章。 \\
+\bottomrule
+\end{longtable}
+
+\section{天体源和辐射机制}
+\label{appsec:c-sources}
+
+\begin{longtable}{p{0.20\linewidth}p{0.45\linewidth}p{0.25\linewidth}}
+\toprule
+术语 & 本书用法 & 主要位置 \\
+\midrule
+亮温 & 把辐射强度表达成等效黑体温度的量；高亮温常提示相干机制或极端小角尺度。 & 第 \ref{chap:e16} 章。 \\
+热辐射 & 由温度和光学深度控制的辐射；光学恒星近似热光但并非完美黑体。 & 第 \ref{chap:e16}、\ref{chap:e17} 章。 \\
+同步辐射 & 相对论电子在磁场中辐射，常带偏振和非热谱。 & 第 \ref{chap:e16}、\ref{chap:e19} 章。 \\
+逆康普顿散射 & 高能电子把低能光子提升到更高能量的过程。 & 第 \ref{chap:e16} 章。 \\
+maser & 微波或射电受激辐射源，天体环境中常受速度相干和泵浦涨落控制。 & 第 \ref{chap:e16}、\ref{chap:e27} 章。 \\
+自然激光 & 天体中可能的光学/近红外受激辐射候选，不等同于实验室稳定激光腔。 & 第 \ref{chap:e25}、\ref{chap:e27} 章。 \\
+宽线区 & AGN 中产生宽发射线的气体区域，可用时间延迟、谱线和角尺度联合约束。 & 第 \ref{chap:e19} 章。 \\
+photon ring & 黑洞强引力附近由光子轨道相关路径形成的细结构。 & 第 \ref{chap:e19} 章。 \\
+Type Ia 超新星 & 热核超新星，可作为距离指标；强度干涉方案关心光球角半径。 & 第 \ref{chap:e20}、\ref{chap:e26} 章。 \\
+千新星 & 双中子星并合后的 r-process 暂现源，多信使延迟和扩散时间是核心量。 & 第 \ref{chap:e20} 章。 \\
+GRB 余辉 & 伽马暴后喷流与环境相互作用产生的多波段辐射。 & 第 \ref{chap:e20} 章。 \\
+TDE & 恒星被黑洞潮汐撕裂后的暂现事件，可约束黑洞质量和再处理光球。 & 第 \ref{chap:e20} 章。 \\
+\bottomrule
+\end{longtable}
+
+\section{传播、宇宙学和新物理}
+\label{appsec:c-propagation}
+
+\begin{longtable}{p{0.20\linewidth}p{0.45\linewidth}p{0.25\linewidth}}
+\toprule
+术语 & 本书用法 & 主要位置 \\
+\midrule
+DM & dispersion measure，电子柱密度造成的频率相关延迟。 & 第 \ref{chap:e21} 章。 \\
+RM & rotation measure，磁化等离子体造成的 Faraday 偏振旋转量。 & 第 \ref{chap:e21}、\ref{chap:e22} 章。 \\
+散射展宽 & 多径传播把脉冲或相关峰展宽，可能掩盖本征时间结构。 & 第 \ref{chap:e21} 章。 \\
+消光 & 尘埃吸收和散射造成的通量降低；会影响光子率和颜色。 & 第 \ref{chap:e21} 章。 \\
+透镜方程 & 源位置、像位置和偏折角之间的关系。 & 第 \ref{chap:e21} 章。 \\
+时间延迟距离 & 强透镜时间延迟宇宙学中的距离组合。 & 第 \ref{chap:e21} 章。 \\
+波动光学透镜 & 当波长、透镜质量和路径差使干涉不可忽略时的透镜现象。 & 第 \ref{chap:e21}、\ref{chap:e22} 章。 \\
+轴子双折射 & 轻场耦合导致偏振角随时间或方向变化的效应候选。 & 第 \ref{chap:e22}、\ref{chap:e23} 章。 \\
+CMB B 模 & CMB 偏振中的旋度型分量，可来自引力波、透镜或系统误差。 & 第 \ref{chap:e23} 章。 \\
+cosmic variance & 只观测一个宇宙导致的大尺度统计不确定性。 & 第 \ref{chap:e23} 章。 \\
+standard siren & 用引力波直接给出距离、再结合红移或电磁对应体做宇宙学的源。 & 第 \ref{chap:e20} 章。 \\
+\bottomrule
+\end{longtable}
+
+\section{量子网络和项目管理}
+\label{appsec:c-program}
+
+\begin{longtable}{p{0.20\linewidth}p{0.45\linewidth}p{0.25\linewidth}}
+\toprule
+术语 & 本书用法 & 主要位置 \\
+\midrule
+量子网络望远镜 & 用纠缠、量子存储、频率转换或本地模式测量辅助长基线干涉的远期架构。 & 第 \ref{chap:e24}、\ref{chap:e28} 章。 \\
+纠缠分发率 & 网络每秒可提供的可用纠缠资源数；链路损耗会迅速压低它。 & 第 \ref{chap:e24} 章。 \\
+量子存储 & 暂存量子态或纠缠资源的设备；存储时间需覆盖基线光行时和处理延迟。 & 第 \ref{chap:e24} 章。 \\
+Bell fidelity & 实际纠缠态与理想 Bell 态的保真度，用来衡量网络资源质量。 & 第 \ref{chap:e24} 章。 \\
+频率转换 & 把天文光或实验室量子资源转换到可传输、可存储或可探测频段。 & 第 \ref{chap:e24} 章。 \\
+readiness & 观测量、仪器指标、校准、代码和数据产品是否达到可执行阶段的量化判断。 & 第 \ref{chap:e28} 章。 \\
+milestone & 带观测量、目标精度、截止时间、null test 和数据交付的项目节点。 & 第 \ref{chap:e28} 章。 \\
+data product & 可复用的数据交付物，例如事件表、相关直方图、\(|V|^2\)、协方差和后验样本。 & 第 \ref{chap:e28} 章。 \\
+risk register & 把技术风险、科学风险、概率、影响和缓解方案写在一起的项目表。 & 第 \ref{chap:e28} 章。 \\
+失败判据 & 项目开始前定义的放弃或降级条件；例如目标过暗、系统地板过高或触发太晚。 & 第 \ref{chap:e15}、\ref{chap:e28} 章。 \\
+\bottomrule
+\end{longtable}

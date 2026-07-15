@@ -1,0 +1,119 @@
+\documentclass[11pt,openany]{book}
+\usepackage{qa-loom-fonts}
+\usepackage{qa-modern-clear}
+\usepackage{amsmath,mathtools}
+\usepackage{graphicx}
+\usepackage{booktabs,longtable,array}
+\usepackage{enumitem}
+\usepackage{newunicodechar}
+\usepackage{eso-pic}
+\usepackage{hyperref}
+\usepackage[round,authoryear]{natbib}
+\input{shared/ads_journal_macros}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=gray,
+  urlcolor=gray
+}
+
+\providecommand{\bm}[1]{\symbf{#1}}
+\newcommand{\citationneeded}{\textsuperscript{[citation needed]}}
+\newunicodechar{─}{--}
+\newenvironment{chapteropening}{\begin{quote}\small}{\end{quote}}
+\linespread{1.13}
+\setlength{\emergencystretch}{3em}
+\tolerance=2000
+
+\title{Quantum Astronomy}
+\input{shared/author_info}
+\input{shared/cover_page}
+\renewcommand{\bookcoverimage}{figures/generated/cover-en.png}
+\author{\bookauthorblock}
+\date{First working draft, July 2026}
+\renewcommand{\qaModernChapterLabelText}[1]{Chapter~#1}
+\renewcommand{\qaModernAppendixLabelText}[1]{Appendix~#1}
+\renewcommand{\qaFormulaExplainAutoTitle}{Equation~(\theequation)~Guide}
+\renewcommand{\qaFormulaExplainStarTitle}{Formula Guide}
+
+\begin{document}
+\frontmatter
+\qaModernCenteredLayout
+\makebookimagecover
+\qaModernTitlePage{Quantum Astronomy}{\bookauthorblock}{First working draft, July 2026}
+\tableofcontents
+
+\input{frontmatter/en/preface}
+
+\cleardoublepage
+\qaModernBodyLayout
+\mainmatter
+\cleardoublepage
+\part*{Quickstart}
+\input{quickstart/en/intensity_interferometry}
+
+% ============================================================
+\part{Preliminaries: Bridging Undergraduate Physics and Quantum Optics}
+\input{chapters/en/chapter_00}
+\input{chapters/en/chapter_01}
+\input{chapters/en/chapter_02}
+\input{chapters/en/chapter_03}
+\input{chapters/en/chapter_04}
+\input{chapters/en/chapter_05}
+
+% ============================================================
+\part{Quantum States of Light and Photon Statistics}
+\input{chapters/en/chapter_06}
+\input{chapters/en/chapter_07}
+\input{chapters/en/chapter_08}
+
+% ============================================================
+\part{Coherence, Interference, and Imaging}
+\input{chapters/en/chapter_09}
+\input{chapters/en/chapter_10}
+\input{chapters/en/chapter_11}
+\input{chapters/en/chapter_12}
+
+% ============================================================
+\part{Instruments, Event Tables, and Observation Design}
+\input{chapters/en/chapter_13}
+\input{chapters/en/chapter_14}
+\input{chapters/en/chapter_15}
+
+% ============================================================
+\part{Astrophysical Objects as Quantum Light Sources}
+\input{chapters/en/chapter_16}
+\input{chapters/en/chapter_17}
+\input{chapters/en/chapter_18}
+\input{chapters/en/chapter_19}
+\input{chapters/en/chapter_20}
+
+% ============================================================
+\part{Propagation, Cosmology, and New Physics}
+\input{chapters/en/chapter_21}
+\input{chapters/en/chapter_22}
+\input{chapters/en/chapter_23}
+
+% ============================================================
+\part{Frontiers, Case Studies, and Practice}
+\input{chapters/en/chapter_24}
+\input{chapters/en/chapter_25}
+\input{chapters/en/chapter_26}
+\input{chapters/en/chapter_27}
+\input{chapters/en/chapter_28}
+
+% ------------------------------------------------------------
+\appendix
+\input{appendices/en/appendix_A}
+\input{appendices/en/appendix_B}
+\input{appendices/en/appendix_C}
+\input{appendices/en/appendix_D}
+\input{appendices/en/appendix_E}
+\input{appendices/en/appendix_F}
+\input{appendices/en/appendix_G}
+
+\backmatter
+\bibliographystyle{plainnat}
+\bibliography{references}
+\end{document}

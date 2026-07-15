@@ -1,0 +1,55 @@
+\chapter{Annotated Reading Guide}
+\label{app:g}
+
+This guide organizes the literature by reading purpose. The chapters of the main text keep denser citations; here we list a set that is suitable to read first when entering a topic. All entries use NASA ADS bib keys and are maintained in \texttt{references.bib}.
+
+\section{Classic Starting Points}
+\label{appsec:g-classic}
+
+The historical starting point of intensity interferometry is the experiments and astronomical implementation of Hanbury Brown and Twiss \citep{1956Natur.178.1046H,1957RSPSA.242..300B,1974iiia.book.....H}. When reading this set, the emphasis should be on how they linked the correlation peak, the telescope area, the baseline, the bandwidth, and the integration time into an executable observation; do not stop at the name \(g^{(2)}\). The foundations of quantum optics can be entered through the coherence theory of Glauber and Sudarshan, and the textbooks of Mandel--Wolf and Gerry--Knight \citep{1963PhRv..130.2529G,1963PhRvL..10..277S,1995ocqo.book.....M,1985stop.book.....G}.
+
+\section{The Modern Revival of Intensity Interferometry}
+\label{appsec:g-sii}
+
+The main thread of the modern revival is bringing together Cherenkov arrays, large-area telescopes, digital correlators, and calibrator-star libraries. Early proposals and instrumental paths can be read in \citet{2009A&A...508..531N,2017MNRAS.472.4126G}; real astronomical results, starting from VERITAS, MAGIC, and subsequent samples, are entering the stage of systematic measurement \citep{2020NatAs...4.1164A,2021MNRAS.506.1585Z,2022MNRAS.512.1722K,2024MNRAS.529.4387A,2024ApJ...966...28A,2025ApJ...995..191A}. When reading these papers, look first at the data rate, zero-baseline calibration, background subtraction, systematic-error floor, and target selection, and put the angular-diameter tables back in the context of these conditions to understand them.
+
+\section{Detectors, Timing, and Event Tables}
+\label{appsec:g-instrument}
+
+Event-table astronomy requires reading optics, electronics, and time standards together. The AQuEye, IquEye, and photon-counting instrument papers are suitable for understanding ps--ns timing tags, absolute synchronization, and high-photon-rate data streams \citep{2015SPIE.9504E..0CZ,2016SPIE.9907E..0NZ,2013NIMPA.725..187J,2020RScI...91a3108W}. When reading this set, list separately the detector efficiency, dead time, afterpulsing, TDC resolution, GPS/White Rabbit synchronization, and data format; all of these quantities later enter the data model of Chapters~\ref{chap:e13}--\ref{chap:e14}.
+
+\section{Quantum Estimation and Sub-Rayleigh Measurement}
+\label{appsec:g-estimation}
+
+The core literature on the Rayleigh curse and SPADE shows that the traditional resolution criterion is not the information limit for every parameter-estimation problem \citep{2015Optic...2..646T,2016PhRvX...6c1033T,2017PhRvL.118g0801T,2017NJPh...19b3054T}. When reading this set, list the source model, PSF, background, available modes, and Fisher-information definition of each paper; the conclusion for ``two weak incoherent point sources'' should be used only under the corresponding conditions.
+
+\section{Astrophysical Radiation Mechanisms and Source Models}
+\label{appsec:g-sources}
+
+The chapters on stars, masers, natural lasers, Crab photon statistics, and compact objects require reading both the classical radiation mechanisms and the modern observations at the same time. The language of quantum optics cannot replace ordinary astrophysical models; its role is to flag which photon statistics have not yet been averaged away. When reading this set, record three quantities per source type: the brightness or photon rate, the angular or temporal scale, and the mixing component most likely to destroy the ideal statistics. For stimulated-emission and natural-laser candidates, it is especially important to distinguish among narrow lines, high brightness temperature, pump fluctuations, and a stable coherent state \citep{1982RvMP...54.1225E,1992ARA&A..30...75E,2004A&A...428..497J,2005MNRAS.364..731J,2005NewA...10..361J,2008AIPC..984..216D}.
+
+\section{Propagation, Lensing, Polarization, and Cosmology}
+\label{appsec:g-propagation}
+
+The literature of the propagation chapters should be read by observable: DM and dispersion delay, RM and polarization angle, scattering-induced pulse broadening, dust extinction, gravitational-lensing time delay, wave-optics lensing, CMB polarization, and cosmic birefringence. Each topic should ask the same question: does it change the arrival time, the frequency, the polarization, the phase, or the intensity correlation? If this question cannot be answered clearly, later chapters can easily misattribute a propagation effect to the quantum statistics of the source.
+
+\section{Science Cases and the Far-Term Network}
+\label{appsec:g-cases}
+
+The first-generation science cases can start from the angular diameters of bright stars, rapid rotators, Be-star disks, binaries, Crab photon statistics, natural lasers, and nearby transients. The Type Ia supernova distance proposal shows how intensity interferometry can enter the problem of cosmological distances, but it also exposes the pressure of baseline, photon rate, trigger time, and model systematics \citep{2025PhRvD.111h3047K}. The quantum-network telescope should be read starting from the pathfinders: two-photon astrometry, entanglement-assisted interferometry, and the resource constraints of storage and frequency conversion are discussed respectively in \citet{2023PhRvL.130p0801M,2025PhRvA.111d3701M,2025PhRvR...7d3278Z,2026PhRvA.113a2608P,2026Natur.651..326S}. This set is suitable to place at the end of the course, because only after event tables, coherence functions, instrumental errors, and error budgets are familiar does the resource pressure of the network schemes become clear.
+
+\section{A Note-Taking Template for Reading the Literature}
+\label{appsec:g-reading-template}
+
+\begin{longtable}{p{0.22\linewidth}p{0.68\linewidth}}
+\toprule
+Record item & How to write it \\
+\midrule
+Observable & Write down the quantity the paper actually measures, for example \(g^{(2)}(\tau)\), \(|V|^2\), angular diameter, polarization angle, delay, or event rate. \\
+Data products & Record whether the paper releases an event table, correlation histograms, calibration tables, posterior samples, or code. \\
+Main orders of magnitude & Photon rate, bandwidth, time resolution, baseline, target magnitude, background, and integration time. \\
+Core assumptions & Thermal light, Gaussian PSF, uniform disk, incoherent source, stable response, weak signal, and so on. \\
+Systematic errors & Background, dead time, afterpulsing, crosstalk, calibrator stars, model errors, and selection effects. \\
+Reusable figures & Which figures in the paper can inspire a teaching figure, but must not be copied directly. \\
+\bottomrule
+\end{longtable}

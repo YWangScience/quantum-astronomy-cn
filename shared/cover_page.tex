@@ -1,0 +1,26 @@
+\newcommand{\bookcoverimage}{figures/generated/cover-cn.png}
+\newcommand{\makebookimagecover}{%
+  \hypersetup{pageanchor=false}%
+  \thispagestyle{empty}%
+  \AddToShipoutPictureBG*{%
+    \AtPageLowerLeft{%
+      \includegraphics[width=\paperwidth,height=\paperheight]{\bookcoverimage}%
+    }%
+  }%
+  \mbox{}%
+  \clearpage
+  \hypersetup{pageanchor=true}%
+}
+
+\newcommand{\makebooktitlepage}[3]{%
+  \thispagestyle{empty}%
+  \vspace*{0.34\textheight}
+  \begin{center}
+    {\Large #1\par}
+    \vspace{2.2em}
+    {#2\par}
+    \vspace{2em}
+    {#3\par}
+  \end{center}
+  \clearpage
+}

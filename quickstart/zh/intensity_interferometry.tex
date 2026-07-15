@@ -1,0 +1,768 @@
+\chapter*{第一篇：什么是强度干涉}
+\phantomsection
+\addcontentsline{toc}{chapter}{第一篇：什么是强度干涉}
+\label{quickstart:intensity-interferometry}
+\markboth{第一篇：什么是强度干涉}{第一篇：什么是强度干涉}
+
+从普通干涉到强度干涉：为什么两台望远镜能够测量恒星大小？先从最基本的问题开始：光是什么，探测器测到的又是什么。光本质上是电磁波。对于一个单色光，电场可以写成
+\[
+  E(t)=E_0\cos(\omega t+\phi),
+\]
+\begin{formulaexplain}[电场记号解读]
+\(E(t)\) 是随时间振荡的电场；\(E_0\) 是振幅；\(\omega\) 是角频率；\(t\) 是时间；\(\phi\) 是相位。这个式子说明光首先是带振幅和相位的波，而不是一开始就是探测器里的计数。
+\end{formulaexplain}
+其中 \(E_0\) 是振幅，\(\omega=2\pi\nu\) 是角频率，\(\nu\) 是频率，\(\phi\) 是相位。真正随时间振荡并传播的是电场 \(E\)。
+
+更一般地，常用复数形式表示电场：
+\[
+  E(t)=\mathrm{Re}\left[\mathcal E e^{-i\omega t}\right],
+\]
+其中 \(\mathcal E\) 是复振幅，包含振幅和相位信息：
+\[
+  \mathcal E=E_0 e^{i\phi}.
+\]
+
+探测器，例如 CCD、PMT、APD，并不能直接测量这个快速振荡的电场。原因很简单：可见光频率大约是
+\[
+  \nu\sim 5\times 10^{14}\ {\rm Hz},
+\]
+对应周期
+\[
+  T=\frac{1}{\nu}\sim 2\times 10^{-15}\ {\rm s}.
+\]
+普通电子设备远远跟不上这样的振荡速度。因此探测器真正测到的不是 \(E(t)\) 本身，而是时间平均后的光强。对于电磁波，光强正比于电场平方的时间平均：
+\[
+  I\propto \langle E^2(t)\rangle_t.
+\]
+若
+\[
+  E(t)=E_0\cos(\omega t+\phi),
+\]
+则
+\[
+  \langle E^2(t)\rangle_t
+  =
+  E_0^2\left\langle \cos^2(\omega t+\phi)\right\rangle_t
+  =
+  \frac{E_0^2}{2}.
+\]
+所以
+\[
+  I\propto \frac{E_0^2}{2}.
+\]
+在复振幅记号下，常把光强写成
+\[
+  I\propto |\mathcal E|^2.
+\]
+\begin{formulaexplain}[强度公式解读]
+\(I\) 是探测器记录的光强；\(\mathcal E\) 是复振幅；\(|\mathcal E|^2\) 是振幅平方。这个式子把“波的语言”和“探测器的语言”接起来：相位藏在复振幅里，但普通探测器主要响应能量。
+\end{formulaexplain}
+这是理解强度干涉最关键的一点：光的基本变量是电场，但探测器测到的是光强。
+
+普通干涉正是从电场叠加开始的。假设有两束相同频率的光：
+\[
+  E_1(t)=A\cos\omega t,
+\]
+\[
+  E_2(t)=A\cos(\omega t+\phi).
+\]
+两束光叠加后，
+\[
+  E(t)=E_1(t)+E_2(t).
+\]
+探测器测量的是
+\[
+  I\propto \left\langle E^2(t)\right\rangle_t
+  =
+  \left\langle \left(E_1+E_2\right)^2\right\rangle_t.
+\]
+展开得到
+\[
+  I
+  \propto
+  \left\langle E_1^2\right\rangle_t
+  +
+  \left\langle E_2^2\right\rangle_t
+  +
+  2\left\langle E_1E_2\right\rangle_t.
+\]
+其中
+\[
+  \left\langle E_1^2\right\rangle_t
+  =
+  \left\langle A^2\cos^2\omega t\right\rangle_t
+  =
+  \frac{A^2}{2},
+\]
+\[
+  \left\langle E_2^2\right\rangle_t
+  =
+  \left\langle A^2\cos^2(\omega t+\phi)\right\rangle_t
+  =
+  \frac{A^2}{2}.
+\]
+交叉项为
+\[
+  \left\langle E_1E_2\right\rangle_t
+  =
+  A^2\left\langle
+  \cos\omega t\cos(\omega t+\phi)
+  \right\rangle_t.
+\]
+利用恒等式
+\[
+  \cos a\cos b
+  =
+  \frac{1}{2}\left[\cos(a-b)+\cos(a+b)\right],
+\]
+得到
+\[
+  \left\langle E_1E_2\right\rangle_t
+  =
+  \frac{A^2}{2}\cos\phi.
+\]
+因此
+\[
+  I
+  \propto
+  \frac{A^2}{2}
+  +
+  \frac{A^2}{2}
+  +
+  2\cdot \frac{A^2}{2}\cos\phi,
+\]
+也就是
+\[
+  I
+  \propto
+  A^2(1+\cos\phi).
+\]
+若定义单束光的光强为
+\[
+  I_0\propto \frac{A^2}{2},
+\]
+则总光强为
+\[
+  I
+  =
+  2I_0(1+\cos\phi).
+\]
+\begin{formulaexplain}[普通干涉解读]
+\(I_0\) 是单束光强；\(\phi\) 是两束光相位差；\(\cos\phi\) 控制相长或相消。这个结果说明普通干涉测的是电场交叉项：相位差没有被直接看到，却通过强度明暗表现出来。
+\end{formulaexplain}
+因此，当相位差 \(\phi\) 不同时，探测器会看到亮纹和暗纹。这就是普通干涉。这里真正起作用的是交叉项
+\[
+  2\left\langle E_1E_2\right\rangle_t.
+\]
+也就是说，普通干涉本质上是在比较两个电场，所以它也叫振幅干涉。
+
+问题是，恒星光不是激光。激光的相位可以在较长时间内保持稳定，因此可以形成稳定干涉条纹。但恒星表面有大量原子和等离子体微元，它们各自随机辐射。总电场可以写成
+\[
+  E(t)=\sum_i E_i(t).
+\]
+每一项可以近似写为
+\[
+  E_i(t)=A_i(t)\cos[\omega_i t+\phi_i(t)].
+\]
+由于每个辐射单元的相位 \(\phi_i(t)\) 都在随机变化，总电场的相位也在不断变化。等待时间稍长以后，
+\[
+  \langle E(t)\rangle=0.
+\]
+这并不是说恒星不发光，而是说电场作为一个带相位的量，正负振荡和随机相位平均后会相互抵消。探测器仍然能测到非零光强，因为
+\[
+  I\propto \langle |E(t)|^2\rangle.
+\]
+
+虽然恒星光的相位是随机的，但它不会无限快地随机变化。在很短时间内，电场仍然保持一定相关。这个保持相关的时间尺度叫相干时间，记为
+\[
+  \tau_c.
+\]
+更准确地说，相干时间可以由时间相干函数定义。对同一位置的电场，定义
+\[
+  g^{(1)}(\tau)
+  =
+  \frac{
+    \langle E(t)E^\ast(t+\tau)\rangle
+  }{
+    \langle |E(t)|^2\rangle
+  }.
+\]
+当 \(|\tau|\ll \tau_c\) 时，
+\[
+  |g^{(1)}(\tau)|\approx 1.
+\]
+当 \(|\tau|\gg \tau_c\) 时，
+\[
+  |g^{(1)}(\tau)|\rightarrow 0.
+\]
+所以 \(\tau_c\) 表示电场仍然保持相位记忆的时间尺度。若光的频率带宽为 \(\Delta \nu\)，通常有数量级关系
+\[
+  \tau_c\sim \frac{1}{\Delta \nu}.
+\]
+对应的相干长度为
+\[
+  l_c=c\tau_c\sim \frac{c}{\Delta \nu}.
+\]
+
+现在考虑两台望远镜。一台测到 \(E_1(t)\)，另一台测到 \(E_2(t)\)。如果两台望远镜距离很近，它们接收到的几乎是同一个波前，因此
+\[
+  E_1(t)\approx E_2(t).
+\]
+为了描述两个位置的电场有多相似，我们定义一阶空间相干函数
+\[
+  g^{(1)}_{12}
+  =
+  \frac{
+    \langle E_1(t)E_2^\ast(t)\rangle
+  }{
+    \sqrt{
+      \langle |E_1(t)|^2\rangle
+      \langle |E_2(t)|^2\rangle
+    }
+  }.
+\]
+如果还考虑时间延迟 \(\tau\)，则写成
+\[
+  g^{(1)}_{12}(\tau)
+  =
+  \frac{
+    \langle E_1(t)E_2^\ast(t+\tau)\rangle
+  }{
+    \sqrt{
+      \langle |E_1(t)|^2\rangle
+      \langle |E_2(t+\tau)|^2\rangle
+    }
+  }.
+\]
+\begin{formulaexplain}[一阶相干解读]
+\(g^{(1)}_{12}(\tau)\) 比较两台望远镜在相隔 \(\tau\) 的两个电场；分子是电场相关，分母用各自强度做归一化。它的模接近 1 表示两个电场仍有共同相位记忆，接近 0 表示相位关系已经丢失。
+\end{formulaexplain}
+这个量的物理意义很直接：它比较两个位置、两个时刻的电场是否相关。若
+\[
+  |g^{(1)}_{12}|=1,
+\]
+两个电场完全相关；若
+\[
+  |g^{(1)}_{12}|=0,
+\]
+两个电场没有相关性。普通振幅干涉直接测量的就是 \(g^{(1)}_{12}\)。
+
+但是普通光学干涉很难做，因为它要求真正把两束光汇合，并且要求光程误差小于波长。对于可见光，
+\[
+  \lambda\sim 500\ {\rm nm}.
+\]
+这意味着整个光学系统必须稳定到几十纳米量级。对于相距很远的望远镜，这非常困难。
+
+Hanbury Brown 和 Twiss 的想法正是从这里开始的。既然探测器本来就测不到电场 \(E\)，只能测光强 \(I\)，那么能不能不比较 \(E_1(t)\) 和 \(E_2(t)\)，而是直接比较两个望远镜测到的光强
+\[
+  I_1(t),\qquad I_2(t)?
+\]
+这就是强度干涉。
+
+表面上看，这很奇怪。光强已经是 \(|E|^2\)，似乎把相位信息平均掉了，为什么还会有干涉？关键在于，热光的平均光强虽然近似恒定，但瞬时光强并不是严格恒定的，而是存在微小随机涨落。可以写成
+\[
+  I(t)=\langle I\rangle+\Delta I(t),
+\]
+\begin{formulaexplain}[光强涨落解读]
+\(I(t)\) 是瞬时光强；\(\langle I\rangle\) 是平均光强；\(\Delta I(t)\) 是围绕平均值的涨落。强度干涉不合并电场，而是比较两台望远镜的这些微小涨落是否同步。
+\end{formulaexplain}
+其中
+\[
+  \Delta I(t)=I(t)-\langle I\rangle.
+\]
+因此
+\[
+  \langle \Delta I(t)\rangle=0.
+\]
+这些涨落来自热光的随机相位叠加。可以把每个原子或辐射单元贡献的电场看成复平面上的一个小向量。某一瞬间，如果很多小向量方向接近，总电场就大，因此
+\[
+  I=|E|^2
+\]
+也大。另一瞬间，如果这些小向量方向混乱并相互抵消，总电场就小，光强也变弱。于是热光天然存在随机闪烁，也就是光强涨落。
+
+如果两台望远镜接收到的是同一个相干区域的光，那么这些光强涨落不会完全独立。某个时刻恒星某一部分的辐射刚好增强，两台望远镜都会看到增强；下一时刻它变暗，两台望远镜也都会看到变暗。因此有
+\[
+  \left\langle \Delta I_1(t)\Delta I_2(t)\right\rangle>0.
+\]
+强度干涉测量的正是这种光强涨落之间的相关，而不是平均光强本身。
+
+如果两台望远镜之间的距离逐渐增大，它们接收到的波前不再完全相同，看到的相干区域也逐渐不同。于是一个望远镜看到的亮暗变化，另一个望远镜不一定同步看到。相关性会逐渐下降，最后趋近于零：
+\[
+  \left\langle \Delta I_1(t)\Delta I_2(t)\right\rangle\rightarrow 0.
+\]
+因此，光强涨落的相关程度告诉我们光源的空间相干尺度。
+
+这马上和恒星大小联系起来。如果恒星非常小，近似点源，那么到达地球的波前在很大范围内仍然相干。即使两台望远镜相距较远，它们仍然能看到相似的涨落，相关性下降较慢。
+
+如果恒星角直径较大，不同区域彼此独立发光。两台望远镜相距较远时，它们对恒星不同区域的相位加权不同，因此光强涨落相关会更快下降。所以恒星越大，相干性随基线下降得越快。通过测量不同基线 \(B\) 下的相关性，就可以反推出恒星角直径。
+
+现在可以把这个想法写成数学形式。定义
+\[
+  I_1(t)=\bar I_1+\Delta I_1(t),
+\]
+\[
+  I_2(t)=\bar I_2+\Delta I_2(t),
+\]
+其中
+\[
+  \bar I_1=\langle I_1(t)\rangle,\qquad
+  \bar I_2=\langle I_2(t)\rangle.
+\]
+两台望远镜测量的光强乘积为
+\[
+  I_1(t)I_2(t)
+  =
+  [\bar I_1+\Delta I_1(t)]
+  [\bar I_2+\Delta I_2(t)].
+\]
+展开得到
+\[
+  I_1I_2
+  =
+  \bar I_1\bar I_2
+  +
+  \bar I_1\Delta I_2
+  +
+  \bar I_2\Delta I_1
+  +
+  \Delta I_1\Delta I_2.
+\]
+取平均后，由于
+\[
+  \langle \Delta I_1\rangle=
+  \langle \Delta I_2\rangle=0,
+\]
+中间两项消失，因此
+\[
+  \langle I_1I_2\rangle
+  =
+  \bar I_1\bar I_2+
+  \langle \Delta I_1\Delta I_2\rangle.
+\]
+于是定义归一化二阶相干函数
+\[
+  g^{(2)}_{12}(0)
+  =
+  \frac{
+    \langle I_1(t)I_2(t)\rangle
+  }{
+    \langle I_1(t)\rangle
+    \langle I_2(t)\rangle
+  }.
+\]
+\begin{formulaexplain}[二阶相干解读]
+\(g^{(2)}_{12}(0)\) 是零延迟的归一化强度乘积；\(I_1,I_2\) 是两台望远镜的光强；分母去掉平均亮度的影响。若它大于 1，说明两路光强涨落有过量同步性。
+\end{formulaexplain}
+代入上式得到
+\[
+  g^{(2)}_{12}(0)
+  =
+  1+
+  \frac{
+    \langle \Delta I_1(t)\Delta I_2(t)\rangle
+  }{
+    \bar I_1\bar I_2
+  }.
+\]
+如果考虑时间延迟 \(\tau\)，则
+\[
+  g^{(2)}_{12}(\tau)
+  =
+  \frac{
+    \langle I_1(t)I_2(t+\tau)\rangle
+  }{
+    \langle I_1(t)\rangle
+    \langle I_2(t+\tau)\rangle
+  }.
+\]
+对应地，
+\[
+  g^{(2)}_{12}(\tau)
+  =
+  1+
+  \frac{
+    \langle \Delta I_1(t)\Delta I_2(t+\tau)\rangle
+  }{
+    \bar I_1\bar I_2
+  }.
+\]
+所以二阶相干函数就是归一化后的光强涨落相关。
+
+接下来的关键问题是，为什么这个量会和一阶相干函数的平方有关？也就是说，为什么热光满足
+\[
+  g^{(2)}_{12}(\tau)=1+\left|g^{(1)}_{12}(\tau)\right|^2?
+\]
+\begin{formulaexplain}[Siegert 问题解读]
+\(g^{(2)}\) 是强度相关；\(g^{(1)}\) 是电场相关；模平方表示只保留一阶相干的大小。这个问题是 HBT 的核心：为什么不测电场相位，仍能通过热光统计读出一阶相干的模平方。
+\end{formulaexplain}
+这不是巧合，而是因为热光可以很好地近似为复高斯随机场。对于高斯随机变量，四阶矩可以由二阶矩表示，这就是 Isserlis 定理，也就是经典随机变量中的 Wick 定理。
+
+设两处电场分别为 \(E_1\) 和 \(E_2\)，光强为
+\[
+  I_1=|E_1|^2=E_1E_1^\ast,
+\]
+\[
+  I_2=|E_2|^2=E_2E_2^\ast.
+\]
+于是
+\[
+  \langle I_1 I_2\rangle
+  =
+  \langle E_1E_1^\ast E_2E_2^\ast\rangle.
+\]
+对于零均值复高斯随机场，有
+\[
+  \langle E_1E_1^\ast E_2E_2^\ast\rangle
+  =
+  \langle E_1E_1^\ast\rangle
+  \langle E_2E_2^\ast\rangle
+  +
+  \langle E_1E_2^\ast\rangle
+  \langle E_1^\ast E_2\rangle.
+\]
+由于
+\[
+  \langle E_1^\ast E_2\rangle
+  =
+  \langle E_1E_2^\ast\rangle^\ast,
+\]
+所以第二项可以写成
+\[
+  \langle E_1E_2^\ast\rangle
+  \langle E_1^\ast E_2\rangle
+  =
+  \left|
+  \langle E_1E_2^\ast\rangle
+  \right|^2.
+\]
+因此
+\[
+  \langle I_1 I_2\rangle
+  =
+  \langle |E_1|^2\rangle
+  \langle |E_2|^2\rangle
+  +
+  \left|
+  \langle E_1E_2^\ast\rangle
+  \right|^2.
+\]
+两边除以
+\[
+  \langle |E_1|^2\rangle
+  \langle |E_2|^2\rangle
+\]
+得到
+\[
+  \frac{
+    \langle I_1 I_2\rangle
+  }{
+    \langle I_1\rangle
+    \langle I_2\rangle
+  }
+  =
+  1+
+  \frac{
+    \left|
+    \langle E_1E_2^\ast\rangle
+    \right|^2
+  }{
+    \langle |E_1|^2\rangle
+    \langle |E_2|^2\rangle
+  }.
+\]
+根据一阶相干函数定义，
+\[
+  g^{(1)}_{12}
+  =
+  \frac{
+    \langle E_1E_2^\ast\rangle
+  }{
+    \sqrt{
+      \langle |E_1|^2\rangle
+      \langle |E_2|^2\rangle
+    }
+  },
+\]
+所以
+\[
+  \left|g^{(1)}_{12}\right|^2
+  =
+  \frac{
+    \left|
+    \langle E_1E_2^\ast\rangle
+    \right|^2
+  }{
+    \langle |E_1|^2\rangle
+    \langle |E_2|^2\rangle
+  }.
+\]
+最终得到 Siegert 关系：
+\[
+  g^{(2)}_{12}
+  =
+  1+
+  \left|g^{(1)}_{12}\right|^2.
+\]
+\begin{formulaexplain}[HBT 核心关系解读]
+左边 \(g^{(2)}_{12}\) 是强度干涉直接测到的量；右边的 1 是无相关时的基线；\(|g^{(1)}_{12}|^2\) 是电场相干的模平方。它说明热光的光强相关保留了空间相干信息。
+\end{formulaexplain}
+如果考虑有限偏振数、探测时间分辨率和有限带宽，实际观测到的相关幅度会被稀释，常写成
+\[
+  g^{(2)}_{12}(0)
+  =
+  1+\beta \left|g^{(1)}_{12}\right|^2,
+\]
+其中 \(0<\beta\leq 1\)。理想单偏振、时间分辨率足够高的情况下，\(\beta=1\)。实际强度干涉实验中，\(\beta\) 受到探测器时间分辨率、光谱带宽和偏振选择的影响。
+
+这说明，强度干涉虽然不直接测量电场，但由于热光的高斯统计性质，电场相关的信息仍然保存在光强涨落的相关函数中。这是强度干涉的理论核心。
+
+现在还需要回答最后一个天文问题：为什么测量不同望远镜之间的相关性，就能知道恒星有多大？
+
+假设一颗恒星距离我们很远，例如
+\[
+  D=100\ {\rm pc}.
+\]
+恒星发出的球面波传播到地球附近时，由于
+\[
+  D\gg R_{\rm Earth},
+\]
+局部上可以近似为平面波。波前就是相位相同的位置组成的面。对于点源，整个波前几乎一致，因此空间相干性很高。
+
+真实恒星不是点源，而是一个有角直径的圆盘。可以把恒星表面分成许多小面元，每个小面元都近似看成一个点源。不同面元位于天空中的不同方向，因此到达两台望远镜时会产生不同路径差。
+
+设两台望远镜之间的基线为 \(\mathbf B\)，某个面元的方向为单位向量 \(\mathbf s\)。路径差为
+\[
+  \Delta l=\mathbf B\cdot \mathbf s.
+\]
+对应相位差为
+\[
+  \Delta\phi
+  =
+  \frac{2\pi}{\lambda}\mathbf B\cdot\mathbf s.
+\]
+这里 \(\lambda\) 是波长，\(\mathbf B\cdot\mathbf s\) 是路径差，\(2\pi/\lambda\) 把路径差转换成相位差。
+
+如果恒星在方向 \(\mathbf s\) 上的亮度为 \(I(\mathbf s)\)，那么所有面元的贡献相加得到
+\[
+  g^{(1)}(\mathbf B)
+  =
+  \frac{
+    \int
+    I(\mathbf s)
+    e^{-i2\pi\mathbf B\cdot\mathbf s/\lambda}
+    \,d\Omega
+  }{
+    \int
+    I(\mathbf s)\,d\Omega
+  }.
+\]
+\begin{formulaexplain}[空间相干解读]
+\(\mathbf B\) 是望远镜基线；\(I(\mathbf s)\) 是天空方向 \(\mathbf s\) 的亮度；指数因子给出该方向在两台望远镜之间的相位差；分母归一化总亮度。它把天空亮度分布转成基线上的一阶相干。
+\end{formulaexplain}
+这个公式的物理意义并不复杂。每个面元都贡献一个电场振幅，但因为方向不同，它在两台望远镜之间带有不同的相位因子
+\[
+  e^{-i2\pi\mathbf B\cdot\mathbf s/\lambda}.
+\]
+把所有方向的贡献相加，就得到两台望远镜之间的一阶相干函数。
+
+在小视场近似下，可以用角坐标 \((\alpha,\delta)\) 表示天空方向。若基线在天空平面上的投影为 \((B_x,B_y)\)，定义
+\[
+  u=\frac{B_x}{\lambda},
+  \qquad
+  v=\frac{B_y}{\lambda}.
+\]
+则 Van Cittert-Zernike 定理可以写成
+\[
+  g^{(1)}(u,v)
+  =
+  \frac{
+    \iint
+    I(\alpha,\delta)
+    e^{-i2\pi(u\alpha+v\delta)}
+    \,d\alpha\,d\delta
+  }{
+    \iint
+    I(\alpha,\delta)
+    \,d\alpha\,d\delta
+  }.
+\]
+这说明，远场光源的一阶空间相干函数等于光源亮度分布的归一化傅里叶变换：
+\[
+  g^{(1)}(u,v)
+  =
+  \frac{
+    \mathcal F[I(\alpha,\delta)]
+  }{
+    \mathcal F[I(\alpha,\delta)]_{u=0,v=0}
+  }.
+\]
+通常把这个归一化傅里叶变换称为复可见度：
+\[
+  V(u,v)=g^{(1)}(u,v).
+\]
+改变基线长度和方向，就相当于在傅里叶空间中采样不同位置。随着地球自转，基线相对于天空的投影也会变化，因此采样点会在 \(u,v\) 平面上移动，这就是地球自转综合的基本思想。
+
+对于均匀亮度圆盘恒星，亮度分布可以写成
+\[
+  I(\rho)=
+  \begin{cases}
+    I_0, & \rho\leq \theta/2,\\
+    0, & \rho>\theta/2,
+  \end{cases}
+\]
+其中 \(\theta\) 是恒星角直径，\(\rho\) 是离圆盘中心的角距离。
+
+由于圆盘具有轴对称性，复可见度只依赖于基线长度
+\[
+  B=|\mathbf B|.
+\]
+傅里叶变换可以解析计算，得到
+\[
+  V(B)
+  =
+  \frac{2J_1(x)}{x},
+\]
+\begin{formulaexplain}[均匀圆盘解读]
+\(V(B)\) 是基线长度 \(B\) 上的可见度；\(J_1\) 是一阶贝塞尔函数；\(x\) 把角直径、基线和波长合成无量纲参数。圆盘越大，\(V(B)\) 随基线下降越快。
+\end{formulaexplain}
+其中
+\[
+  x=
+  \pi\theta\frac{B}{\lambda}.
+\]
+这里 \(J_1\) 是第一类一阶贝塞尔函数。因此
+\[
+  |V(B)|^2
+  =
+  \left[
+  \frac{2J_1(x)}{x}
+  \right]^2.
+\]
+这个函数会随着基线增加而下降，并在某些基线处变为零。第一个零点满足
+\[
+  J_1(x)=0,
+\]
+其中第一个零点为
+\[
+  x_1\simeq 3.8317.
+\]
+因此
+\[
+  \pi\theta\frac{B_{\rm null}}{\lambda}
+  =
+  3.8317.
+\]
+解得
+\[
+  B_{\rm null}
+  =
+  \frac{3.8317}{\pi}
+  \frac{\lambda}{\theta}.
+\]
+由于
+\[
+  \frac{3.8317}{\pi}\simeq 1.22,
+\]
+所以
+\[
+  B_{\rm null}
+  \simeq
+  1.22\frac{\lambda}{\theta}.
+\]
+反过来，如果观测到第一个零点基线 \(B_{\rm null}\)，就可以估计角直径：
+\[
+  \theta
+  \simeq
+  1.22\frac{\lambda}{B_{\rm null}}.
+\]
+这个结果和圆孔衍射中艾里斑第一暗环的位置具有相同数学来源，因为两者都来自圆盘的傅里叶变换。
+
+普通振幅干涉直接测量
+\[
+  V(B)=g^{(1)}(B),
+\]
+因此可以得到傅里叶变换的振幅和相位。HBT 强度干涉测量的是
+\[
+  g^{(2)}(B)=1+|g^{(1)}(B)|^2.
+\]
+由于
+\[
+  V(B)=g^{(1)}(B),
+\]
+所以
+\[
+  g^{(2)}(B)=1+|V(B)|^2.
+\]
+实际观测中常写成
+\[
+  g^{(2)}(B)-1
+  =
+  \beta |V(B)|^2.
+\]
+\begin{formulaexplain}[强度干涉观测量解读]
+\(g^{(2)}(B)-1\) 是扣掉无相关基线后的 HBT 信号；\(\beta\) 是有限时间分辨率、带宽和偏振带来的稀释因子；\(|V(B)|^2\) 是天体亮度傅里叶变换的模平方。这就是用强度相关测恒星大小的直接观测式。
+\end{formulaexplain}
+也就是说，强度干涉直接得到的是
+\[
+  |V(B)|^2
+  =
+  \frac{g^{(2)}(B)-1}{\beta}.
+\]
+它保留了傅里叶变换的模平方，但不直接给出相位。因此，强度干涉非常适合测量恒星角直径、双星间距等模型参数；但如果要直接恢复二维图像，就比振幅干涉困难，需要模型拟合、闭合相位或更高阶相关等附加信息。
+
+到这里，完整逻辑链条是：
+
+光的基本变量是电场 \(E\)，但探测器测到的是光强
+\[
+  I\propto |E|^2.
+\]
+普通干涉通过比较两个位置的电场来测量一阶相干函数
+\[
+  g^{(1)}_{12}
+  =
+  \frac{
+    \langle E_1E_2^\ast\rangle
+  }{
+    \sqrt{
+      \langle |E_1|^2\rangle
+      \langle |E_2|^2\rangle
+    }
+  },
+\]
+因此需要保持光程稳定和相位信息。热光的电场相位随机，但光强存在微小涨落。两台望远镜接收到同一相干区域的光时，这些涨落会相关。强度干涉测量的是归一化光强涨落相关，也就是二阶相干函数
+\[
+  g^{(2)}_{12}
+  =
+  \frac{
+    \langle I_1I_2\rangle
+  }{
+    \langle I_1\rangle\langle I_2\rangle
+  }.
+\]
+对于热光，由于电场可以近似为复高斯随机场，Siegert 关系给出
+\[
+  g^{(2)}_{12}
+  =
+  1+
+  \left|g^{(1)}_{12}\right|^2.
+\]
+而根据 Van Cittert-Zernike 定理，
+\[
+  g^{(1)}(u,v)
+  =
+  \frac{
+    \iint
+    I(\alpha,\delta)
+    e^{-i2\pi(u\alpha+v\delta)}
+    \,d\alpha\,d\delta
+  }{
+    \iint
+    I(\alpha,\delta)
+    \,d\alpha\,d\delta
+  },
+\]
+也就是天体亮度分布的归一化傅里叶变换。因此 HBT 强度干涉测量的是
+\[
+  |V(B)|^2,
+\]
+也就是天体亮度分布傅里叶变换的模平方。通过改变基线长度和方向，就可以采样不同空间频率，从而推断恒星的角直径和结构。

@@ -1,0 +1,80 @@
+\chapter{14 周课程安排建议}
+\label{app:f}
+
+这是一套按一学期设计的阅读和项目顺序。课程可以压缩或扩展，但第 \ref{chap:e00}--\ref{chap:e14} 章最好保留；后面的科学案例都依赖事件表、相干函数、仪器误差和相关器语言。
+
+\section{课程目标和评分结构}
+\label{appsec:f-goals}
+
+课程结束时，应能从一个科学问题写出观测量、事件表字段、核心公式、数量级、误差预算、null test 和可复现代码。建议评分结构为：每周阅读笔记 \(20\%\)，三次短计算作业 \(30\%\)，一次中期项目设计 \(20\%\)，期末项目报告和代码 \(30\%\)。
+
+\begin{longtable}{p{0.20\linewidth}p{0.34\linewidth}p{0.36\linewidth}}
+\toprule
+交付物 & 内容 & 评价标准 \\
+\midrule
+阅读笔记 & 每周 1 页，列出主要观测量、公式、数量级和疑问。 & 是否读懂公式适用条件，不以摘抄摘要代替理解。 \\
+短计算作业 & 事件表、\(g^{(2)}\)、可见度、Fisher 信息或误差预算。 & 单位正确、图清楚、代码可运行。 \\
+中期设计 & 一个可执行观测或实验方案。 & 光子率、基线、背景、校准和失败判据是否完整。 \\
+期末项目 & 代码、PDF 图、短报告和 null test。 & 是否能复现，是否解释系统误差。 \\
+\bottomrule
+\end{longtable}
+
+\section{第 1--5 周：基础和仪器}
+\label{appsec:f-foundation}
+
+\begin{longtable}{@{}p{0.09\linewidth}p{0.21\linewidth}p{0.27\linewidth}p{0.29\linewidth}@{}}
+\toprule
+周次 & 阅读 & 课堂重点 & 作业 \\
+\midrule
+1 & 第 \ref{chap:e00} 章 & 事件表、可观测量、单位和数量级。 & 用同一事件表生成光变曲线和一个简单统计量。 \\
+2 & 第 \ref{chap:e00}--\ref{chap:e06} 章 & 为什么平均强度不够；常见光态。 & 比较热光和相干光的计数统计。 \\
+3 & 第 \ref{chap:e08} 章 & \(g^{(1)}\)、\(g^{(2)}\)、Siegert 关系和多模稀释。 & 画出不同模式数和时间 bin 下的 \(g^{(2)}\) 对比度。 \\
+4 & 第 \ref{chap:e10} 章 & VCZ、均匀圆盘、双星和强度干涉 SNR。 & 拟合一个模拟均匀圆盘角直径。 \\
+5 & 第 \ref{chap:e13}--\ref{chap:e14} 章 & 探测器、时间同步、相关器和 null test。 & 写一个事件表相关器，并完成 time-shift 检查。 \\
+\bottomrule
+\end{longtable}
+
+\section{第 6--10 周：源模型和科学问题}
+\label{appsec:f-science}
+
+\begin{longtable}{@{}p{0.09\linewidth}p{0.21\linewidth}p{0.27\linewidth}p{0.29\linewidth}@{}}
+\toprule
+周次 & 阅读 & 课堂重点 & 作业 \\
+\midrule
+6 & 第 \ref{chap:e12} 章 & Rayleigh curse、SPADE 和 Fisher 信息。 & 比较直接成像和模式测量的小分离误差。 \\
+7 & 第 \ref{chap:e16}--\ref{chap:e17} 章 & 辐射机制、热光近似、恒星角直径和双星。 & 用 \(|V|^2\) 区分均匀圆盘和双星 toy model。 \\
+8 & 第 \ref{chap:e18}--\ref{chap:e19} 章 & 紧致天体、脉冲星、黑洞和 photon ring。 & 设计一个保留相位或时间标签的事件表。 \\
+9 & 第 \ref{chap:e20} 章 & 瞬变触发、角膨胀、多信使延迟。 & 做 Type Ia 或新星角膨胀 toy model。 \\
+10 & 第 \ref{chap:e21}--\ref{chap:e23} 章 & 传播、偏振旋转、透镜、新物理和 CMB。 & 区分一个普通传播项和一个新物理候选项。 \\
+\bottomrule
+\end{longtable}
+
+\section{第 11--14 周：设计、项目和报告}
+\label{appsec:f-project}
+
+\begin{longtable}{@{}p{0.09\linewidth}p{0.21\linewidth}p{0.27\linewidth}p{0.29\linewidth}@{}}
+\toprule
+周次 & 阅读 & 课堂重点 & 作业 \\
+\midrule
+11 & 第 \ref{chap:e24}--\ref{chap:e15} 章 & 量子网络边界、观测设计和误差预算。 & 写一页观测申请摘要。 \\
+12 & 第 \ref{chap:e25} 章 & 第一代科学案例排序。 & 给三个候选项目打 readiness 分数。 \\
+13 & 第 \ref{chap:e26}--\ref{chap:e27} 章 & 教学实验、常见误区、假警报和新物理边界。 & 完成项目代码、图和两个 null test。 \\
+14 & 第 \ref{chap:e28} 章 & 从教材项目到 proposal。 & 提交期末报告、代码和里程碑表。 \\
+\bottomrule
+\end{longtable}
+
+\section{期末项目题目库}
+\label{appsec:f-project-list}
+
+\begin{longtable}{p{0.25\linewidth}p{0.34\linewidth}p{0.31\linewidth}}
+\toprule
+题目 & 基本内容 & 推荐扩展 \\
+\midrule
+桌面 HBT & 事件表、延迟直方图、time-shift、响应核。 & 比较激光、LED 和伪热光。 \\
+均匀圆盘拟合 & \(|V|^2\) 模拟、角直径后验、基线覆盖。 & 加入边缘昏暗或校准星误差。 \\
+双星强度干涉 & 通量比、角分离、位置角和多基线退化。 & 加入轨道相位和镜像退化。 \\
+SPADE toy model & 模式概率、Fisher 信息、串扰和背景。 & 比较不同 PSF 或质心误差。 \\
+Type Ia 距离 & 角半径、速度、爆炸时间和距离后验。 & 加入非球对称或速度梯度。 \\
+假警报分析 & Poisson 尾部、trial factor、全局显著性。 & 用真实或模拟搜索网格。 \\
+\bottomrule
+\end{longtable}

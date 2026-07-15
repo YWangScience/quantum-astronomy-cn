@@ -1,0 +1,216 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{qa-modern-clear}[2026/07/04 Modern clear textbook style for Quantum Astronomy]
+
+\RequirePackage[a4paper,asymmetric,top=2.45cm,bottom=2.05cm,left=1.25cm,right=5.45cm,marginparwidth=4.55cm,marginparsep=0.42cm,headheight=15pt]{geometry}
+\RequirePackage{xcolor}
+\RequirePackage{graphicx}
+\RequirePackage{fancyhdr}
+\RequirePackage{lastpage}
+\RequirePackage{titlesec}
+\RequirePackage{setspace}
+\RequirePackage{caption}
+\RequirePackage{enumitem}
+\RequirePackage{tabularx}
+\RequirePackage{ragged2e}
+\RequirePackage{microtype}
+\RequirePackage{environ}
+\RequirePackage{needspace}
+\RequirePackage[skins,breakable]{tcolorbox}
+
+\definecolor{qaPurple}{HTML}{4F439A}
+\definecolor{qaGrey}{HTML}{777777}
+\definecolor{qaLightGrey}{HTML}{ECECEC}
+\definecolor{qaBoxRule}{HTML}{D5D5D5}
+\definecolor{qaNoteBg}{HTML}{FFFFFF}
+\definecolor{qaNoteText}{HTML}{424242}
+\definecolor{qaBodyInk}{HTML}{1E1E1E}
+
+\color{qaBodyInk}
+\setstretch{1.07}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.48em}
+\setlength{\marginparpush}{0.48em}
+\renewcommand{\arraystretch}{1.22}
+\emergencystretch=2.5em
+\microtypesetup{protrusion=true,expansion=false}
+\normalmarginpar
+
+\newcommand{\qaModernCenteredLayout}{%
+  \newgeometry{top=2.45cm,bottom=2.05cm,left=3.35cm,right=3.35cm,headheight=15pt}%
+}
+
+\newcommand{\qaModernBodyLayout}{%
+  \newgeometry{asymmetric,top=2.45cm,bottom=2.05cm,left=1.25cm,right=5.45cm,marginparwidth=4.55cm,marginparsep=0.42cm,headheight=15pt}%
+  \normalmarginpar
+}
+
+\makeatletter
+\@twosidefalse
+\@mparswitchfalse
+\makeatother
+
+\pagestyle{fancy}
+\fancyhf{}
+\cfoot{\sffamily\small\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\newif\ifqaModernAppendix
+\let\qaModernOriginalAppendix\appendix
+\renewcommand{\appendix}{\qaModernOriginalAppendix\qaModernAppendixtrue}
+
+\providecommand{\qaModernChapterLabelText}[1]{第~#1~章}
+\providecommand{\qaModernAppendixLabelText}[1]{附录~#1}
+\providecommand{\qaFormulaExplainAutoTitle}{公式~(\theequation)~解读}
+\providecommand{\qaFormulaExplainStarTitle}{公式解读}
+
+\newcommand{\qaModernChapterLabel}{%
+  \ifqaModernAppendix
+    \qaModernAppendixLabelText{\thechapter}
+  \else
+    \qaModernChapterLabelText{\thechapter}
+  \fi}
+
+\titleformat{\chapter}[display]
+  {\normalfont\sffamily\bfseries\RaggedRight}
+  {\textcolor{qaPurple}{\fontsize{42}{48}\selectfont\qaModernChapterLabel}}
+  {0.35em}
+  {\fontsize{24}{30}\selectfont}
+\titleformat{name=\chapter,numberless}[display]
+  {\normalfont\sffamily\bfseries\RaggedRight}
+  {}
+  {0pt}
+  {\fontsize{24}{30}\selectfont}
+\titlespacing*{\chapter}{0pt}{1.0em}{1.2em}
+
+\titleformat{\part}[display]
+  {\normalfont\sffamily\bfseries\RaggedRight}
+  {\textcolor{qaPurple}{\fontsize{46}{52}\selectfont\partname~\thepart}}
+  {0.45em}
+  {\fontsize{24}{30}\selectfont}
+\titleformat{name=\part,numberless}[display]
+  {\normalfont\sffamily\bfseries\RaggedRight}
+  {}
+  {0pt}
+  {\fontsize{24}{30}\selectfont}
+\titlespacing*{\part}{0pt}{3.0em}{2.2em}
+
+\titleformat{\section}[hang]
+  {\normalfont\sffamily\bfseries\RaggedRight}
+  {\textcolor{qaPurple}{\fontsize{34}{39}\selectfont\thesection}}
+  {0.55em}
+  {\fontsize{19}{25}\selectfont}
+\titleformat{name=\section,numberless}[block]
+  {\normalfont\sffamily\bfseries\RaggedRight\fontsize{19}{24}\selectfont}
+  {}
+  {0pt}
+  {}
+\titleformat{\subsection}[hang]
+  {\normalfont\sffamily\bfseries\RaggedRight\Large}
+  {\textcolor{qaPurple}{\thesubsection}}
+  {0.5em}
+  {}
+\titleformat{name=\subsection,numberless}[block]
+  {\normalfont\sffamily\bfseries\RaggedRight\large}
+  {}
+  {0pt}
+  {}
+\titleformat{\subsubsection}[hang]
+  {\normalfont\sffamily\bfseries\RaggedRight\large}
+  {\textcolor{qaPurple}{\thesubsubsection}}
+  {0.5em}
+  {}
+\titlespacing*{\section}{0pt}{2.0em}{1.0em}
+\titlespacing*{\subsection}{0pt}{1.35em}{0.35em}
+\titlespacing*{\subsubsection}{0pt}{1.05em}{0.25em}
+
+\captionsetup{
+  font=small,
+  labelfont={bf,sf,color=qaPurple},
+  textfont={color=qaBodyInk!92!white},
+  labelsep=period,
+  skip=5pt
+}
+
+\setlist[enumerate]{leftmargin=2em,itemsep=0.15em,topsep=0.3em}
+\setlist[itemize]{leftmargin=2em,itemsep=0.15em,topsep=0.3em}
+
+\newtcolorbox{qaFormulaMarginNoteBox}{
+  enhanced,
+  width=\marginparwidth,
+  colback=qaNoteBg,
+  colframe=qaBoxRule,
+  boxrule=0pt,
+  arc=1.4mm,
+  outer arc=1.4mm,
+  left=1.6mm,
+  right=1.5mm,
+  top=1.2mm,
+  bottom=1.3mm,
+  boxsep=0pt,
+  borderline west={1.2pt}{0pt}{qaPurple},
+  before skip=0pt,
+  after skip=0pt
+}
+
+\newlength{\qaFormulaMarginNoteRaise}
+\setlength{\qaFormulaMarginNoteRaise}{2.85\baselineskip}
+
+\newcommand{\qaFormulaMarginNote}[2]{%
+  \marginpar{%
+    \vspace*{-\qaFormulaMarginNoteRaise}%
+    \begin{qaFormulaMarginNoteBox}
+      {\sffamily\bfseries\fontsize{7.0}{8.3}\selectfont\textcolor{qaPurple}{#1}\par}%
+      \vspace{0.16em}%
+      {\fontsize{6.9}{8.2}\selectfont\color{qaNoteText}\RaggedRight\sloppy #2\par}%
+    \end{qaFormulaMarginNoteBox}%
+  }%
+}
+
+\NewEnviron{formulaexplain}[1][]{%
+  \par\noindent\leavevmode
+  \if\relax\detokenize{#1}\relax
+    \qaFormulaMarginNote{\qaFormulaExplainAutoTitle}{\BODY}%
+  \else
+    \qaFormulaMarginNote{#1}{\BODY}%
+  \fi
+  \par\vspace{-\baselineskip}\ignorespacesafterend
+}
+
+\NewEnviron{formulaexplain*}{%
+  \par\noindent\leavevmode
+  \qaFormulaMarginNote{\qaFormulaExplainStarTitle}{\BODY}%
+  \par\vspace{-\baselineskip}\ignorespacesafterend
+}
+
+\newsavebox{\qaTemplateNoteBox}
+\newenvironment{templateNote}
+  {\par\smallskip\begin{lrbox}{\qaTemplateNoteBox}\begin{minipage}{0.94\textwidth}\vspace{0.35em}\bfseries}
+  {\vspace{0.35em}\end{minipage}\end{lrbox}\noindent\colorbox{qaLightGrey}{\usebox{\qaTemplateNoteBox}}\par\smallskip}
+
+\newcommand{\qaModernTitlePage}[3]{%
+  \thispagestyle{empty}%
+  \vspace*{1.0cm}%
+  {\sffamily\bfseries\noindent
+    \begin{minipage}[t]{0.20\textwidth}
+      \raggedright\textcolor{qaPurple}{\fontsize{48}{54}\selectfont QA}%
+    \end{minipage}%
+    \hspace{0.04\textwidth}%
+    \begin{minipage}[t]{0.72\textwidth}
+      \raggedright\fontsize{25}{31}\selectfont #1\par
+    \end{minipage}%
+  }%
+  \vspace{1.05cm}%
+  \begin{flushright}
+    \begin{minipage}{0.44\textwidth}
+      \itshape #3\par
+      \vspace{0.25em}
+      \hrule
+      \vspace{0.25em}
+      \raggedleft\normalfont #2
+    \end{minipage}
+  \end{flushright}
+  \clearpage
+}
+
+\endinput

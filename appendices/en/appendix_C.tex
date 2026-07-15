@@ -1,0 +1,160 @@
+\chapter{Glossary}
+\label{app:c}
+
+Common terms are listed by their working definition, the boundaries that are easily confused, and the main places to read about them. The definitions keep only the boundaries most needed when looking things up; for the full physical picture, formulas, orders of magnitude and references, see the corresponding chapter in the main text.
+
+\section{Data, Statistics and Inference}
+\label{appsec:c-data}
+
+\begin{longtable}{p{0.20\linewidth}p{0.45\linewidth}p{0.25\linewidth}}
+\toprule
+Term & Usage in this book & Main location \\
+\midrule
+Event table & A photon-by-photon record containing at least a time and a detection channel; it can be extended with frequency, polarization, position, quality flags and weight. Do not equate it with an already binned light curve. & Chapters~\ref{chap:e00}, \ref{chap:e13}, \ref{chap:e14}. \\
+Light curve & The projection of an event table onto the time axis, usually discarding channel, polarization and single-event interval information. & Chapters~\ref{chap:e00}, \ref{chap:e14}. \\
+Exposure function & A function describing how the effective observing time, area, efficiency and selection function vary with time or channel. & Chapters~\ref{chap:e14}, \ref{chap:e15}. \\
+Live time & The effective integration time after removing dead time, bad weather, saturation and quality selection. & Chapters~\ref{chap:e13}, \ref{chap:e15}. \\
+Poisson process & A counting model in which, given the instantaneous rate, events arrive independently; non-stationary sources require a time-varying rate. & Chapters~\ref{chap:e00}, \ref{chap:e14}, \ref{chap:e27}. \\
+Cox process & A Poisson process whose rate itself varies randomly; it can produce super-Poisson counts without being new physics. & Chapter~\ref{chap:e27}. \\
+Likelihood & The probability density or probability mass of obtaining the observed data given the model parameters. Do not conflate it with the posterior. & Chapters~\ref{chap:e14}, \ref{chap:e15}. \\
+Posterior & The parameter distribution after combining the likelihood with the prior. When reporting a posterior, state the prior and the data vector. & Chapters~\ref{chap:e14}, \ref{chap:e26}. \\
+Fisher information & A measure of the local sensitivity of the likelihood to the parameters; it is not an automatic substitute for systematic errors. & Chapters~\ref{chap:e00}, \ref{chap:e14}, \ref{chap:e12}. \\
+Covariance matrix & The matrix of correlations between the errors of data points or parameters. Multi-baseline \(|V|^2\) points usually cannot be assumed independent. & Chapters~\ref{chap:e14}, \ref{chap:e15}. \\
+Fano factor & The ratio of count variance to mean, used to diagnose slowly varying sources, dead time and afterpulsing. & Chapter~\ref{chap:e27}. \\
+Trial factor & The correction to global significance caused by multiple testing. Time bins, frequency channels, baselines and the number of targets can all contribute trials. & Chapter~\ref{chap:e27}. \\
+Null test & A check that should remove the astrophysical signal while retaining instrumental or background structure, such as time-shift, off-source, off-band or wrong-polarization tests. & Chapters~\ref{chap:e14}, \ref{chap:e26}, \ref{chap:e27}. \\
+\bottomrule
+\end{longtable}
+
+\section{Quantum Optics and Coherence Functions}
+\label{appsec:c-optics}
+
+\begin{longtable}{p{0.20\linewidth}p{0.45\linewidth}p{0.25\linewidth}}
+\toprule
+Term & Usage in this book & Main location \\
+\midrule
+Mode & A distinguishable degree of freedom of the light field, which may be a spatial, temporal, frequency or polarization mode. The number of modes determines whether the bunching contrast is diluted. & Chapters~\ref{chap:e06}, \ref{chap:e08}. \\
+Occupation number & The mean photon number in a single mode; large in the radio, often very small for a single mode in optical astronomy. & Chapters~\ref{chap:e06}, \ref{chap:e16}. \\
+Coherent state & An ideal light state with a Poisson photon-number distribution and \(g^{(2)}(0)=1\); an astrophysical laser/maser is not necessarily equivalent to a stable coherent state. & Chapters~\ref{chap:e06}, \ref{chap:e27}. \\
+Thermal state & A chaotic light field that exhibits bunching in a single mode; multiple modes and finite response reduce the observed contrast. & Chapters~\ref{chap:e06}, \ref{chap:e08}. \\
+Squeezed state & A light-field state in which one quadrature has noise below vacuum while the other is raised; similar language also appears in cosmological fluctuations. & Chapters~\ref{chap:e06}, \ref{chap:e23}. \\
+Density matrix & A state object describing a pure or mixed state; especially natural when an astrophysical light source consists of many indistinguishable components. & Chapters~\ref{chap:e06}, \ref{chap:e24}. \\
+Decoherence & The loss of usable phase relations due to the environment, averaging or unobserved degrees of freedom; do not simply equate it with ``no quantum.'' & Chapters~\ref{chap:e06}, \ref{chap:e23}. \\
+First-order coherence function & Describes field-amplitude correlations; both amplitude interferometry and complex visibility depend on this quantity. & Chapters~\ref{chap:e08}, \ref{chap:e10}. \\
+Second-order coherence function & Describes correlations of intensity or detection events; the central observable of HBT and photon statistics. & Chapters~\ref{chap:e08}, \ref{chap:e14}. \\
+Bunching & The positive second-order correlation excess of thermal or chaotic light near zero delay. & Chapters~\ref{chap:e00}, \ref{chap:e08}. \\
+Antibunching & The nonclassical photon-statistics signature of \(g^{(2)}(0)<1\); extremely hard to preserve in an astronomical setting. & Chapters~\ref{chap:e08}, \ref{chap:e27}. \\
+Coherence time & The time width over which the first-order coherence of the light field is significant, usually set by the spectral bandwidth. & Chapters~\ref{chap:e00}, \ref{chap:e08}. \\
+Siegert relation & The relation that links the second-order correlation to the squared modulus of the first-order coherence under thermal light or a Gaussian field. & Chapters~\ref{chap:e00}, \ref{chap:e08}, \ref{chap:e10}. \\
+Glauber correlation & The quantum-optical correlation function defined via detection operators, the basis of the \(g^{(n)}\) language. & Chapters~\ref{chap:e06}, \ref{chap:e08}. \\
+\bottomrule
+\end{longtable}
+
+\section{Interferometry, Imaging and Mode Measurement}
+\label{appsec:c-interferometry}
+
+\begin{longtable}{p{0.20\linewidth}p{0.45\linewidth}p{0.25\linewidth}}
+\toprule
+Term & Usage in this book & Main location \\
+\midrule
+Complex visibility & A normalized Fourier component of the sky brightness distribution; both amplitude and phase are first-order coherence information. & Chapters~\ref{chap:e00}, \ref{chap:e10}. \\
+Baseline & The vector separation between two telescopes; what enters the visibility is \(B_\perp\), the projection onto the sky plane. & Chapter~\ref{chap:e10}. \\
+\(u,v\) coverage & The sampling of an observation in the spatial-frequency plane; it determines imaging and model degeneracies. & Chapters~\ref{chap:e10}, \ref{chap:e15}. \\
+VCZ theorem & The theorem linking the sky brightness of an incoherent far-field source to the first-order spatial coherence. & Chapter~\ref{chap:e10}, Appendix~\ref{app:d}. \\
+Uniform disk & The simplest model of a stellar angular diameter; real stars often need limb-darkening or non-spherical corrections. & Chapters~\ref{chap:e00}, \ref{chap:e10}, \ref{chap:e17}. \\
+Limb darkening & The effect whereby the stellar-disk edge is fainter than the center, which changes the visibility curve and the interpretation of the angular diameter. & Chapter~\ref{chap:e17}. \\
+Intensity interferometry & Measures \(|V|^2\) using intensity-fluctuation correlations; insensitive to atmospheric piston phase, but sensitive to background, time response and calibration. & Chapters~\ref{chap:e10}, \ref{chap:e15}. \\
+Zero-baseline contrast & The correlation-peak amplitude when not yet suppressed by spatial resolution, often used to calibrate the instrumental dilution factor. & Chapters~\ref{chap:e10}, \ref{chap:e15}. \\
+Missing phase & When only \(|V|^2\) is measured, the complex phase cannot be obtained directly, leading to mirror and asymmetric-structure degeneracies. & Chapters~\ref{chap:e10}, \ref{chap:e27}. \\
+Phase retrieval & The algorithmic problem of recovering phase from intensity or \(|V|^2\) constraints, requiring priors and multiple samples. & Chapters~\ref{chap:e10}, \ref{chap:e27}. \\
+SPADE & The measurement idea of projecting the focal-plane field onto spatial modes to estimate sub-Rayleigh separations. & Chapters~\ref{chap:e12}, \ref{chap:e26}. \\
+Rayleigh curse & The phenomenon of declining Fisher information when direct imaging estimates the separation of a closely spaced pair of sources; not a limit of all measurements. & Chapters~\ref{chap:e12}, \ref{chap:e27}. \\
+Quantum Fisher information & The upper limit on parameter information over the allowed set of measurements; an achievable target only when the model and measurement assumptions are satisfied. & Chapter~\ref{chap:e12}. \\
+\bottomrule
+\end{longtable}
+
+\section{Instruments, Detectors and Calibration}
+\label{appsec:c-instrument}
+
+\begin{longtable}{p{0.20\linewidth}p{0.45\linewidth}p{0.25\linewidth}}
+\toprule
+Term & Usage in this book & Main location \\
+\midrule
+SPAD & Single-photon avalanche diode, suited to time-tagged photon counting; dead time and afterpulsing must be handled. & Chapter~\ref{chap:e13}. \\
+PMT & Photomultiplier tube, often used for fast photon counting and Cherenkov instruments; gain, pulse shape and background must be calibrated. & Chapters~\ref{chap:e13}, \ref{chap:e15}. \\
+TDC & Time-to-digital converter, which turns a detection pulse into a digital time tag. & Chapters~\ref{chap:e13}, \ref{chap:e26}. \\
+Jitter & The timing jitter introduced by the detection and timing chain, which broadens the correlation peak and dilutes contrast. & Chapter~\ref{chap:e13}. \\
+Dead time & The interval after an event during which a detector or electronics cannot record a new event. & Chapters~\ref{chap:e13}, \ref{chap:e27}. \\
+Afterpulsing & Delayed spurious events caused by the release of internal detector traps, producing positive correlation at short delays. & Chapters~\ref{chap:e13}, \ref{chap:e27}. \\
+Dark count & The rate of detection events in the absence of astrophysical photons; temperature and bias voltage change it. & Chapter~\ref{chap:e13}. \\
+Electronic crosstalk & An electronic pulse in one channel contaminating another channel, which may masquerade as a zero-delay correlation. & Chapters~\ref{chap:e13}, \ref{chap:e27}. \\
+White Rabbit & One of the sub-ns network synchronization technologies; whether it is sufficient depends on the correlation-peak width and the baseline model. & Chapter~\ref{chap:e13}. \\
+Spectral channel & A frequency or wavelength label in the event table; a narrow channel increases the coherence time but reduces the photon number per channel. & Chapters~\ref{chap:e13}, \ref{chap:e28}. \\
+Polarization channel & A polarization label in the event table; used to distinguish source physics, scattering, Faraday effects and instrumental polarization. & Chapters~\ref{chap:e13}, \ref{chap:e22}. \\
+Calibrator star & A reference star used to determine the zero-baseline contrast, the system response or the angular-diameter scale. & Chapters~\ref{chap:e15}, \ref{chap:e28}. \\
+Systematic-error floor & The lower error limit below which further integration no longer improves as \(T^{-1/2}\). & Chapters~\ref{chap:e15}, \ref{chap:e27}. \\
+\bottomrule
+\end{longtable}
+
+\section{Astrophysical Sources and Radiation Mechanisms}
+\label{appsec:c-sources}
+
+\begin{longtable}{p{0.20\linewidth}p{0.45\linewidth}p{0.25\linewidth}}
+\toprule
+Term & Usage in this book & Main location \\
+\midrule
+Brightness temperature & A quantity expressing radiation intensity as an equivalent blackbody temperature; a high brightness temperature often hints at a coherent mechanism or an extremely small angular scale. & Chapter~\ref{chap:e16}. \\
+Thermal radiation & Radiation controlled by temperature and optical depth; optical stars approximate thermal light but are not perfect blackbodies. & Chapters~\ref{chap:e16}, \ref{chap:e17}. \\
+Synchrotron radiation & Radiation from relativistic electrons in a magnetic field, often carrying polarization and a nonthermal spectrum. & Chapters~\ref{chap:e16}, \ref{chap:e19}. \\
+Inverse Compton scattering & The process in which high-energy electrons boost low-energy photons to higher energies. & Chapter~\ref{chap:e16}. \\
+Maser & A microwave or radio stimulated-emission source, often controlled by velocity coherence and pump fluctuations in astrophysical environments. & Chapters~\ref{chap:e16}, \ref{chap:e27}. \\
+Natural laser & A candidate for optical/near-infrared stimulated emission in astrophysical objects, not equivalent to a stable laboratory laser cavity. & Chapters~\ref{chap:e25}, \ref{chap:e27}. \\
+Broad-line region & The gas region in an AGN that produces broad emission lines, which can be jointly constrained by time delay, spectral lines and angular scale. & Chapter~\ref{chap:e19}. \\
+Photon ring & The fine structure formed by correlated light-orbit paths near the strong gravity of a black hole. & Chapter~\ref{chap:e19}. \\
+Type Ia supernova & A thermonuclear supernova usable as a distance indicator; intensity-interferometry schemes care about the photospheric angular radius. & Chapters~\ref{chap:e20}, \ref{chap:e26}. \\
+Kilonova & An r-process transient following a binary-neutron-star merger, for which multi-messenger delay and diffusion time are central quantities. & Chapter~\ref{chap:e20}. \\
+GRB afterglow & The multiband radiation produced by the interaction of a gamma-ray-burst jet with its environment. & Chapter~\ref{chap:e20}. \\
+TDE & A transient event following the tidal disruption of a star by a black hole, which can constrain the black-hole mass and the reprocessing photosphere. & Chapter~\ref{chap:e20}. \\
+\bottomrule
+\end{longtable}
+
+\section{Propagation, Cosmology and New Physics}
+\label{appsec:c-propagation}
+
+\begin{longtable}{p{0.20\linewidth}p{0.45\linewidth}p{0.25\linewidth}}
+\toprule
+Term & Usage in this book & Main location \\
+\midrule
+DM & Dispersion measure, the frequency-dependent delay caused by the electron column density. & Chapter~\ref{chap:e21}. \\
+RM & Rotation measure, the amount of Faraday polarization rotation caused by a magnetized plasma. & Chapters~\ref{chap:e21}, \ref{chap:e22}. \\
+Scatter broadening & Multipath propagation broadening a pulse or correlation peak, which can mask the intrinsic time structure. & Chapter~\ref{chap:e21}. \\
+Extinction & The flux reduction caused by dust absorption and scattering; it affects the photon rate and color. & Chapter~\ref{chap:e21}. \\
+Lens equation & The relation between source position, image position and deflection angle. & Chapter~\ref{chap:e21}. \\
+Time-delay distance & The distance combination in strong-lensing time-delay cosmology. & Chapter~\ref{chap:e21}. \\
+Wave-optics lensing & Lensing phenomena when the wavelength, lens mass and path difference make interference non-negligible. & Chapters~\ref{chap:e21}, \ref{chap:e22}. \\
+Axion birefringence & A candidate effect in which coupling to a light field causes the polarization angle to vary with time or direction. & Chapters~\ref{chap:e22}, \ref{chap:e23}. \\
+CMB B mode & The curl-type component of CMB polarization, which can arise from gravitational waves, lensing or systematic errors. & Chapter~\ref{chap:e23}. \\
+Cosmic variance & The large-scale statistical uncertainty caused by observing only a single universe. & Chapter~\ref{chap:e23}. \\
+Standard siren & A source that gives a distance directly from gravitational waves and then, combined with a redshift or electromagnetic counterpart, does cosmology. & Chapter~\ref{chap:e20}. \\
+\bottomrule
+\end{longtable}
+
+\section{Quantum Networks and Project Management}
+\label{appsec:c-program}
+
+\begin{longtable}{p{0.20\linewidth}p{0.45\linewidth}p{0.25\linewidth}}
+\toprule
+Term & Usage in this book & Main location \\
+\midrule
+Quantum-network telescope & A far-future architecture that uses entanglement, quantum memory, frequency conversion or local mode measurement to assist long-baseline interferometry. & Chapters~\ref{chap:e24}, \ref{chap:e28}. \\
+Entanglement-distribution rate & The number of usable entanglement resources the network can provide per second; link loss rapidly suppresses it. & Chapter~\ref{chap:e24}. \\
+Quantum memory & A device that temporarily stores a quantum state or entanglement resource; the storage time must cover the baseline light travel time and processing latency. & Chapter~\ref{chap:e24}. \\
+Bell fidelity & The fidelity of the actual entangled state relative to the ideal Bell state, used to gauge the quality of network resources. & Chapter~\ref{chap:e24}. \\
+Frequency conversion & Converting astronomical light or laboratory quantum resources to a band that can be transmitted, stored or detected. & Chapter~\ref{chap:e24}. \\
+Readiness & A quantitative judgment of whether the observables, instrument metrics, calibration, code and data products have reached an executable stage. & Chapter~\ref{chap:e28}. \\
+Milestone & A project node carrying observables, target precision, a deadline, null tests and data delivery. & Chapter~\ref{chap:e28}. \\
+Data product & A reusable data deliverable, for example an event table, correlation histogram, \(|V|^2\), covariance and posterior samples. & Chapter~\ref{chap:e28}. \\
+Risk register & A project table that records technical risks, science risks, probabilities, impacts and mitigation plans together. & Chapter~\ref{chap:e28}. \\
+Failure criteria & Abandonment or downgrade conditions defined before the project begins; for example, a target too faint, a systematic floor too high, or a trigger too late. & Chapters~\ref{chap:e15}, \ref{chap:e28}. \\
+\bottomrule
+\end{longtable}
