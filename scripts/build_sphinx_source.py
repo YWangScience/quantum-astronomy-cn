@@ -65,6 +65,11 @@ HTML_FIGURE_RE = re.compile(
 PANDOC_TABLE_RE = re.compile(
     r"(?m)(?P<table>^(?:\|.*\|\n)+)\n?:\s+(?P<caption>.+?)\s+\{#(?P<label>tab:[^}]+)\}\s*$"
 )
+PANDOC_DIV_TABLE_RE = re.compile(
+    r"(?m)^:::\s+\{#(?P<label>tab:[^}]+)\}\s*\n"
+    r"(?P<table>(?:\|.*\|\n)+)\n?"
+    r":\s+(?P<caption>.+?)\s*\n:::\s*$"
+)
 IMG_SRC_RE = re.compile(r'src="([^"]+)"')
 IMG_WIDTH_RE = re.compile(r'width:\s*([0-9.]+)%')
 
@@ -286,6 +291,7 @@ def replace_pandoc_tables(markdown: str) -> str:
             ":::\n"
         )
 
+    markdown = PANDOC_DIV_TABLE_RE.sub(table_repl, markdown)
     return PANDOC_TABLE_RE.sub(table_repl, markdown)
 
 
